@@ -1,14 +1,14 @@
-Most used pattern
+Most used pattern - indirectly in Spring
 A singleton class has only one instance, accessible globally through a single point (via a method/field)
 Only single instance of this class, means "global state"
 
 Early and Lazy initialization
 
 Example
-java.text.NumberFormat
+java.lang.Runtime in rt.jar
 
-Simple Factory vs Factory Method
+Singleton vs Factory Method
 
 Pitfall
-Criteria - to instantiate can be more convoluted/complex over time
-    > if we see this happening then we should move to Factory Method
+difficult to mock and unit test
+singleton with large mutable global state is bad practice

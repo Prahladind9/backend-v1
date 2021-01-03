@@ -1,5 +1,7 @@
 edu/prahlad/dp/cdp/simplefactory/BlogPost.java
  edu.prahlad.dp.cdp.simplefactory.BlogPost
+edu/prahlad/dp/cdp/abstractfactory/gcp/GoogleResourceFactory.java
+ edu.prahlad.dp.cdp.abstractfactory.gcp.GoogleResourceFactory
 edu/prahlad/dp/cdp/factorymethod/MessageCreator.java
  edu.prahlad.dp.cdp.factorymethod.MessageCreator
 edu/prahlad/dp/cdp/builder/UserWebDTO.java
@@ -14,25 +16,37 @@ edu/prahlad/dp/cdp/factorymethod/JSONMessageCreator.java
  edu.prahlad.dp.cdp.factorymethod.JSONMessageCreator
 edu/prahlad/dp/cdp/builder2/Client.java
  edu.prahlad.dp.cdp.builder2.Client
+edu/prahlad/dp/cdp/abstractfactory/Client.java
+ edu.prahlad.dp.cdp.abstractfactory.Client
+edu/prahlad/dp/cdp/abstractfactory/aws/S3Storage.java
+ edu.prahlad.dp.cdp.abstractfactory.aws.S3Storage
 edu/prahlad/dp/cdp/factorymethod/message/Message.java
  edu.prahlad.dp.cdp.factorymethod.message.Message
+edu/prahlad/dp/cdp/abstractfactory/gcp/GoogleComputeEngineInstance.java
+ edu.prahlad.dp.cdp.abstractfactory.gcp.GoogleComputeEngineInstance
 edu/prahlad/dp/cdp/builder/UserDTO.java
  edu.prahlad.dp.cdp.builder.UserDTO
 edu/prahlad/dp/cdp/builder/Client.java
  edu.prahlad.dp.cdp.builder.Client
+edu/prahlad/dp/cdp/singleton/EagerRegistry.java
+ edu.prahlad.dp.cdp.singleton.EagerRegistry
 edu/prahlad/dp/cdp/simplefactory/PostFactory.java
  edu.prahlad.dp.cdp.simplefactory.PostFactory
 edu/prahlad/dp/cdp/builder/Address.java
  edu.prahlad.dp.cdp.builder.Address
-edu/prahlad/dp/cdp/factorymethod/message/JSONMessage.java
- edu.prahlad.dp.cdp.factorymethod.message.JSONMessage
 edu/prahlad/dp/cdp/prototype/Client.java
  edu.prahlad.dp.cdp.prototype.Client
+edu/prahlad/dp/cdp/abstractfactory/ResourceFactory.java
+ edu.prahlad.dp.cdp.abstractfactory.ResourceFactory
+edu/prahlad/dp/cdp/prototype/General.java
+ edu.prahlad.dp.cdp.prototype.General
 edu/prahlad/dp/cdp/builder2/UserDTO.java
  edu.prahlad.dp.cdp.builder2.UserDTO
  edu.prahlad.dp.cdp.builder2.UserDTO$UserDTOBuilder
-edu/prahlad/dp/cdp/factorymethod/message/TextMessage.java
- edu.prahlad.dp.cdp.factorymethod.message.TextMessage
+edu/prahlad/dp/cdp/factorymethod/message/JSONMessage.java
+ edu.prahlad.dp.cdp.factorymethod.message.JSONMessage
+edu/prahlad/dp/cdp/prototype/GameUnit.java
+ edu.prahlad.dp.cdp.prototype.GameUnit
 edu/prahlad/dp/cdp/simplefactory/NewsPost.java
  edu.prahlad.dp.cdp.simplefactory.NewsPost
 edu/prahlad/dp/cdp/factorymethod/TextMessageCreator.java
@@ -41,34 +55,29 @@ edu/prahlad/dp/cdp/factorymethod/Client.java
  edu.prahlad.dp.cdp.factorymethod.Client
 edu/prahlad/dp/cdp/simplefactory/ProductPost.java
  edu.prahlad.dp.cdp.simplefactory.ProductPost
-edu/prahlad/dp/cdp/builder/User.java
- edu.prahlad.dp.cdp.builder.User
-edu/prahlad/dp/cdp/simplefactory/Client.java
- edu.prahlad.dp.cdp.simplefactory.Client
-edu/prahlad/dp/cdp/abstractfactory/ResourceFactory.java
- edu.prahlad.dp.cdp.abstractfactory.ResourceFactory
-edu/prahlad/dp/cdp/prototype/General.java
- edu.prahlad.dp.cdp.prototype.General
-edu/prahlad/dp/cdp/abstractfactory/gcp/GoogleResourceFactory.java
- edu.prahlad.dp.cdp.abstractfactory.gcp.GoogleResourceFactory
-edu/prahlad/dp/cdp/prototype/GameUnit.java
- edu.prahlad.dp.cdp.prototype.GameUnit
-edu/prahlad/dp/cdp/abstractfactory/aws/AwsResourceFactory.java
- edu.prahlad.dp.cdp.abstractfactory.aws.AwsResourceFactory
-edu/prahlad/dp/cdp/abstractfactory/aws/S3Storage.java
- edu.prahlad.dp.cdp.abstractfactory.aws.S3Storage
 edu/prahlad/dp/cdp/prototype/Swordsman.java
  edu.prahlad.dp.cdp.prototype.Swordsman
-edu/prahlad/dp/cdp/abstractfactory/gcp/GoogleComputeEngineInstance.java
- edu.prahlad.dp.cdp.abstractfactory.gcp.GoogleComputeEngineInstance
+edu/prahlad/dp/cdp/simplefactory/Client.java
+ edu.prahlad.dp.cdp.simplefactory.Client
 edu/prahlad/dp/cdp/abstractfactory/Instance.java
  edu.prahlad.dp.cdp.abstractfactory.Instance
  edu.prahlad.dp.cdp.abstractfactory.Instance$Capacity
+edu/prahlad/dp/cdp/factorymethod/message/TextMessage.java
+ edu.prahlad.dp.cdp.factorymethod.message.TextMessage
+edu/prahlad/dp/cdp/builder/User.java
+ edu.prahlad.dp.cdp.builder.User
 edu/prahlad/dp/cdp/abstractfactory/gcp/GoogleCloudStorage.java
  edu.prahlad.dp.cdp.abstractfactory.gcp.GoogleCloudStorage
 edu/prahlad/dp/cdp/abstractfactory/aws/Ec2Instance.java
  edu.prahlad.dp.cdp.abstractfactory.aws.Ec2Instance
 edu/prahlad/dp/cdp/abstractfactory/Storage.java
  edu.prahlad.dp.cdp.abstractfactory.Storage
-edu/prahlad/dp/cdp/abstractfactory/Client.java
- edu.prahlad.dp.cdp.abstractfactory.Client
+edu/prahlad/dp/cdp/abstractfactory/aws/AwsResourceFactory.java
+ edu.prahlad.dp.cdp.abstractfactory.aws.AwsResourceFactory
+edu/prahlad/dp/cdp/singleton/LazyRegistryWithDCL.java
+ edu.prahlad.dp.cdp.singleton.LazyRegistryWithDCL
+edu/prahlad/dp/cdp/singleton/LazyRegistryIODH.java
+ edu.prahlad.dp.cdp.singleton.LazyRegistryIODH
+ edu.prahlad.dp.cdp.singleton.LazyRegistryIODH$RegistryHolder
+edu/prahlad/dp/cdp/singleton/Client.java
+ edu.prahlad.dp.cdp.singleton.Client
