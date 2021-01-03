@@ -28,8 +28,8 @@ edu/prahlad/dp/cdp/builder/UserDTO.java
  edu.prahlad.dp.cdp.builder.UserDTO
 edu/prahlad/dp/cdp/builder/Client.java
  edu.prahlad.dp.cdp.builder.Client
-edu/prahlad/dp/cdp/singleton/EagerRegistry.java
- edu.prahlad.dp.cdp.singleton.EagerRegistry
+edu/prahlad/dp/cdp/abstractfactory/aws/AwsResourceFactory.java
+ edu.prahlad.dp.cdp.abstractfactory.aws.AwsResourceFactory
 edu/prahlad/dp/cdp/simplefactory/PostFactory.java
  edu.prahlad.dp.cdp.simplefactory.PostFactory
 edu/prahlad/dp/cdp/builder/Address.java
@@ -72,12 +72,24 @@ edu/prahlad/dp/cdp/abstractfactory/aws/Ec2Instance.java
  edu.prahlad.dp.cdp.abstractfactory.aws.Ec2Instance
 edu/prahlad/dp/cdp/abstractfactory/Storage.java
  edu.prahlad.dp.cdp.abstractfactory.Storage
-edu/prahlad/dp/cdp/abstractfactory/aws/AwsResourceFactory.java
- edu.prahlad.dp.cdp.abstractfactory.aws.AwsResourceFactory
+edu/prahlad/dp/cdp/objectpool/Bitmap.java
+ edu.prahlad.dp.cdp.objectpool.Bitmap
+edu/prahlad/dp/cdp/singleton/RegistryEnum.java
+ edu.prahlad.dp.cdp.singleton.RegistryEnum
+edu/prahlad/dp/cdp/singleton/Client.java
+ edu.prahlad.dp.cdp.singleton.Client
+edu/prahlad/dp/cdp/objectpool/Client.java
+ edu.prahlad.dp.cdp.objectpool.Client
+edu/prahlad/dp/cdp/objectpool/ObjectPool.java
+ edu.prahlad.dp.cdp.objectpool.ObjectPool
 edu/prahlad/dp/cdp/singleton/LazyRegistryWithDCL.java
  edu.prahlad.dp.cdp.singleton.LazyRegistryWithDCL
+edu/prahlad/dp/cdp/objectpool/Poolable.java
+ edu.prahlad.dp.cdp.objectpool.Poolable
 edu/prahlad/dp/cdp/singleton/LazyRegistryIODH.java
  edu.prahlad.dp.cdp.singleton.LazyRegistryIODH
  edu.prahlad.dp.cdp.singleton.LazyRegistryIODH$RegistryHolder
-edu/prahlad/dp/cdp/singleton/Client.java
- edu.prahlad.dp.cdp.singleton.Client
+edu/prahlad/dp/cdp/singleton/EagerRegistry.java
+ edu.prahlad.dp.cdp.singleton.EagerRegistry
+edu/prahlad/dp/cdp/objectpool/Image.java
+ edu.prahlad.dp.cdp.objectpool.Image

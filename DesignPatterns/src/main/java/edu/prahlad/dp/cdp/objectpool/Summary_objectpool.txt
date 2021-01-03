@@ -1,0 +1,18 @@
+In our system if "cost of creating an instance" of a class is high and
+we need "a large number of objects" of this class "for short duration",
+then we can use an object pool.
+
+Implementation Consideration
+Pre-caching objects; meaning creating objects in advance can be helpful
+as it won't slow down the code using these objects.
+However it may add-up to startup time & memory consumption
+
+Examples
+java.util.concurrent.ThreadPoolExecutor > newCachedThreadPool()
+db connections - dbcp library - configured via Spring bean or JNDI
+
+Object Pool vs Prototype
+
+Pitfalls
+Releasing/Resetting must be handled efficiently
+Legacy code - could be difficult to implement
