@@ -1,0 +1,16 @@
+Think of builder patten when you have a complex constructor
+or an object is built in multiple steps
+
+Builder1 - implementation can be referred for the legacy code impl
+Builder2 - modern or popular impl
+
+Builder Pattern
+1) StringBuilder Class - satisfies only the intent/purpose of builder pattern
+    Not 100% complaint by GOF
+2) Java 8 - java.util.Calendar.Builder
+
+
+Builder vs Prototype
+
+Pitfalls
+nothing major but, bit complex impl - method chaining could be confusing for newbie

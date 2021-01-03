@@ -1,0 +1,15 @@
+>>What is?
+When you have multiple sets of objects, where objects in one set work together,
+then you can use abstract factory pattern, to isolate client code from
+concrete objects & their factories
+
+>>Implementation Consideration
+When you want to constrain object creations so that they all work together
+
+>>Examples
+javax.xml.parsers.DocumentBuilderFactory
+
+>>Pitfalls
+lot more complex to implement than factory method.
+adding a new product requires changes to based factory and all its implementations
+very specific to "product families"

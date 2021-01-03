@@ -1,0 +1,16 @@
+When we want to move the object creation logic from our coe to a separate class
+Class instantiation is dynamic via Inheritance hierarchy
+
+Design Consideration
+Template Method & "abstract factory" design pattern makes use of factory method pattern
+"Subclasses providing the actual instance"
+Base class defines the factory method and subclasses of this class,
+will actually provide the concrete implementation (object) of that particular class
+
+
+Examples
+java.util.Collection or AbstractCollection => iterator > ArrayList, LinkedList
+
+Pitfalls
+More complex to implement
+This design must be used from beginning

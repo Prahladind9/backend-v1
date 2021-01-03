@@ -1,0 +1,12 @@
+Not a design pattern - not to be confused with factory method design pattern
+> this way of building class is simply a method that encapsulates object instantiation
+Nothing complex goes on in that method
+
+Example
+java.text.NumberFormat
+
+Simple Factory vs Factory Method
+
+Pitfall
+Criteria - to instantiate can be more convoluted/complex over time
+    > if we see this happening then we should move to Factory Method

@@ -1,0 +1,14 @@
+Most used pattern
+A singleton class has only one instance, accessible globally through a single point (via a method/field)
+Only single instance of this class, means "global state"
+
+Early and Lazy initialization
+
+Example
+java.text.NumberFormat
+
+Simple Factory vs Factory Method
+
+Pitfall
+Criteria - to instantiate can be more convoluted/complex over time
+    > if we see this happening then we should move to Factory Method

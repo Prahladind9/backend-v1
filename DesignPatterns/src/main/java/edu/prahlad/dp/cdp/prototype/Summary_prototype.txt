@@ -1,0 +1,23 @@
+>>Cloneable interface implementation
+CLass should override clone method and return copy of itself
+immutable are good candidates for prototypes
+Deep or Shallow copy - must be initialized properly
+
+>>Implementation Consideration
+Pay attention to the deep copy and shallow copy of references. Immutable fields on clones
+save he trouble of deep copy
+
+Make sure to rest the mutable state of object before returning the prototype. It's a good
+idea to implement this in method to allow subclasses to initialize themselves.
+
+clone() method is protected in Object class and must be overridden to be public to be
+callable from outside the class.
+
+Cloneable is a "marker" interface, an indication that the class supports cloning.
+
+>>Examples
+Object.clone()
+
+>>Pitfalls
+based on number of propertied in state that are immutable or can be shallow copied
+can become complicated if subclass decides not to implement clone - exception handling
