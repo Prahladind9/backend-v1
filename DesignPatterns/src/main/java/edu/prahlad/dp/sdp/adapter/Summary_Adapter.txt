@@ -1,0 +1,18 @@
+
+1) Class adapter/ Two way adapter (Not preferred)
+2) Object Adapter - best way
+Composition instead of Inheritance
+
+Shouldn avoid overriding the adaptee object methods
+
+Example
+java.io.InputStreamReader & OutputStreamReader in rt.jar
+
+Adapter vs Decorator
+
+Pitfall
+Class adapter - as both interface and adaptee class extend our adapter,
+we can create a "class adapter" -
+which pollutes the code as unrelated methods are exposed in parts of code.
+
+Adaptee Object shouldn't be changed

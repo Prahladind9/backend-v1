@@ -93,3 +93,15 @@ edu/prahlad/dp/cdp/singleton/EagerRegistry.java
  edu.prahlad.dp.cdp.singleton.EagerRegistry
 edu/prahlad/dp/cdp/objectpool/Image.java
  edu.prahlad.dp.cdp.objectpool.Image
+edu/prahlad/dp/sdp/adapter/Customer.java
+ edu.prahlad.dp.sdp.adapter.Customer
+edu/prahlad/dp/sdp/adapter/EmployeeClassAdapter.java
+ edu.prahlad.dp.sdp.adapter.EmployeeClassAdapter
+edu/prahlad/dp/sdp/adapter/Employee.java
+ edu.prahlad.dp.sdp.adapter.Employee
+edu/prahlad/dp/sdp/adapter/BusinessCardDesigner.java
+ edu.prahlad.dp.sdp.adapter.BusinessCardDesigner
+edu/prahlad/dp/sdp/adapter/EmployeeObjectAdapter.java
+ edu.prahlad.dp.sdp.adapter.EmployeeObjectAdapter
+edu/prahlad/dp/sdp/adapter/Main.java
+ edu.prahlad.dp.sdp.adapter.Main
