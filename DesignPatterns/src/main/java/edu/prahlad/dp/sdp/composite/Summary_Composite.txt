@@ -1,0 +1,15 @@
+
+We have a part-whole relationship or hierarchy of objects and
+we want to be able to treat all objects in this hierarchy uniformly.
+
+You can provide a method to access parent of a node.
+This will simplify traversal of the entire tree
+
+Example
+Composite is used in many UI frameworks, since it easily allows to represent a tree of UI controls.
+JSF
+
+Composite vs Decorator
+
+Pitfall
+Difficult to restrict what is added to hierarchy.
