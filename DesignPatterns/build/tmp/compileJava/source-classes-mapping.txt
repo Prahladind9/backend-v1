@@ -105,3 +105,14 @@ edu/prahlad/dp/sdp/adapter/EmployeeObjectAdapter.java
  edu.prahlad.dp.sdp.adapter.EmployeeObjectAdapter
 edu/prahlad/dp/sdp/adapter/Main.java
  edu.prahlad.dp.sdp.adapter.Main
+edu/prahlad/dp/sdp/bridge/FifoCollection.java
+ edu.prahlad.dp.sdp.bridge.FifoCollection
+edu/prahlad/dp/sdp/bridge/Client.java
+ edu.prahlad.dp.sdp.bridge.Client
+edu/prahlad/dp/sdp/bridge/SinglyLinkedList.java
+ edu.prahlad.dp.sdp.bridge.SinglyLinkedList
+ edu.prahlad.dp.sdp.bridge.SinglyLinkedList$Node
+edu/prahlad/dp/sdp/bridge/LinkedList.java
+ edu.prahlad.dp.sdp.bridge.LinkedList
+edu/prahlad/dp/sdp/bridge/Queue.java
+ edu.prahlad.dp.sdp.bridge.Queue

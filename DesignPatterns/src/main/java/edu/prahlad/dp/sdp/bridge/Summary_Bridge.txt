@@ -1,0 +1,21 @@
+
+Our implementations & abstractions are generally coupled to each other
+in normal inheritance
+Using Bridge pattern we can decouple them so they can both chang without
+affecting each other
+We achieve this feat by creating two separate inheritance hierarchies; one for
+implementation and another for abstraction
+We use composition to bridge these two hierarchies.
+
+Example
+JDBC API - java.sql.DriverManager class with the java.sql.Driver interface
+form a bridge pattern.
+
+Collections.newSetFromMap() - method returns a Set which is backed by given map object.
+
+Bridge vs Adapter
+
+Pitfall
+fairly complex to understand
+you need to have a well thought out & fairly comprehensive design in front of you
+before you can decide on bridge pattern
