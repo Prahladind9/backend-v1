@@ -1,0 +1,8 @@
+package edu.prahlad.dp.sdp.facade.email;
+
+public class StationaryFactory {
+
+    public static Stationary createStationary() {
+        return new HalloweenStationary();
+    }
+}

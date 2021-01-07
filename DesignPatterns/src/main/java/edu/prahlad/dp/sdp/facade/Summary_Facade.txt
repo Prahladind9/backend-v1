@@ -1,0 +1,17 @@
+
+Client has to interact with a large number of interfaces and classes in a subsystem to get result.
+So client gets tightly couple with those interfaces & classes.
+Facade solves this problem.
+
+Facade provides a simple and unified interface to a subsystem.
+Client interacts with just the facade to get same result.
+
+Example
+java.net.URL class - provides openStream()
+
+Facade vs Adapter
+
+Pitfall
+It is often overused or misused pattern & can hide improperly designed API.
+A common misuse is to use them as "containers of related methods".
+So be on the lookout for such cases during code reviews.

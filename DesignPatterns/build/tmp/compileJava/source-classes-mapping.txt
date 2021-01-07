@@ -134,5 +134,31 @@ edu/prahlad/dp/sdp/composite/Directory.java
  edu.prahlad.dp.sdp.composite.Directory
 edu/prahlad/dp/sdp/composite/BinaryFile.java
  edu.prahlad.dp.sdp.composite.BinaryFile
+edu/prahlad/dp/sdp/facade/Client.java
+ edu.prahlad.dp.sdp.facade.Client
+edu/prahlad/dp/sdp/facade/email/StationaryFactory.java
+ edu.prahlad.dp.sdp.facade.email.StationaryFactory
+edu/prahlad/dp/sdp/facade/email/EmailBuilder.java
+ edu.prahlad.dp.sdp.facade.email.EmailBuilder
+edu/prahlad/dp/sdp/facade/email/HalloweenStationary.java
+ edu.prahlad.dp.sdp.facade.email.HalloweenStationary
+edu/prahlad/dp/sdp/facade/email/Mailer.java
+ edu.prahlad.dp.sdp.facade.email.Mailer
+edu/prahlad/dp/sdp/facade/email/TemplateFactory.java
+ edu.prahlad.dp.sdp.facade.email.TemplateFactory
+ edu.prahlad.dp.sdp.facade.email.TemplateFactory$1
 edu/prahlad/dp/sdp/composite/Client.java
  edu.prahlad.dp.sdp.composite.Client
+edu/prahlad/dp/sdp/facade/Order.java
+ edu.prahlad.dp.sdp.facade.Order
+edu/prahlad/dp/sdp/facade/email/OrderEmailTemplate.java
+ edu.prahlad.dp.sdp.facade.email.OrderEmailTemplate
+edu/prahlad/dp/sdp/facade/email/Email.java
+ edu.prahlad.dp.sdp.facade.email.Email
+edu/prahlad/dp/sdp/facade/email/Template.java
+ edu.prahlad.dp.sdp.facade.email.Template
+ edu.prahlad.dp.sdp.facade.email.Template$TemplateType
+edu/prahlad/dp/sdp/facade/email/EmailFacade.java
+ edu.prahlad.dp.sdp.facade.email.EmailFacade
+edu/prahlad/dp/sdp/facade/email/Stationary.java
+ edu.prahlad.dp.sdp.facade.email.Stationary
