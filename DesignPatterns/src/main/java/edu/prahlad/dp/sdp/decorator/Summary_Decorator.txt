@@ -1,0 +1,20 @@
+
+When we want to enhance behaviour of our existing object dynamically
+as and when required, then we can use decorator design pattern.
+
+Pay attention to equals and hasCode methods of decorator.
+When using decorators, you have to decide if decorated object is equal to
+same instance without decorator
+
+Decorator should act like additional skin over your object.
+They should add helpful small behaviours to object's original behaviour.
+Do not change meaning of operations.
+
+Example
+java's I/O package > java.io.BufferedOutputStream
+
+Decorator vs Composite
+
+Pitfall
+Level of nesting should be controlled
+decorator shouldn't be replaced for inheritance

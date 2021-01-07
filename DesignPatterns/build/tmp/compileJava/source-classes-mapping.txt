@@ -107,12 +107,24 @@ edu/prahlad/dp/sdp/adapter/Main.java
  edu.prahlad.dp.sdp.adapter.Main
 edu/prahlad/dp/sdp/bridge/FifoCollection.java
  edu.prahlad.dp.sdp.bridge.FifoCollection
-edu/prahlad/dp/sdp/bridge/Client.java
- edu.prahlad.dp.sdp.bridge.Client
+edu/prahlad/dp/sdp/bridge/Queue.java
+ edu.prahlad.dp.sdp.bridge.Queue
 edu/prahlad/dp/sdp/bridge/SinglyLinkedList.java
  edu.prahlad.dp.sdp.bridge.SinglyLinkedList
  edu.prahlad.dp.sdp.bridge.SinglyLinkedList$Node
 edu/prahlad/dp/sdp/bridge/LinkedList.java
  edu.prahlad.dp.sdp.bridge.LinkedList
-edu/prahlad/dp/sdp/bridge/Queue.java
- edu.prahlad.dp.sdp.bridge.Queue
+edu/prahlad/dp/sdp/bridge/ArrayLinkedList.java
+ edu.prahlad.dp.sdp.bridge.ArrayLinkedList
+edu/prahlad/dp/sdp/decorator/TextMessage.java
+ edu.prahlad.dp.sdp.decorator.TextMessage
+edu/prahlad/dp/sdp/bridge/Client.java
+ edu.prahlad.dp.sdp.bridge.Client
+edu/prahlad/dp/sdp/decorator/Message.java
+ edu.prahlad.dp.sdp.decorator.Message
+edu/prahlad/dp/sdp/decorator/HtmlEncodedMessage.java
+ edu.prahlad.dp.sdp.decorator.HtmlEncodedMessage
+edu/prahlad/dp/sdp/decorator/Client.java
+ edu.prahlad.dp.sdp.decorator.Client
+edu/prahlad/dp/sdp/decorator/Base64EncodedMessage.java
+ edu.prahlad.dp.sdp.decorator.Base64EncodedMessage
