@@ -4,7 +4,7 @@ interface Flyable{
     void fly();
 }
 
-class Bird implements Flyable{
+class Birds implements Flyable{
     @Override
     public void fly() {
         System.out.println("wih wings");
@@ -19,7 +19,7 @@ class Aeroplane implements Flyable{
 }
 public class FlyableRunner {
     public static void main(String[] args) {
-        Flyable[] flyableObjects =  {new Bird(), new Aeroplane()};
+        Flyable[] flyableObjects =  {new Birds(), new Aeroplane()};
         for (Flyable object: flyableObjects){
             object.fly();
         }
