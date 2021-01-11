@@ -162,3 +162,14 @@ edu/prahlad/dp/sdp/facade/email/EmailFacade.java
  edu.prahlad.dp.sdp.facade.email.EmailFacade
 edu/prahlad/dp/sdp/facade/email/Stationary.java
  edu.prahlad.dp.sdp.facade.email.Stationary
+edu/prahlad/dp/sdp/flyweight/SystemErrorMessage.java
+ edu.prahlad.dp.sdp.flyweight.SystemErrorMessage
+edu/prahlad/dp/sdp/flyweight/ErrorMessage.java
+ edu.prahlad.dp.sdp.flyweight.ErrorMessage
+edu/prahlad/dp/sdp/flyweight/ErrorMessageFactory.java
+ edu.prahlad.dp.sdp.flyweight.ErrorMessageFactory
+ edu.prahlad.dp.sdp.flyweight.ErrorMessageFactory$ErrorType
+edu/prahlad/dp/sdp/flyweight/UserBannedErrorMessage.java
+ edu.prahlad.dp.sdp.flyweight.UserBannedErrorMessage
+edu/prahlad/dp/sdp/flyweight/Client.java
+ edu.prahlad.dp.sdp.flyweight.Client

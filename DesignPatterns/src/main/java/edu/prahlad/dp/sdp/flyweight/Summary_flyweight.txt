@@ -1,0 +1,24 @@
+
+Our system needs a large number of objects of a particular class &
+maintaining these instances is a performance concern.
+
+Flyweight allows us to share an object in multiple contexts.
+But instead of sharing entire object, which may not be feasible, we divide object state in two parts:
+intrinsic (state that is shared in every context) &
+extrinsic (context specific state)
+
+We create objects with only intrinsic state & share them in multiple contexts.
+Client or User of object provides the extrinsic state to object to carry out its functionality
+
+Example
+Wrapper class - java.lang.Integer, Short, Byte, Character
+String pool - intern() method
+
+Flyweight vs Object Pool
+
+Pitfall
+Runtime cost may be added for maintaining extrinsic state. Client code has to either
+maintain it or compute it every time it needs to use flyweight.
+It is often difficult to find perfect candidate objects for flyweight.
+Graphical applications benefit heavily from this pattern, however a typical web application
+may not have a lot of use for this pattern.
