@@ -173,3 +173,19 @@ edu/prahlad/dp/sdp/flyweight/UserBannedErrorMessage.java
  edu.prahlad.dp.sdp.flyweight.UserBannedErrorMessage
 edu/prahlad/dp/sdp/flyweight/Client.java
  edu.prahlad.dp.sdp.flyweight.Client
+edu/prahlad/dp/sdp/proxy/Image.java
+ edu.prahlad.dp.sdp.proxy.Image
+edu/prahlad/dp/sdp/proxy/BitmapImage.java
+ edu.prahlad.dp.sdp.proxy.BitmapImage
+edu/prahlad/dp/sdp/proxy/ImageFactory.java
+ edu.prahlad.dp.sdp.proxy.ImageFactory
+edu/prahlad/dp/sdp/proxy/ImageProxy.java
+ edu.prahlad.dp.sdp.proxy.ImageProxy
+edu/prahlad/dp/sdp/proxy/Client.java
+ edu.prahlad.dp.sdp.proxy.Client
+edu/prahlad/dp/sdp/proxy/dynamic/Client.java
+ edu.prahlad.dp.sdp.proxy.dynamic.Client
+edu/prahlad/dp/sdp/proxy/dynamic/ImageFactory.java
+ edu.prahlad.dp.sdp.proxy.dynamic.ImageFactory
+edu/prahlad/dp/sdp/proxy/dynamic/ImageInvocationHandler.java
+ edu.prahlad.dp.sdp.proxy.dynamic.ImageInvocationHandler

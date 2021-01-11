@@ -1,0 +1,19 @@
+We need to provide a placeholder or surrogate to another object.
+Proxy acts on behalf of the object and is used for lots of reasons .. they are:
+Protection Proxy    - Control access to original object's operations
+Remote Proxy        - Provides a local representation of a remote object
+Virtual Proxy       - Delays construction of original object until absolutely necessary
+
+We have State & Dynamic Proxy
+
+Example
+Spring uses proxy pattern to provide support for features like
+transactions, caching and general AOP support.
+
+Proxy vs Decorator
+
+Pitfall
+If you need proxies for handling multiple responsibilities like
+auditing, authentication, as a stand-in for the same instance,
+then it's better to have a single proxy to handle all these requirements.
+Due to the way some proxies create object on their own, it becomes quite difficult to manage them.
