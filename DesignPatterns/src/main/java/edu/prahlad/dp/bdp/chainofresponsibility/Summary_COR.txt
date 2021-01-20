@@ -1,0 +1,21 @@
+Chain of Responsibility
+
+When we want to decouple sender of request from the object which handles the request,
+we use chain of responsibility.
+We want this decoupling because we want to give multiple objects chance to handle the request &
+we don't know all objects before hand.
+
+We create objects which are chained together by one object knowing reference of object,
+which is next in chain.
+We give request to first object in chain, if it can't handle that it simply passes
+the request down the chain.
+
+Example
+All servlet filters >> javax.servlet.Filter
+
+Chain of Responsibility vs Command
+
+Pitfall
+There is no guarantee provided in the pattern that a request will be handled.
+Request can traverse whole chain and fall at the other end without ever being processed
+and we won't know it.
