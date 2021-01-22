@@ -1,0 +1,9 @@
+Readability
+    Test Method Names
+    Which Method + Scenario Name + Result
+
+    Split
+    Given > When > Then
+
+Test should fail - only because the logic failed
+    all external factors data in DB .... shouldn't be impacted
