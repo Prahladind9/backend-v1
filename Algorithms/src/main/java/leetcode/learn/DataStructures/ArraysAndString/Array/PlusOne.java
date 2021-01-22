@@ -1,6 +1,6 @@
 package leetcode.learn.DataStructures.ArraysAndString.Array;
 
-import DataStructures.Shared.Helper;
+import leetcode.learn.DataStructures.Shared.Helper;
 
 public class PlusOne {
     public static void main(String[] args) {

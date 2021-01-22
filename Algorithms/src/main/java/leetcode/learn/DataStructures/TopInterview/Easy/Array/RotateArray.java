@@ -1,6 +1,6 @@
 package leetcode.learn.DataStructures.TopInterview.Easy.Array;
 
-import DataStructures.Shared.Helper;
+import leetcode.learn.DataStructures.Shared.Helper;
 
 public class RotateArray {
 

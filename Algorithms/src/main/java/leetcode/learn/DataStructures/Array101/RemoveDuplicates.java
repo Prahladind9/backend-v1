@@ -1,6 +1,6 @@
 package leetcode.learn.DataStructures.Array101;
 
-import DataStructures.Shared.Helper;
+import leetcode.learn.DataStructures.Shared.Helper;
 
 import java.util.Random;
 

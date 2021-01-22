@@ -1,6 +1,6 @@
 package leetcode.learn.DataStructures.Array101;
 
-import DataStructures.Shared.Helper;
+import leetcode.learn.DataStructures.Shared.Helper;
 
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/3259/

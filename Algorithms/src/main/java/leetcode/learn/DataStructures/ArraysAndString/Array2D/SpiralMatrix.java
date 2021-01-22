@@ -1,6 +1,6 @@
 package leetcode.learn.DataStructures.ArraysAndString.Array2D;
 
-import DataStructures.Shared.Helper;
+import leetcode.learn.DataStructures.Shared.Helper;
 
 import java.util.ArrayList;
 import java.util.List;

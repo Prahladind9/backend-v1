@@ -1,0 +1,198 @@
+leetcode/learn/DataStructures/ArraysAndString/Array2D/SpiralMatrix.java
+ leetcode.learn.DataStructures.ArraysAndString.Array2D.SpiralMatrix
+companies/Operative/SmallestMissingtInteger.java
+ companies.Operative.SmallestMissingtInteger
+leetcode/learn/DataStructures/Collection/Calculator.java
+ leetcode.learn.DataStructures.Collection.Calculator
+leetcode/Monthly/April/Two/MiddleoftheLinkedList.java
+ leetcode.Monthly.April.Two.MiddleoftheLinkedList
+companies/oracle/saloon/core/SaloonService.java
+ companies.oracle.saloon.core.SaloonService
+leetcode/learn/DataStructures/Array101/SquaresOfSortedArray2.java
+ leetcode.learn.DataStructures.Array101.SquaresOfSortedArray2
+leetcode/Monthly/April/One/CountElements.java
+ leetcode.Monthly.April.One.CountElements
+leetcode/learn/DataStructures/Array101/ValidMountainArray.java
+ leetcode.learn.DataStructures.Array101.ValidMountainArray
+companies/Operative/Question2.java
+ companies.Operative.Question2
+companies/oracle/saloon/maintenance/gender/GenderTypes.java
+ companies.oracle.saloon.maintenance.gender.GenderTypes
+companies/Decorpot/Question1.java
+ companies.Decorpot.Question1
+leetcode/learn/DataStructures/ArraysAndString/String/LongestCommonPrefix.java
+ leetcode.learn.DataStructures.ArraysAndString.String.LongestCommonPrefix
+leetcode/learn/DataStructures/ArraysAndString/String/ReverseString.java
+ leetcode.learn.DataStructures.ArraysAndString.String.ReverseString
+leetcode/learn/DataStructures/ArraysAndString/String/StrStr.java
+ leetcode.learn.DataStructures.ArraysAndString.String.StrStr
+companies/Thoughtworks/MainClass.java
+ companies.Thoughtworks.MainClass
+leetcode/learn/DataStructures/TopInterview/Easy/Array/RotateArray.java
+ leetcode.learn.DataStructures.TopInterview.Easy.Array.RotateArray
+leetcode/Monthly/May/FindAnagrams/FindAnagrams.java
+ leetcode.Monthly.May.FindAnagrams.FindAnagrams
+leetcode/learn/DataStructures/ArraysAndString/String/AddBinary.java
+ leetcode.learn.DataStructures.ArraysAndString.String.AddBinary
+leetcode/Monthly/April/One/HappyNumber/HappyNumber2.java
+ leetcode.Monthly.April.One.HappyNumber.HappyNumber2
+companies/valtech/gameoflife/GOLSolution.java
+ companies.valtech.gameoflife.GOLSolution
+companies/oracle/saloon/maintenance/servicetype/FacialServiceType.java
+ companies.oracle.saloon.maintenance.servicetype.FacialServiceType
+companies/Thoughtworks/Treasure.java
+ companies.Thoughtworks.Treasure
+leetcode/learn/DataStructures/LinkedList/ReverseList.java
+ leetcode.learn.DataStructures.LinkedList.ReverseList
+leetcode/learn/DataStructures/LinkedList/Add2Numbers.java
+ leetcode.learn.DataStructures.LinkedList.Add2Numbers
+leetcode/learn/DataStructures/Recursion/Permutations.java
+ leetcode.learn.DataStructures.Recursion.Permutations
+leetcode/learn/DataStructures/Array101/ReplaceElements.java
+ leetcode.learn.DataStructures.Array101.ReplaceElements
+leetcode/learn/DataStructures/Array101/MoveZeroes.java
+ leetcode.learn.DataStructures.Array101.MoveZeroes
+leetcode/learn/DataStructures/ArraysAndString/Array2D/DiagonalTraverseSquare_2Handle.java
+ leetcode.learn.DataStructures.ArraysAndString.Array2D.DiagonalTraverseSquare_2Handle
+leetcode/learn/DataStructures/ArraysAndString/Array/PlusOne.java
+ leetcode.learn.DataStructures.ArraysAndString.Array.PlusOne
+companies/Decorpot/Question2.java
+ companies.Decorpot.Question2
+leetcode/Monthly/April/One/MoveZeroes.java
+ leetcode.Monthly.April.One.MoveZeroes
+companies/Thoughtworks/Empty.java
+ companies.Thoughtworks.Empty
+leetcode/learn/DataStructures/Array101/FindDisappearedNumbers.java
+ leetcode.learn.DataStructures.Array101.FindDisappearedNumbers
+leetcode/learn/DataStructures/Array101/DuplicateZeros.java
+ leetcode.learn.DataStructures.Array101.DuplicateZeros
+leetcode/learn/DataStructures/Array101/RemoveDuplicates.java
+ leetcode.learn.DataStructures.Array101.RemoveDuplicates
+leetcode/learn/DataStructures/ArraysAndString/Array/PivotIndex.java
+ leetcode.learn.DataStructures.ArraysAndString.Array.PivotIndex
+leetcode/learn/DataStructures/ArraysAndString/Array2D/Print2DArray.java
+ leetcode.learn.DataStructures.ArraysAndString.Array2D.Print2DArray
+companies/paypal/SavingAccount.java
+ companies.paypal.SavingAccount
+companies/Thoughtworks/Jail.java
+ companies.Thoughtworks.Jail
+companies/oracle/saloon/maintenance/servicetype/ServiceTypes.java
+ companies.oracle.saloon.maintenance.servicetype.ServiceTypes
+leetcode/learn/DataStructures/Collection/MapDemo.java
+ leetcode.learn.DataStructures.Collection.MapDemo
+leetcode/learn/DataStructures/Array101/ThirdMax.java
+ leetcode.learn.DataStructures.Array101.ThirdMax
+leetcode/learn/DataStructures/ArraysAndString/Array/LargestNumberAtLeastTwiceofOthers.java
+ leetcode.learn.DataStructures.ArraysAndString.Array.LargestNumberAtLeastTwiceofOthers
+leetcode/learn/DataStructures/TopInterview/Easy/String/ReverseString.java
+ leetcode.learn.DataStructures.TopInterview.Easy.String.ReverseString
+leetcode/Monthly/April/One/MaxSubArray/MaxSubArray2.java
+ leetcode.Monthly.April.One.MaxSubArray.MaxSubArray2
+leetcode/Monthly/April/One/HappyNumber/HappyNumber3.java
+ leetcode.Monthly.April.One.HappyNumber.HappyNumber3
+companies/Thoughtworks/Board.java
+ companies.Thoughtworks.Board
+leetcode/learn/DataStructures/ArraysAndString/Array/PrintArray.java
+ leetcode.learn.DataStructures.ArraysAndString.Array.PrintArray
+companies/neustar/StringClass.java
+ companies.neustar.StringClass
+leetcode/learn/DataStructures/Queue/MyQueue.java
+ leetcode.learn.DataStructures.Queue.Main
+ leetcode.learn.DataStructures.Queue.MyQueue
+leetcode/learn/DataStructures/Array101/HeightChecker.java
+ leetcode.learn.DataStructures.Array101.HeightChecker
+leetcode/Monthly/May/FindAnagrams/FindAnagrams3.java
+ leetcode.Monthly.May.FindAnagrams.FindAnagrams3
+companies/Thoughtworks/Cell.java
+ companies.Thoughtworks.Cell
+leetcode/Monthly/April/Two/BackspaceCompare.java
+ leetcode.Monthly.April.Two.BackspaceCompare
+leetcode/learn/DataStructures/TopInterview/Easy/LinkedList/RemoveNthNodeFromEndOfList.java
+ leetcode.learn.DataStructures.TopInterview.Easy.LinkedList.ListNode
+ leetcode.learn.DataStructures.TopInterview.Easy.LinkedList.RemoveNthNodeFromEndOfList
+leetcode/learn/DataStructures/Array101/CheckIfExist.java
+ leetcode.learn.DataStructures.Array101.CheckIfExist
+companies/Thoughtworks/Player.java
+ companies.Thoughtworks.Player
+companies/Thoughtworks/Hotel.java
+ companies.Thoughtworks.Hotel
+companies/neustar/Test.java
+ companies.neustar.Test
+leetcode/Monthly/April/One/BestTimeBuySellStockII.java
+ leetcode.Monthly.April.One.BestTimeBuySellStockII
+companies/paypal/Test.java
+ companies.paypal.Test
+companies/oracle/saloon/maintenance/gender/MaleGender.java
+ companies.oracle.saloon.maintenance.gender.MaleGender
+leetcode/Monthly/May/StockSpanner.java
+ leetcode.Monthly.May.StockSpanner
+leetcode/Monthly/April/One/GroupAnagrams.java
+ leetcode.Monthly.April.One.GroupAnagrams
+leetcode/learn/DataStructures/Recursion/CheckPalindrome2.java
+ leetcode.learn.DataStructures.Recursion.CheckPalindrome2
+companies/oracle/Soln.java
+ companies.oracle.Soln
+ companies.oracle.Soln$Node
+leetcode/learn/DataStructures/LinkedList/ListNode.java
+ leetcode.learn.DataStructures.LinkedList.ListNode
+leetcode/learn/DataStructures/Array101/MergeSortedArray.java
+ leetcode.learn.DataStructures.Array101.MergeSortedArray
+leetcode/learn/DataStructures/ArraysAndString/Array2D/DiagonalTraverseSquare.java
+ leetcode.learn.DataStructures.ArraysAndString.Array2D.DiagonalTraverseSquare
+companies/oracle/saloon/maintenance/gender/GenderAbstraction.java
+ companies.oracle.saloon.maintenance.gender.GenderAbstraction
+leetcode/Monthly/June/TwoCitySchedCost.java
+ leetcode.Monthly.June.TwoCitySchedCost
+companies/Operative/RemoveLettersFromWord.java
+ companies.Operative.RemoveLettersFromWord
+companies/oracle/saloon/maintenance/gender/FemaleGender.java
+ companies.oracle.saloon.maintenance.gender.FemaleGender
+leetcode/learn/DataStructures/Array101/MaxConsecutiveOnes.java
+ leetcode.learn.DataStructures.Array101.MaxConsecutiveOnes
+companies/oracle/saloon/maintenance/servicetype/BeardServiceType.java
+ companies.oracle.saloon.maintenance.servicetype.BeardServiceType
+leetcode/Monthly/May/CheckInclusion.java
+ leetcode.Monthly.May.CheckInclusion
+companies/oracle/saloon/maintenance/servicetype/HairCutServiceType.java
+ companies.oracle.saloon.maintenance.servicetype.HairCutServiceType
+leetcode/learn/DataStructures/Array101/RemoveElement.java
+ leetcode.learn.DataStructures.Array101.RemoveElement
+leetcode/learn/DataStructures/Array101/SortArrayByParity.java
+ leetcode.learn.DataStructures.Array101.SortArrayByParity
+leetcode/learn/DataStructures/Recursion/CheckPalindrome.java
+ leetcode.learn.DataStructures.Recursion.CheckPalindrome
+leetcode/learn/DataStructures/Array101/SquaresOfSortedArray.java
+ leetcode.learn.DataStructures.Array101.SquaresOfSortedArray
+companies/Decorpot/Question3.java
+ companies.Decorpot.Question3
+companies/oracle/saloon/maintenance/servicetype/ServiceType.java
+ companies.oracle.saloon.maintenance.servicetype.ServiceType
+leetcode/learn/DataStructures/TopInterview/Easy/Array/ContainsDuplicate.java
+ leetcode.learn.DataStructures.TopInterview.Easy.Array.ContainsDuplicate
+leetcode/learn/DataStructures/Tree/InorderTraversal.java
+ leetcode.learn.DataStructures.Tree.InorderTraversal
+ leetcode.learn.DataStructures.Tree.TreeNode
+leetcode/learn/DataStructures/Shared/Helper.java
+ leetcode.learn.DataStructures.Shared.Helper
+leetcode/learn/DataStructures/Collection/ListDemo.java
+ leetcode.learn.DataStructures.Collection.ListDemo
+leetcode/Monthly/April/One/SingleNumber.java
+ leetcode.Monthly.April.One.SingleNumber
+leetcode/Monthly/April/One/MaxSubArray/MaxSubArray.java
+ leetcode.Monthly.April.One.MaxSubArray.MaxSubArray
+leetcode/learn/DataStructures/Array101/FindNumbersWithEvenNoOfDigits.java
+ leetcode.learn.DataStructures.Array101.FindNumbersWithEvenNoOfDigits
+leetcode/Monthly/May/FindAnagrams/FindAnagrams2.java
+ leetcode.Monthly.May.FindAnagrams.FindAnagrams2
+leetcode/learn/DataStructures/TopInterview/Easy/String/ReverseInteger.java
+ leetcode.learn.DataStructures.TopInterview.Easy.String.ReverseInteger
+leetcode/learn/DataStructures/ArraysAndString/Array2D/DiagonalTraverseGenric.java
+ leetcode.learn.DataStructures.ArraysAndString.Array2D.DiagonalTraverseGenric
+leetcode/Monthly/April/One/HappyNumber/HappyNumber.java
+ leetcode.Monthly.April.One.HappyNumber.HappyNumber
+leetcode/learn/DataStructures/Array101/SquareEven.java
+ leetcode.learn.DataStructures.Array101.SquareEven
+leetcode/Monthly/June/PermutationSequence.java
+ leetcode.Monthly.June.PermutationSequence
+companies/oracle/saloon/maintenance/servicetype/CurlingServiceType.java
+ companies.oracle.saloon.maintenance.servicetype.CurlingServiceType

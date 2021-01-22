@@ -1,6 +1,7 @@
 package leetcode.learn.DataStructures.Array101;
 
-import DataStructures.Shared.Helper;
+
+import leetcode.learn.DataStructures.Shared.Helper;
 
 public class MergeSortedArray {
     public static void main(String[] args) {
