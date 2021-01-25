@@ -28,8 +28,8 @@ leetcode/learn/DataStructures/ArraysAndString/String/StrStr.java
  leetcode.learn.DataStructures.ArraysAndString.String.StrStr
 companies/Thoughtworks/MainClass.java
  companies.Thoughtworks.MainClass
-leetcode/learn/DataStructures/TopInterview/Easy/Array/RotateArray.java
- leetcode.learn.DataStructures.TopInterview.Easy.Array.RotateArray
+companies/oracle/saloon/maintenance/servicetype/CurlingServiceType.java
+ companies.oracle.saloon.maintenance.servicetype.CurlingServiceType
 leetcode/Monthly/May/FindAnagrams/FindAnagrams.java
  leetcode.Monthly.May.FindAnagrams.FindAnagrams
 leetcode/learn/DataStructures/ArraysAndString/String/AddBinary.java
@@ -194,5 +194,5 @@ leetcode/learn/DataStructures/Array101/SquareEven.java
  leetcode.learn.DataStructures.Array101.SquareEven
 leetcode/Monthly/June/PermutationSequence.java
  leetcode.Monthly.June.PermutationSequence
-companies/oracle/saloon/maintenance/servicetype/CurlingServiceType.java
- companies.oracle.saloon.maintenance.servicetype.CurlingServiceType
+leetcode/learn/DataStructures/TopInterview/Easy/Array/RotateArray.java
+ leetcode.learn.DataStructures.TopInterview.Easy.Array.RotateArray
