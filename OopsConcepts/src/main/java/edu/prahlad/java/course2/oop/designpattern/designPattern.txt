@@ -1,0 +1,66 @@
+Design pattens are typical solutions to commonly occurring problems in software design,
+which is not a specific piece of code, but a general concept for solving a particular problem.
+
+An Analogy to "algorithm" is cooking recipe: both have clear steps to achieve a goal.
+On the other hand, a pattern is more like blueprint:
+you can see what the result and its features are, but the exact order of implementation is up to you.
+
+Pattern consists of
+1) Intent
+2) Motivation
+3) Structure
+4) Code example
+
+Creational patterns, provide object creation mechanisms that increase flexibility
+and reuse of existing code.
+Structural patterns, explain how to assemble objects & classes into larger structures,
+while keeping the structures flexible and efficient.
+Behavioral patterns, take care of effective communication and the assignment of
+responsibilities between objects.
+
+Features of Good Design
+1) Code reuse
+    Cost & time are two of the most valuable metrics when developing any software product.
+    Less time in development means entering the market earlier than competitors.
+    Lower development costs mean more money is left for marketing and a broader reach to potential customers.
+
+        3 levels
+        lowest level, you reuse classes: class libraries, containers
+        highest level, frameworks: larger-grained than just a single class
+                    "don't call is, we'll call you"
+        middle level, design patterns: both smaller & more abstract than frameworks.
+
+2) Extensibility
+    Change is the only constant thing in a programmer's life.
+
+Design Principles
+What is good software design? How would you measure it?
+What practices would you need to follow to achieve it?
+Most of the design patterns listed in this book are based on these principles.
+
+1) Encapsulate What Varies
+2) Program to an Interface, not an Implementation
+3) Favor Composition Over Inheritance
+
+
+SOLID Principles
+is a mnemonic for five design principles intended to make software designs
+more understandable, flexible and maintainable
+1) Single Responsibility Principle
+   A class should have just one reason to change.
+2) Open/Closed Principle
+   Classes should be open for extension but closed for modification.
+
+3) Liskov Substitution Principle
+   When extending a class, remember that you should be able to,
+   pass objects of the subclass in place of objects of the parent class
+   without breaking the client code.
+   Couple of Rules needs to checked
+
+4) Interface Segregation Principle
+   Clients shouldn't be forced to depend on methods they do not use.
+
+5) Dependency Inversion Principle
+   High-level classes shouldn't depend on low-level classes.
+   Both should depend on abstractions. Abstractions shouldn't depend on details.
+   Details should depend on abstractions.
