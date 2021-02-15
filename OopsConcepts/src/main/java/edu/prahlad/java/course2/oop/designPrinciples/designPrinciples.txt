@@ -1,0 +1,21 @@
+Design Principles
+What is good software design? How would you measure it?
+What practices would you need to follow to achieve it?
+Most of the design patterns listed in this book are based on these principles.
+
+1) Encapsulate What Varies
+2) Program to an Interface, not an Implementation
+3) Favor composition over Inheritance
+
+1) Encapsulate What Varies
+    Identify the aspects of your application that vary and
+    separate them from what stays the same.
+    example: ship and hull
+    a) Encapsulate on a method level
+    b) Encapsulate on the class level
+
+2) Program to an Interface, not an Implementation
+    Program to an interface, not an implementation,
+    meaning Depend on abstractions, not on concrete classes.
+    You can tell that the design is flexible enough, if you can easily
+    extend it without breaking any existing code.
