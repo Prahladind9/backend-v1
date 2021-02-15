@@ -1,4 +1,4 @@
-package edu.prahlad.java.course2.oop;
+package edu.prahlad.java.course2.oop.classhierarchies;
 
 //Cat - Name
 public class SimpleCat {
