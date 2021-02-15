@@ -1,0 +1,21 @@
+1)  Association is a type of relationship in which one object uses or interacts with another.
+    **like field or method in a class
+        Professor -> Student
+    UML:Professor communicates with students.
+
+2)  Dependency is a weaker variant of association that usually implies that there's no
+    permanent link between objects.
+        Professor -----> Salary
+    UML:Professor depends on salary.
+
+3)  Composition is a "whole-part" relationship between two objects,
+    one of which is composed of one or more instances of the other.
+        University <*>->Department (filled diamond)
+    UML:University consists of departments.
+
+4)  Aggregation is a less strict variant of composition, where one
+    object merely contains a reference to another.
+    The container doesn't control the life cycle of the component.
+    The component can exist without the container & can be linked to several containers at the same time.
+        Department < >-> Professor (empty diamond)
+    UML:Department contains Professor

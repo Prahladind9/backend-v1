@@ -1,0 +1,62 @@
+OOP
+O - Object
+O - Oriented
+P - Programming
+
+4 Pillars (APIE)
+A - Abstraction
+P - Polymorphism
+I - Inheritance
+E - Encapsulation
+
+Abstraction is a model of real-world object or phenomenon,
+limited to a specific context, which represents all details
+relevant to this context with high accuracy and omits all the rest
+
+Flight Simulator                Flight Booking Application
+We need details related         We would care details only about the seat map
+to the actual flight            & which seats are available
+------------------              ------------------
+    Airplane                        Airplane
+------------------              ------------------
+- speed                         - seats
+- altitude
+- rollAngle
+- pitchAngle
+- yawAngle
+------------------              ------------------
++ fly()                         + reserveSeat(n)
+
+------------------     ------------------     ------------------     ------------------
+
+Encapsulation is the ability of an object to hide parts of its
+state and behaviour from other objects, exposing only a limited
+interface to the rest of the program.
+
+
+                Airport
+       +accept(vehicle: FlyingTransport)
+                depends on
+     ------------------------------------
+               <<interface>>
+              FlyingTransport
+    +fly(origin, destination, passengers)
+     ------------------------------------
+                    implements
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Helicopter(+fly())  Airplane(+fly())   DomesticatedGryphon(+fly())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Inheritance is the ability to build new classes on top of existing ones.
+The main benefit of inheritance is code reuse.
+If you want to create a class thats slightly different from an existing one,
+there's no need to duplicate code. Instead, you extend the existing class and put the
+extra functionality into a resulting subclass, which inherits fields & methods of the superclass.
+
+
+Polymorphism is the ability of the program to detect the real class
+of an object and call its implementation even when its real type is
+unknown in the current context
+
+In our example, the dogs & cats in the bag were pretending to be generic animals.
