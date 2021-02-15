@@ -1,0 +1,5 @@
+1) We can update Properties at runtime while Environment Variables are an immutable copy of the Operating System's variables.
+2) Properties are contained only within Java platform while Environment Variables are global at the Operating System level –
+    available to all applications running on the same machine.
+3) Properties must exist when packaging the application
+    but we can create Environment Variables on the Operating System at almost any point.
