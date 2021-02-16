@@ -19,3 +19,15 @@ Most of the design patterns listed in this book are based on these principles.
     meaning Depend on abstractions, not on concrete classes.
     You can tell that the design is flexible enough, if you can easily
     extend it without breaking any existing code.
+
+3) Favour Composition Over Inheritance
+    Composition represents "has a" relationship,
+    whereas inheritance represents "is a" relationship
+    Inheritance caveats are below
+    a) A subclass can't reduce the interface of the superclass
+    b) When overriding methods you need to make sure that the
+       new behavior is compatible with the base one.
+    c) Inheritance breaks encapsulation of the superclass
+    d) Subclasses are tightly couple to superclasses
+    e) Trying to reuse code through inheritance can lead to creating
+       parallel inheritance hierarchies.
