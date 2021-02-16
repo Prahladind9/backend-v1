@@ -1,0 +1,24 @@
+SOLID Principles
+is a mnemonic for five design principles intended to make software designs
+more understandable, flexible and maintainable
+1) Single Responsibility Principle
+   A class should have just one reason to change.
+   Try to make every class responsible for a single part of the
+   functionality provided by the software, and make that responsibility
+   entirely encapsulated by the class.
+2) Open/Closed Principle
+   Classes should be open for extension but closed for modification.
+
+3) Liskov Substitution Principle
+   When extending a class, remember that you should be able to,
+   pass objects of the subclass in place of objects of the parent class
+   without breaking the client code.
+   Couple of Rules needs to checked
+
+4) Interface Segregation Principle
+   Clients shouldn't be forced to depend on methods they do not use.
+
+5) Dependency Inversion Principle
+   High-level classes shouldn't depend on low-level classes.
+   Both should depend on abstractions. Abstractions shouldn't depend on details.
+   Details should depend on abstractions.
