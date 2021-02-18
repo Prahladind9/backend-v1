@@ -344,3 +344,18 @@ edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblemSolution/
  edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblemSolution.InterfaceB
 edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblemSolution/Main.java
  edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblemSolution.Main
+edu/prahlad/java/course3/interfaceMethods/staticMethods/Car.java
+ edu.prahlad.java.course3.interfaceMethods.staticMethods.Car
+edu/prahlad/java/course3/interfaceMethods/staticMethods/Vehicle.java
+ edu.prahlad.java.course3.interfaceMethods.staticMethods.Vehicle
+edu/prahlad/java/course3/interfaceMethods/functionalInterface/Functional.java
+ edu.prahlad.java.course3.interfaceMethods.functionalInterface.Functional
+edu/prahlad/java/course3/lambdas/firstLambda/HindiGreeting.java
+ edu.prahlad.java.course3.lambdas.firstLambda.HindiGreeting
+edu/prahlad/java/course3/lambdas/firstLambda/WellWisher.java
+ edu.prahlad.java.course3.lambdas.firstLambda.WellWisher
+ edu.prahlad.java.course3.lambdas.firstLambda.WellWisher$1
+edu/prahlad/java/course3/lambdas/firstLambda/EnglishGreeting.java
+ edu.prahlad.java.course3.lambdas.firstLambda.EnglishGreeting
+edu/prahlad/java/course3/lambdas/firstLambda/Greeting.java
+ edu.prahlad.java.course3.lambdas.firstLambda.Greeting
