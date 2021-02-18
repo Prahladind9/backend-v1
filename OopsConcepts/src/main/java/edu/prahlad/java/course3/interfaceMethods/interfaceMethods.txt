@@ -1,0 +1,18 @@
+Default Methods
+------------------
+Before Java 8, we could only declare abstract methods in an interface.
+However, Java 8 introduced the concept of the default methods.
+"Default methods are methods that cam have a body".
+The most important use of default methods in interfaces is to provide additional
+functionality to a given type without breaking down the implementing classes.
+
+Static Methods
+------------------
+The static methods in interfaces are similar to default methods but
+the only difference is that you can't override them
+
+Functional Interface
+--------------------
+An interface that has a single abstract method is called a functional interface.
+While an interface can have one or more default methods,
+it should compulsory and only have one abstract method to be called a functional interface.

@@ -286,3 +286,61 @@ edu/prahlad/java/course2/oop/designPrinciples/programToInterfaceNotImplementatio
  edu.prahlad.java.course2.oop.designPrinciples.programToInterfaceNotImplementation.usecase2.after.OutsourcingCompany
 edu/prahlad/java/course2/oop/designPrinciples/programToInterfaceNotImplementation/usecase2/after/Driver.java
  edu.prahlad.java.course2.oop.designPrinciples.programToInterfaceNotImplementation.usecase2.after.Driver
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/AutopilotCombustionEngineCar.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.AutopilotCombustionEngineCar
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/AutopilotElectricTruck.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.AutopilotElectricTruck
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/after_compositon/Driver.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.after_compositon.Driver
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/CombustionEngineTruck.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.CombustionEngineTruck
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/AutopilotCombustionEngineTruck.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.AutopilotCombustionEngineTruck
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/after_compositon/Robot.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.after_compositon.Robot
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/after_compositon/MainTransport.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.after_compositon.MainTransport
+edu/prahlad/java/course2/oop/solidPrinciples/singleResponsibility/after/Employee.java
+ edu.prahlad.java.course2.oop.solidPrinciples.singleResponsibility.after.Employee
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/Car.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.Car
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/Truck.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.Truck
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/CombustionEngineCar.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.CombustionEngineCar
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/after_compositon/Engine.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.after_compositon.Engine
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/AutopilotElectricCar.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.AutopilotElectricCar
+edu/prahlad/java/course2/oop/solidPrinciples/singleResponsibility/before/Employee.java
+ edu.prahlad.java.course2.oop.solidPrinciples.singleResponsibility.before.Employee
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/MainTransport.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.MainTransport
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/ElectricCar.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.ElectricCar
+edu/prahlad/java/course2/oop/solidPrinciples/singleResponsibility/after/TimeSheetReport.java
+ edu.prahlad.java.course2.oop.solidPrinciples.singleResponsibility.after.TimeSheetReport
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/after_compositon/ElectricEngine.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.after_compositon.ElectricEngine
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/before_Inheritance/ElectricTruck.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.before_Inheritance.ElectricTruck
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/after_compositon/CombustionEngine.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.after_compositon.CombustionEngine
+edu/prahlad/java/course2/oop/designPrinciples/favorCompositionOverInheritance/after_compositon/Human.java
+ edu.prahlad.java.course2.oop.designPrinciples.favorCompositionOverInheritance.after_compositon.Human
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblem/InterfaceB.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblem.InterfaceB
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblem/InterfaceA.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblem.InterfaceA
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/basic/Car.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.basic.Car
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/basic/Vehicle.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.basic.Vehicle
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblem/Main.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblem.Main
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblemSolution/InterfaceA.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblemSolution.InterfaceA
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblemSolution/InterfaceB.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblemSolution.InterfaceB
+edu/prahlad/java/course3/interfaceMethods/defaultMethods/diamondProblemSolution/Main.java
+ edu.prahlad.java.course3.interfaceMethods.defaultMethods.diamondProblemSolution.Main
