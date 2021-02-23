@@ -44,3 +44,19 @@ more understandable, flexible and maintainable
    High-level classes shouldn't depend on low-level classes.
    Both should depend on abstractions. Abstractions shouldn't depend on details.
    Details should depend on abstractions.
+   a) Low-level classes, implement basic operations such as working with a disk,
+        transferring data over a network, connecting to a database, etc.
+   b) High-level classes, contain complex business logic
+        that directs low-level classes to do something
+   c) The dependency inversion principle suggests changing the direction of this dependency
+         i) For starters, you need to describe interfaces for low-level operations
+            that high-level classes rely on, preferably in business terms.
+            For instance, business logic should call a method "opeReport(file)" (high-level interface)
+            rather than a series of methods openFile(x), readBytes(n), closeFile(x)
+        ii) Now you can make high-level classes dependent on those interfaces,
+            instead of on concrete low-level classes.
+       iii) Once low-level classes implement these interfaces,
+             they become dependent on the business logic level,
+             reversing the direction of the original dependency.
+   d)  The dependency inversion principle often goes along with the open/closed principle:
+        you can extend low-level classes to use with different business logic without breaking existing classes.
