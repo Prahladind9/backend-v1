@@ -2,12 +2,17 @@ SOLID Principles
 is a mnemonic for five design principles intended to make software designs
 more understandable, flexible and maintainable
 1) Single Responsibility Principle
-   A class should have just one reason to change.
-   Try to make every class responsible for a single part of the
-   functionality provided by the software, and make that responsibility
-   entirely encapsulated by the class.
+   a) A class should have just one reason to change.
+   b) Try to make every class responsible for a single part of the
+       functionality provided by the software, and make that responsibility
+       entirely encapsulated by the class.
 2) Open/Closed Principle
-   Classes should be open for extension but closed for modification.
+   a) Classes should be open for extension but closed for modification.
+   b) If a class is already developed, tested, reviewed, and included in
+        some framework or otherwise used in an app, trying to mess with its code is risky.
+        Instead if chaining the code of the original class that you want to behave differently.
+   c) If you know that there's a bug in the class, just go on and fix it;
+        child class shouldn't be responsible for the paren't issues.
 
 3) Liskov Substitution Principle
    When extending a class, remember that you should be able to,

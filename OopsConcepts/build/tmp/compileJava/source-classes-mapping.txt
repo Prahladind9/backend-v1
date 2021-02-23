@@ -352,10 +352,36 @@ edu/prahlad/java/course3/interfaceMethods/functionalInterface/Functional.java
  edu.prahlad.java.course3.interfaceMethods.functionalInterface.Functional
 edu/prahlad/java/course3/lambdas/firstLambda/HindiGreeting.java
  edu.prahlad.java.course3.lambdas.firstLambda.HindiGreeting
+edu/prahlad/java/course3/lambdas/firstLambda/Greeting.java
+ edu.prahlad.java.course3.lambdas.firstLambda.Greeting
+edu/prahlad/java/course3/lambdas/firstLambda/EnglishGreeting.java
+ edu.prahlad.java.course3.lambdas.firstLambda.EnglishGreeting
 edu/prahlad/java/course3/lambdas/firstLambda/WellWisher.java
  edu.prahlad.java.course3.lambdas.firstLambda.WellWisher
  edu.prahlad.java.course3.lambdas.firstLambda.WellWisher$1
-edu/prahlad/java/course3/lambdas/firstLambda/EnglishGreeting.java
- edu.prahlad.java.course3.lambdas.firstLambda.EnglishGreeting
-edu/prahlad/java/course3/lambdas/firstLambda/Greeting.java
- edu.prahlad.java.course3.lambdas.firstLambda.Greeting
+edu/prahlad/java/course3/lambdas/javaComparator/Person.java
+ edu.prahlad.java.course3.lambdas.javaComparator.Person
+edu/prahlad/java/course2/oop/generics/Generics.java
+ edu.prahlad.java.course2.oop.generics.Consumer
+ edu.prahlad.java.course2.oop.generics.Generics
+ edu.prahlad.java.course2.oop.generics.IntegerConsumer
+ edu.prahlad.java.course2.oop.generics.consumerNoGenerics
+edu/prahlad/java/course3/lambdas/javaComparator/PersonMain.java
+ edu.prahlad.java.course3.lambdas.javaComparator.PersonMain
+edu/prahlad/java/course3/lambdas/javaComparator/PersonService.java
+ edu.prahlad.java.course3.lambdas.javaComparator.PersonService
+ edu.prahlad.java.course3.lambdas.javaComparator.PersonService$1
+edu/prahlad/java/course4/chap2/FahrenheitToCelsius.java
+ edu.prahlad.java.course4.chap2.FahrenheitToCelsius
+edu/prahlad/java/course4/chap2/ComputeAreaWithConsoleOutput.java
+ edu.prahlad.java.course4.chap2.ComputeAreaWithConsoleOutput
+edu/prahlad/java/course4/chap2/DisplayTime.java
+ edu.prahlad.java.course4.chap2.DisplayTime
+edu/prahlad/java/course4/chap2/ShowCurrentTime.java
+ edu.prahlad.java.course4.chap2.ShowCurrentTime
+edu/prahlad/java/course4/chap2/SalesTax.java
+ edu.prahlad.java.course4.chap2.SalesTax
+edu/prahlad/java/course4/chap2/ComputeLoan.java
+ edu.prahlad.java.course4.chap2.ComputeLoan
+edu/prahlad/java/course4/chap2/ComputeChange.java
+ edu.prahlad.java.course4.chap2.ComputeChange
