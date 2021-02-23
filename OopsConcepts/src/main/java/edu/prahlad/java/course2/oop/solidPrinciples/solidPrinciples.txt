@@ -36,7 +36,9 @@ more understandable, flexible and maintainable
       vii) A subclass shouldn't change values of private fields of the superclass. ( not in Java, in some programming lang it's possible ..)
 
 4) Interface Segregation Principle
-   Clients shouldn't be forced to depend on methods they do not use.
+   a) Clients shouldn't be forced to depend on methods they do not use.
+   b) you should break down "fat" interfaces into more granular & specific ones.
+   c) Remember the more interfaces you create, the more complex your code becomes, keep the balance.
 
 5) Dependency Inversion Principle
    High-level classes shouldn't depend on low-level classes.
