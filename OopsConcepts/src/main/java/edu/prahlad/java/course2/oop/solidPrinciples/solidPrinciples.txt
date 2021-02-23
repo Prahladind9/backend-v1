@@ -12,13 +12,28 @@ more understandable, flexible and maintainable
         some framework or otherwise used in an app, trying to mess with its code is risky.
         Instead if chaining the code of the original class that you want to behave differently.
    c) If you know that there's a bug in the class, just go on and fix it;
-        child class shouldn't be responsible for the paren't issues.
+        child class shouldn't be responsible for the parent's issues.
 
 3) Liskov Substitution Principle
    When extending a class, remember that you should be able to,
    pass objects of the subclass in place of objects of the parent class
    without breaking the client code.
-   Couple of Rules needs to checked
+   a) Liskov is a set of checks that help predict whether a subclass remains compatible
+        with the code that was able to work with objects of the superclass.
+   b) This concept is critical when developing libraries & frameworks because
+        your classes are going to be used by other people whose code
+        you can't directly access and change.
+   c) Rules
+        i) Parameter types in a method of a subclass should match or be more abstract
+            than parameter types in the method of the super class
+       ii) The return type in a method of a subclass should match or be a subtype
+            of the return type in the method of the superclass.
+      iii) A method in a subclass shouldn't throw types of exceptions which
+            the base method isn't expected to throw.
+       iv) A subclass shouldn't strengthen pre-conditions.
+        v) A subclass shouldn't weaken post-conditions.
+       vi) Invariants if a superclass must be preserved.
+      vii) A subclass shouldn't change values of private fields of the superclass. ( not in Java, in some programming lang it's possible ..)
 
 4) Interface Segregation Principle
    Clients shouldn't be forced to depend on methods they do not use.
