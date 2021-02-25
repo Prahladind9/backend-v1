@@ -1,16 +1,39 @@
-Java is an object-oriented language.
-By introducing lambdas in Java 8, the authors of Java tried to add elements of functional programming in Java.
-Now you might be wondering what the difference between object-oriented programming & functional programming is?
+1) Java is an object-oriented language.
+    By introducing lambdas in Java 8, the authors of Java tried to add elements of functional programming in Java.
+    Now you might be wondering what the difference between object-oriented programming & functional programming is?
 
-In "object-oriented programming", objects and classes are the main entities.
-If we create a function then it should exist within a class.
-A function has no meaning outside the scope of the class object.
+2) In "object-oriented programming", objects and classes are the main entities.
+    If we create a function then it should exist within a class.
+    A function has no meaning outside the scope of the class object.
 
-In "functional programming", functions can exist outside the scope of an object.
-We can assign them to a reference variable and we can also pass them to other methods as a parameter.
+3) In "functional programming", functions can exist outside the scope of an object.
+    We can assign them to a reference variable and we can also pass them to other methods as a parameter.
 
-A "lambda expression" is just an anonymous function,
-i.e., a function with no name & that is not bound to an identifier.
-We can pass it to other methods as parameters, therefore, using the power of functional programming in Java.
+Taste of Lambdas
+1) A "lambda expression" is just an anonymous function,
+    i.e., a function with no name & that is not bound to an identifier.
+    We can pass it to other methods as parameters, therefore, using the power of functional programming in Java.
+2) Comparator example
 
-Comparator example
+Java 8 provides some in-built functional interfaces in the java.util.function package.
+These interfaces are required so that, while writing lambda expressions,
+we don't need to worry about creating a functional interface.
+There are 43 predefined interfaces in Java 8, categorised for better understanding
+
+3) Predicate Interface has an abstract method "boolean test(T t)"
+    a) Basically, a predicate is a function that evaluates the given input & returns true or false.
+    b) This interface has some other default & static methods that are used for the purpose of chaining.
+ "Purpose of Chaining" > is the practice of calling different methods in a single line,
+                         instead of calling different methods with the same object reference separately.
+    c) default method: and(Predicate other)
+        represents a short-circuiting logical AND
+    d) default method: or(Predicate other)
+        represents a shor-circuiting logical OR
+    e) default method: negate()
+        represents the logical negation of the predicate it is called on.
+    f) static method: isEqual(Object targetRef)
+        This method returns a predicate that tests if two arguments are equal
+        according to Object.equals(Object, Object).
+        This is not a chaining method.
+
+4) BiPredicate<T,T> has a functional method "boolean test(Object, Object)"

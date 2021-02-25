@@ -383,5 +383,71 @@ edu/prahlad/java/course4/chap2/SalesTax.java
  edu.prahlad.java.course4.chap2.SalesTax
 edu/prahlad/java/course4/chap2/ComputeLoan.java
  edu.prahlad.java.course4.chap2.ComputeLoan
+edu/prahlad/java/course2/oop/solidPrinciples/dependencyInversion/after/Database.java
+ edu.prahlad.java.course2.oop.solidPrinciples.dependencyInversion.after.Database
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/after/CDNProvider.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.after.CDNProvider
+edu/prahlad/java/course2/oop/solidPrinciples/dependencyInversion/after/MongoDB.java
+ edu.prahlad.java.course2.oop.solidPrinciples.dependencyInversion.after.MongoDB
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/after/Dropbox.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.after.Dropbox
+edu/prahlad/java/course2/oop/solidPrinciples/liskovSubstitution/before/Project.java
+ edu.prahlad.java.course2.oop.solidPrinciples.liskovSubstitution.before.Project
+edu/prahlad/java/course2/oop/solidPrinciples/liskovSubstitution/after/Project.java
+ edu.prahlad.java.course2.oop.solidPrinciples.liskovSubstitution.after.Project
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/before/Dropbox.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.before.Dropbox
+edu/prahlad/java/course2/oop/solidPrinciples/openClosedPrinciple/after/Shipping.java
+ edu.prahlad.java.course2.oop.solidPrinciples.openClosedPrinciple.after.Shipping
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/before/Amazon.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.before.Amazon
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/before/CloudProvider.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.before.CloudProvider
+edu/prahlad/java/course2/oop/solidPrinciples/dependencyInversion/before/BudgetReport.java
+ edu.prahlad.java.course2.oop.solidPrinciples.dependencyInversion.before.BudgetReport
+edu/prahlad/java/course2/oop/solidPrinciples/openClosedPrinciple/after/Order.java
+ edu.prahlad.java.course2.oop.solidPrinciples.openClosedPrinciple.after.Order
+edu/prahlad/java/course2/oop/solidPrinciples/dependencyInversion/after/MySQL.java
+ edu.prahlad.java.course2.oop.solidPrinciples.dependencyInversion.after.MySQL
+edu/prahlad/java/course2/oop/solidPrinciples/liskovSubstitution/before/ReadOnlyDocument.java
+ edu.prahlad.java.course2.oop.solidPrinciples.liskovSubstitution.before.ReadOnlyDocument
+edu/prahlad/java/course2/oop/solidPrinciples/dependencyInversion/before/MySQLDatabase.java
+ edu.prahlad.java.course2.oop.solidPrinciples.dependencyInversion.before.MySQLDatabase
 edu/prahlad/java/course4/chap2/ComputeChange.java
  edu.prahlad.java.course4.chap2.ComputeChange
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/after/Amazon.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.after.Amazon
+edu/prahlad/java/course2/oop/solidPrinciples/dependencyInversion/after/BudgetReport.java
+ edu.prahlad.java.course2.oop.solidPrinciples.dependencyInversion.after.BudgetReport
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/after/CloudStorageProvider.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.after.CloudStorageProvider
+edu/prahlad/java/course2/oop/solidPrinciples/openClosedPrinciple/after/Air.java
+ edu.prahlad.java.course2.oop.solidPrinciples.openClosedPrinciple.after.Air
+edu/prahlad/java/course2/oop/solidPrinciples/liskovSubstitution/before/Document.java
+ edu.prahlad.java.course2.oop.solidPrinciples.liskovSubstitution.before.Document
+edu/prahlad/java/course2/oop/solidPrinciples/liskovSubstitution/after/WritableDocument.java
+ edu.prahlad.java.course2.oop.solidPrinciples.liskovSubstitution.after.WritableDocument
+edu/prahlad/java/course2/oop/solidPrinciples/interfaceSegregation/after/CloudHostingProvider.java
+ edu.prahlad.java.course2.oop.solidPrinciples.interfaceSegregation.after.CloudHostingProvider
+edu/prahlad/java/course2/oop/solidPrinciples/openClosedPrinciple/before/Order.java
+ edu.prahlad.java.course2.oop.solidPrinciples.openClosedPrinciple.before.Order
+edu/prahlad/java/course2/oop/solidPrinciples/liskovSubstitution/after/Document.java
+ edu.prahlad.java.course2.oop.solidPrinciples.liskovSubstitution.after.Document
+edu/prahlad/java/course2/oop/solidPrinciples/openClosedPrinciple/after/Ground.java
+ edu.prahlad.java.course2.oop.solidPrinciples.openClosedPrinciple.after.Ground
+edu/prahlad/java/course3/lambdas/predicate/defaultI/PredicateDemo.java
+ edu.prahlad.java.course3.lambdas.predicate.defaultI.Person
+ edu.prahlad.java.course3.lambdas.predicate.defaultI.PredicateDemo
+edu/prahlad/java/course3/lambdas/predicate/and/PredicateDemo.java
+ edu.prahlad.java.course3.lambdas.predicate.and.Person
+ edu.prahlad.java.course3.lambdas.predicate.and.PredicateDemo
+edu/prahlad/java/course3/lambdas/predicate/or/PredicateDemo.java
+ edu.prahlad.java.course3.lambdas.predicate.or.Person
+ edu.prahlad.java.course3.lambdas.predicate.or.PredicateDemo
+edu/prahlad/java/course3/lambdas/predicate/negate/PredicateDemo.java
+ edu.prahlad.java.course3.lambdas.predicate.negate.PredicateDemo
+edu/prahlad/java/course3/lambdas/predicate/isEqual/PredicateDemo.java
+ edu.prahlad.java.course3.lambdas.predicate.isEqual.PredicateDemo
+edu/prahlad/java/course3/lambdas/predicate/bipredicate/PredicateTest.java
+ edu.prahlad.java.course3.lambdas.predicate.bipredicate.Person
+ edu.prahlad.java.course3.lambdas.predicate.bipredicate.PredicateTest
