@@ -37,3 +37,8 @@ There are 43 predefined interfaces in Java 8, categorised for better understandi
         This is not a chaining method.
 
 4) BiPredicate<T,T> has a functional method "boolean test(Object, Object)"
+
+5) Supplier is an interface that doesn't take in any argument
+    but produces a value when the get() function is invoked.
+    Suppliers are useful when we don't need to supply any value and obtain a result at the same time
+

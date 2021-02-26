@@ -451,3 +451,11 @@ edu/prahlad/java/course3/lambdas/predicate/isEqual/PredicateDemo.java
 edu/prahlad/java/course3/lambdas/predicate/bipredicate/PredicateTest.java
  edu.prahlad.java.course3.lambdas.predicate.bipredicate.Person
  edu.prahlad.java.course3.lambdas.predicate.bipredicate.PredicateTest
+edu/prahlad/java/course4/chap5/GCD.java
+ edu.prahlad.java.course4.chap5.GCD
+edu/prahlad/java/course4/chap5/FutureTuition.java
+ edu.prahlad.java.course4.chap5.FutureTuition
+edu/prahlad/java/course4/chap5/Palindrome.java
+ edu.prahlad.java.course4.chap5.Palindrome
+edu/prahlad/java/course4/chap5/PrimeNumber.java
+ edu.prahlad.java.course4.chap5.PrimeNumber
