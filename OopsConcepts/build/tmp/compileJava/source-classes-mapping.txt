@@ -459,3 +459,11 @@ edu/prahlad/java/course4/chap5/Palindrome.java
  edu.prahlad.java.course4.chap5.Palindrome
 edu/prahlad/java/course4/chap5/PrimeNumber.java
  edu.prahlad.java.course4.chap5.PrimeNumber
+edu/prahlad/java/course4/chap6/PrintCalendar.java
+ edu.prahlad.java.course4.chap6.PrintCalendar
+edu/prahlad/java/course4/chap7/searchingArrays/BinarySearch.java
+ edu.prahlad.java.course4.chap7.searchingArrays.BinarySearch
+edu/prahlad/java/course4/chap7/searchingArrays/LinearSearch.java
+ edu.prahlad.java.course4.chap7.searchingArrays.LinearSearch
+edu/prahlad/java/course4/chap7/sortingArrays/SelectionSort.java
+ edu.prahlad.java.course4.chap7.sortingArrays.SelectionSort

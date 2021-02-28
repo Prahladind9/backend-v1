@@ -5,3 +5,22 @@ Software Development Process
 The software development life cycle is a multistage process that includes
 requirements, specification, analysis, design, implementation, testing,
 deployment, and maintenance
+
+Chapter 5 > Loops
+Chapter 6 > Methods
+    Stepwise refinement
+    1) Simpler Program
+    2) Reusing Methods
+    3) Easier Developing, Debugging and Testing
+    4) Better Facilitating Teamwork
+
+Chapter 7 > Single-Dimensional Arrays (DataStructure)
+ 10)Searching Arrays
+    Linear Search
+    Binary Search
+        1) If the key is less than the middle element, you need to continue to search for the key
+            only in the first half of the array.
+        2) If the key is equal to middle element, the search ends with a match.
+        3) If the key is greater than the middle element, you need to continue to search for the
+            key only in the second half of the array
+ 11)Sorting Arrays
