@@ -465,5 +465,9 @@ edu/prahlad/java/course4/chap7/searchingArrays/BinarySearch.java
  edu.prahlad.java.course4.chap7.searchingArrays.BinarySearch
 edu/prahlad/java/course4/chap7/searchingArrays/LinearSearch.java
  edu.prahlad.java.course4.chap7.searchingArrays.LinearSearch
+edu/prahlad/java/course4/chap7/arraysClass/ArraysClass.java
+ edu.prahlad.java.course4.chap7.arraysClass.ArraysClass
 edu/prahlad/java/course4/chap7/sortingArrays/SelectionSort.java
  edu.prahlad.java.course4.chap7.sortingArrays.SelectionSort
+edu/prahlad/java/course4/chap8/GradeExam.java
+ edu.prahlad.java.course4.chap8.GradeExam
