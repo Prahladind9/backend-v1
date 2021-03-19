@@ -34,3 +34,5 @@ Chapter 9 > Objects and Classes
         3) No accessor methods can return a reference to a data field that is mutable.
 
 Chapter 10 > Object-Oriented Thinking
+    Class Abstraction & Encapsulation
+    Thinking in Objects
