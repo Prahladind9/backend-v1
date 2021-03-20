@@ -36,3 +36,4 @@ Chapter 9 > Objects and Classes
 Chapter 10 > Object-Oriented Thinking
     Class Abstraction & Encapsulation
     Thinking in Objects
+    Class Relationships
