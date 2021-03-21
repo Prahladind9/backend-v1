@@ -37,3 +37,4 @@ Chapter 10 > Object-Oriented Thinking
     Class Abstraction & Encapsulation
     Thinking in Objects
     Class Relationships
+    Case Studies
