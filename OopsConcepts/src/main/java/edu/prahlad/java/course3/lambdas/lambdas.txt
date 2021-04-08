@@ -42,3 +42,5 @@ There are 43 predefined interfaces in Java 8, categorised for better understandi
     but produces a value when the get() function is invoked.
     Suppliers are useful when we don't need to supply any value and obtain a result at the same time
 
+6) Consumers are functional interfaces that take in a parameter & do not produce anything
+
