@@ -1,0 +1,13 @@
+SQL vs MongoDB
+DataBase - Database
+Tale - Collection
+Column - Field
+Record/Row - Document
+ForeignKey - Sub Document (with/without Reference)
+
+---------------------------------------------------------------
+
+ORM - object relationship mapping
+@Field - to be used when fieldName & variable Name are different
+@PersistenceConstructor - If we have more than one constructor - class which represents document
+for example if Student has 2 constructors
