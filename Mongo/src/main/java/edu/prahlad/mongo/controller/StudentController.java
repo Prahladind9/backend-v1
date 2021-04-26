@@ -3,11 +3,9 @@ package edu.prahlad.mongo.controller;
 import edu.prahlad.mongo.entiity.Student;
 import edu.prahlad.mongo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/student")
@@ -20,4 +18,49 @@ public class StudentController {
     public Student createStudent(@RequestBody Student student) {
         return studentService.createStudent(student);
     }
+
+    @GetMapping("/getById/{id}")
+    public Student getStudentbyId(@PathVariable String id){
+        return studentService.getStudentbyId(id);
+    }
+
+    @GetMapping("/all")
+    public List<Student> getAllStudents(){
+        return studentService.getAllStudents();
+    }
+
+    @PutMapping("/update")
+    public Student updateStudent(@RequestBody Student student){
+        return studentService.updateStudent(student);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String deleteStudent(@PathVariable String id){
+        return studentService.deleteStudent(id);
+    }
+
+    @GetMapping("/studentsByName/{name}")
+    public List<Student> studentsByName(@PathVariable String name) {
+        return studentService.getStudentsByName(name);
+    }
+
+    @GetMapping("/studentsByNameAndMail")
+    public Student studentsByNameAndMail(@RequestParam String name,
+                                         @RequestParam String email) {
+        return studentService.studentsByNameAndMail(name, email);
+    }
+
+    @GetMapping("/studentsByNameOrMail")
+    public Student studentsByNameOrMail(@RequestParam String name,
+                                        @RequestParam String email) {
+        return studentService.studentsByNameOrMail(name, email);
+    }
+
+    @GetMapping("/allWithPagination")
+    public List<Student> getAllWithPagination(@RequestParam int pageNo,
+                                              @RequestParam int pageSize) {
+        return studentService.getAllWithPagination(pageNo, pageSize);
+    }
+
+
 }
