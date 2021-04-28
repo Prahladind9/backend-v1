@@ -1,7 +1,9 @@
 package edu.prahlad.mongo.service;
 
 import edu.prahlad.mongo.entiity.Student;
+import edu.prahlad.mongo.repo.DepartmentRepo;
 import edu.prahlad.mongo.repo.StudentRepo;
+import edu.prahlad.mongo.repo.SubjectRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -15,8 +17,22 @@ public class StudentService {
 
     @Autowired
     private StudentRepo studentRepository;
+    @Autowired
+    private DepartmentRepo departmentRepository;
+    @Autowired
+    private SubjectRepo subjectRepository;
 
     public Student createStudent (Student student) {
+        //return studentRepository.save(student);//For Embedded Documents
+
+        if(student.getDepartment() != null){
+            departmentRepository.save(student.getDepartment());
+        }
+
+        if(student.getSubjects() != null && student.getSubjects().size() > 0){
+            subjectRepository.saveAll(student.getSubjects());
+        }
+
         return studentRepository.save(student);
     }
 
@@ -75,5 +91,9 @@ public class StudentService {
 
     public List<Student> nameStartsWith (String name) {
         return studentRepository.findByNameStartsWith(name);
+    }
+
+    public List<Student> byDepartmentId(String deptId) {
+        return studentRepository.findByDepartmentId(deptId);
     }
 }

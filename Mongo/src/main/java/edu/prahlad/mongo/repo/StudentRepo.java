@@ -15,11 +15,13 @@ public interface StudentRepo extends MongoRepository<Student, String> {
 
     Student findByNameOrEmail (String name, String email);
 
-    List<Student> findByDepartmentDepartmentName(String deptName);
+    List<Student> findByDepartmentDepartmentName(String deptName);//only works for Embedded Doc
 
-    List<Student> findBySubjectsSubjectName (String subName);
+    List<Student> findBySubjectsSubjectName (String subName);//only works for Embedded Doc
 
     List<Student> findByEmailIsLike (String email);
 
     List<Student> findByNameStartsWith (String name);
+
+    List<Student> findByDepartmentId(String deptId);
 }
