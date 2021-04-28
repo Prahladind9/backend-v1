@@ -2,6 +2,7 @@ package edu.prahlad.mongo.repo;
 
 import edu.prahlad.mongo.entiity.Student;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -24,4 +25,7 @@ public interface StudentRepo extends MongoRepository<Student, String> {
     List<Student> findByNameStartsWith (String name);
 
     List<Student> findByDepartmentId(String deptId);
+
+    @Query("{ \"name\" : \"?0\" }")//0 - first param .. viz
+    List<Student> getByName(String name);
 }
