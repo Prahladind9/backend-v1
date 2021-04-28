@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "2289e372-f67e-459e-9bd9-1eaf5a5a384e",
+		"name": "Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"name\" : \"Raj\", \n    \"email\" : \"raj@gmail.com\", \n    \"department\" : {\n        \"departmentName\" : \"Computer Science\", \n        \"location\" : \"INDIA\"\n    },\n    \"subjects\" : [\n        {\n            \"subjectName\" : \"Java\", \n            \"marksObtained\" : 70.0\n        }, \n        {\n            \"subjectName\" : \"C++\", \n            \"marksObtained\" : 80.0\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/student/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/getById/60896bde2cd522778c2318b0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"getById",
+						"60896bde2cd522778c2318b0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllStudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStudent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"608647ae8c490453e385c235\",\n    \"name\": \"Raj\",\n    \"email\": \"raj@gmail.com\",\n    \"department\": {\n        \"departmentName\": \"Computer Science\",\n        \"location\": \"INDIA\"\n    },\n    \"subjects\": [\n        {\n            \"subjectName\": \"Java\",\n            \"marksObtained\": 70\n        },\n        {\n            \"subjectName\": \"C++\",\n            \"marksObtained\": 80\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/student/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStudent",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/delete/6086476b8c490453e385c234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"delete",
+						"6086476b8c490453e385c234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentsByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/studentsByName/Raj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"studentsByName",
+						"Raj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byDepartmentId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/byDepartmentId?deptId=60896bde2cd522778c2318ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"byDepartmentId"
+					],
+					"query": [
+						{
+							"key": "deptId",
+							"value": "60896bde2cd522778c2318ad"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentsByNameAndMail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/studentsByNameAndMail?name=Raj&email=raj@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"studentsByNameAndMail"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Raj"
+						},
+						{
+							"key": "email",
+							"value": "raj@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentsByNameOrMail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/studentsByNameAndMail?name=Raj&email=raj@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"studentsByNameAndMail"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Raj"
+						},
+						{
+							"key": "email",
+							"value": "raj@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
