@@ -1,5 +1,6 @@
 package edu.prahlad.java.course3.lambdas.consumer;
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class ConsumerDemo {
@@ -14,5 +15,8 @@ public class ConsumerDemo {
         Consumer<String> consumer2 = (arg) -> System.out.println(arg + "Iam from India.");
 
         consumer1.andThen(consumer2).accept("Hello. ");
+
+        BiConsumer<String, String> greet = (s1, s2) -> System.out.println(s1 + s2);
+        greet.accept("Hello", "World");
     }
 }
