@@ -46,3 +46,7 @@ There are 43 predefined interfaces in Java 8, categorised for better understandi
 
 7) Function<T,R> is a category of functional interfaces that takes an object of type T
     and returns an object of type R.
+
+8) The UnaryOperator<T> interface represents a function that takes one argument of type T
+    and returns a value of the same type.
+    This is similar to the Function interface, which is a parent to the UnaryOperator interface.
