@@ -50,3 +50,10 @@ There are 43 predefined interfaces in Java 8, categorised for better understandi
 8) The UnaryOperator<T> interface represents a function that takes one argument of type T
     and returns a value of the same type.
     This is similar to the Function interface, which is a parent to the UnaryOperator interface.
+
+9) BinaryOperator<T> is a functional that inherits from BiFunction<T, T, T> interface.
+   The BinaryOperator<T> interface takes only one parameter as compared to BiFunction<T, T, T>,
+   which takes three parameters
+
+10) Effectively final is a new concept that was introduced in Java 8.
+    A non-final, local variable whose value is never changed after initialization is known as effectively final.
