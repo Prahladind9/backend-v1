@@ -1,0 +1,39 @@
+A Stream in Java can be defined as a sequence of elements from a source that supports aggregate operations on them.
+    The source here refers to collections or arrays that provide data to a stream.
+
+    A few important points about streams are:
+    1) A stream is not a data structure itself. It is a bunch of operations applied to a source.
+       The source can be collections, arrays or I/O channels.
+    2) Streams don’t change the original data structure.
+    3) There can be zero or more intermediate operations that transform a stream into another stream.
+    4) Each intermediate operation is lazily executed.
+    5)Terminal operations produce the result of the stream.
+
+Method references
+    are shortened versions of lambda expressions that call a specific method.
+
+The Optional<T>
+    is a wrapper class that stores an object of type T.
+    The object may or may not be present in the optional.
+
+Parallel Stream
+    A parallel stream has a lot of overhead compared to a sequential one.
+    Coordinating the threads takes a significant amount of time.
+    We should always use serial stream and consider using a parallel Stream in the following cases:
+    1) We have a large amount of data to process.
+    2) We already have a performance problem in the first place.
+    3) All the shared resources between threads need to be synchronized properly otherwise it might produce unexpected results.
+
+    According to Brian Goetz (Java Language Architect & specification lead for Lambda Expressions), the following things should be considered before going for parallelization:
+    1) Splitting is not more expensive than doing the work.
+    2) Task dispatch or management costs between the threads is not too high.
+    3) The result combination cost must not be too high.
+    4) Use the NQ formula to decide if you want to use parallelism.
+
+    NQ Model: N x Q > 10000
+
+    where,
+    N = number of data items
+    Q = amount of work per item
+
+Lazy Evaluation
