@@ -35,4 +35,13 @@ public class Person {
     public void setCountry(String country) {
         this.country = country;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", country='" + country + '\'' +
+                '}';
+    }
 }
