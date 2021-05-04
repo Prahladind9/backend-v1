@@ -60,3 +60,7 @@ How to improve
     Dynamic Programming
     Greedy Algorithms
     Backtracking
+
+    Frequency Counter (FC)
+    This pattern uses objects or sets to collect values/frequencies of values - O(n)
+    This can often avoid the need for nested loops or O(n`2) operations with arrays/strings
