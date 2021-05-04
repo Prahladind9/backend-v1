@@ -1,0 +1,62 @@
+Algorithm: A process or set of steps to accomplish a certain task.
+
+Almost everything that we do in programming involves some kind of algorithm!
+It's the foundation for being a successful problem solving & developer
+
+How to improve
+1. Devise a plan for solving problems
+2. Master common problem solving patterns
+
+1. Devise a plan for solving problems
+    Problem Solving
+        Understand the problem
+        Explore Concrete Examples
+        Break It Down
+        Solve/Simplify
+        Look Back and Refactor
+
+    Understand the problem
+        1) Can I restate the problem in my own words?
+        2) What are the inputs that go into the problem?
+        3) What are the outputs that should come from the solution to the problem?
+        4) Can the outputs be determined from the inputs?
+           In other words, do I have enough information to solve the problem?
+        5) How should I label the important pieces of data that are a part of the problem?
+
+    Explore Examples
+        Coming up with examples can help you understand the problem better
+        1) Start with Simple Examples
+        2) Progress to More Complex Examples
+        3) Explore Examples with Empty Inputs
+        4) Explore Examples with Invalid Inputs
+
+    Breaking It down
+        1) Explicitly write out the steps you need to take
+        2) This forces you to think about the code you'll write before you write it,
+           and helps you catch any lingering conceptual issues or misunderstandings
+           before you dive in and have to worry about details as well
+
+    Solve/Simplify
+        1) Find the core difficulty in what you're trying to do
+        2) Temporarily ignore that difficulty
+        3) Write a simplified solution
+        4) Then incorporate that difficulty back in
+
+    Look Back and Refactor
+        Congrats on solving it, but you're not done!
+        1) Can you check the result?
+        2) Can you derive the result differently?
+        3) Can you understand it at a glance?
+        4) Can you use the result or method for some other problem?
+        5) Can you improve the performance of your solution?
+        6) Can you think of other ways to refactor?
+        7) How have other people solved this problem?
+
+2. Master common problem solving patterns
+    Frequency Counter
+    Multiple Pointers
+    Sliding Window
+    Divide and Conquer
+    Dynamic Programming
+    Greedy Algorithms
+    Backtracking
