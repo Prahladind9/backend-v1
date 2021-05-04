@@ -1,0 +1,21 @@
+What Solution is best?
+    Faster?
+    Less memory-intensive?
+    More readable?
+
+The problem with Time
+    Different machines will record different times
+    The same machine will record different times!
+    For fast algorithms, speed measurements may not be precise enough?
+
+If not time, then what?
+    Rather than counting seconds, which are so variable ...
+    Let's count the number if simple operations the computer has to perform!
+
+BigO Notation is a way to formalize fuzzy counting
+    It allows us to talk formally about how the runtime of an algorithm
+    grows as the input grow
+
+Space Complexity
+    how much additional memory do we need to allocate in order
+    to run the code in our algorithm?
