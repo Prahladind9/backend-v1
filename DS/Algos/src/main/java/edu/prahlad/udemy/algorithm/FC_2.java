@@ -1,5 +1,6 @@
 package edu.prahlad.udemy.algorithm;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,19 +15,19 @@ public class FC_2 {
      */
 
     //Frequency Counter Solution - O(n)
-    private static boolean validAnagram(final String s1, final String s2){
+    private static boolean validAnagram(final String s, final String t){
         //EdgeCase - All values are lowercase string > no alpha-numeric combination or spaces
 
-        if(s1.length() != s2.length())
+        if(s.length() != t.length())
             return false;
 
         final Map<Character, Integer> m1 = new HashMap<>();
         final Map<Character, Integer> m2 = new HashMap<>();
 
-        for (char ch: s1.toCharArray()){
+        for (char ch: s.toCharArray()){
             m1.put(ch, m1.getOrDefault(ch, 0)+1);
         }
-        for(char ch: s2.toCharArray()){
+        for(char ch: t.toCharArray()){
             m2.put(ch, m2.getOrDefault(ch, 0)+1);
         }
 
@@ -36,8 +37,27 @@ public class FC_2 {
         return m1.equals(m2);
     }
 
+    //Frequency Counter Solution - O(n)
+    private static final boolean isValidAnagram(final String s, final String t){
+        final int[] array = new int[256];
+
+        for(char c: s.toCharArray()){
+            array[c]++;
+        }
+        for(char c: t.toCharArray()){
+            array[c]--;
+        }
+
+        for(int i: array){
+            if(i != 0) return false;
+        }
+
+        return true;
+    }
+
     public static void main(String[] args) {
         System.out.println(validAnagram("anagram", "nagaram"));
+        System.out.println(isValidAnagram("anagram", "nagaram"));
         System.out.println(validAnagram("", ""));
         System.out.println(validAnagram("aa", "ab"));
         System.out.println(validAnagram("aa", "abc"));
