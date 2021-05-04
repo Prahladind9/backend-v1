@@ -1,0 +1,33 @@
+1) Define what recursion is and how it can be used
+2) Understand the two essential components of a recursive function
+3) Visualize the call stack to better debug and understand recursive functions
+4) Use helper method recursion and pure recursion to
+    solve more difficult problems
+
+Recursion: A process that calls itself
+    Almost everywhere recursion is used
+    1) JSON.parse/JSON.stringify
+    2) document.getElementByUd and DOM traversal algorithms
+    3) Object traversal
+    4) We will see it with more complex data structures
+    5) It's sometimes a cleaner alternative to iteration
+
+The call stack
+    1) It's a stack data structure
+    2) any time a function is invoked it is placed (pushed)
+       on the top of the call stack
+    3) When java/javaScript sees the return keyword or when
+       the function ends, the compiler will remove (pop)
+
+How recursive function work
+    Invoke the same function with different input until you
+    reach your base case!
+    > Base Case: the condition when the recursion ends.
+    > Different Input: every call with different input data
+
+Things that can go wrong
+    1) No base case
+    2) Forgetting to return or returning the wrong thing!
+    3) Stack overflow!
+
+Helper Method Recursion
