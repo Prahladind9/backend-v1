@@ -1,0 +1,16 @@
+JShell
+1) Java REPL > Read Eval Print Loop
+2) Type in one line of code
+3) Makes learning Fun
+4) Introduced in Java 9
+
+
+PRECEDENCE > * / % > + -
+
+JavaCode > ByteCode > Run > AnyPlatform JVM > Instructions
+Variables > methods > methodParameters > class
+
+JDK vs JRE vs JVM
+JVM = (Java Virtual Machine) runs Java bytecode, platform Independence
+JRE = JVM + Libraries + Other Components
+JDK = JRE + Compilers + Debuggers
