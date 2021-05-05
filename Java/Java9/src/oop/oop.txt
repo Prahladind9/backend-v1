@@ -1,0 +1,25 @@
+Object Oriented Programming
+    Thinking about Objects
+    Data (state)
+    Actions (behaviour)
+
+Examples
+
+1) Aeroplane
+    airline, make, type, position //date
+    takeOff(), land(), cruise() //actions
+
+2) Online Shopping System
+    Customer
+        name, address
+        login(), logout(), selectProduct(product)
+    Shopping Cart
+        items
+        add(item), remove(item)
+    Product
+        name, price, quantityAvailable
+        order(), changePrice()
+
+3) Person
+    name, address, hobbies, work
+    walk(), run(), sleep(), eat(), drink()
