@@ -1,0 +1,47 @@
+Elementary Sorting Algorithm
+    Sorting
+        Sorting is the process of rearranging the items in a collection,
+        so that the items are in some kind of order.
+        Sorting is an incredibly common task, so it's good to know how it works.
+        There are many different ways to sort things, and different techniques have
+        their own advantages and disadvantages.
+    Comparison
+        https://www.toptal.com/developers/sorting-algorithms
+
+Slower Sorts
+    BubbleSort
+        A sorting algorithm where the largest values bubble up to the top!
+        Every element swap in the loop
+
+    Selection Sort
+        Similar to bubble sort, but instead of first placing large values into sorted position,
+        it places small values into sorted position
+        One time swap per loop
+
+    InsertionSort
+        Builds up the sort by gradually creating a larger left half
+        which is always sorted
+The above all sort will not scale for >100,000 elements array
+
+Faster Sorts
+    MergeSort
+        It's a combination of two things - merging & sorting!
+        Exploits the fact that arrays of 0 or 1 elements are always sorted.
+        Works by decomposing an array into smaller arrays of 0 or 1 elements,
+        then building up a newly sorted array
+
+    QuickSort
+        Like merge sort, exploits the fact that arrays of 0 or 1
+        element are always sorted
+        Works by selecting one element (called the "pivot") and finding
+        the index where the pivot should end up in the sorted array
+        Once the pivot is positioned approx, quick sort can be applied
+        on either side of the pivot
+
+    RadixSort
+        Radix sort is a special sorting algorithm that works on lists of numbers
+        It never makes comparisons between elements!
+        It exploits the fact that information about the size of a number
+        is encoded in the number of digits
+        More digits means a bigger number!
+        Base 10 - 10 buckets & loop based on max number size in array
