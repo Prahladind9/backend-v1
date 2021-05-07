@@ -1,0 +1,4 @@
+Suggestions
+Do you know how many times to run? For Loop
+Do you know when to end the loop? While
+Do you want to execute the loop at least once? Do While
