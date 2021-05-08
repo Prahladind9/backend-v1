@@ -1,7 +1,5 @@
 package edu.prahlad.udemy2.singleLinkedList;
 
-import edu.prahlad.udemy2.dataStructures.Node;
-
 import java.util.ArrayList;
 import java.util.List;
 

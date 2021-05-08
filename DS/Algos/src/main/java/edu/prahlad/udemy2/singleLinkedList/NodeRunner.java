@@ -1,4 +1,4 @@
-package edu.prahlad.udemy2.dataStructures;
+package edu.prahlad.udemy2.singleLinkedList;
 
 public class NodeRunner {
     public static void main(String[] args) {

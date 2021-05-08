@@ -1,6 +1,6 @@
-package edu.prahlad.udemy2.dataStructures;
+package edu.prahlad.udemy2.singleLinkedList;
 
-public class Node {
+class Node {
     public String val;
     public Node next;
 
