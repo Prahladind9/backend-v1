@@ -12,3 +12,9 @@ LinkedList (LL)
         Arrays contain a built in index whereas LL do not.
         The idea of a "list DS" that consists of nodes is the foundation
         for other data structures like Stacks & Queues
+
+    DoublyLinkedList (DLL)
+        Almost identical to SLL, except every node has another pointer,
+        to the previous node!
+        Compared to SLL > More Memory === More Flexibility
+            It's almost always a tradeoff!
