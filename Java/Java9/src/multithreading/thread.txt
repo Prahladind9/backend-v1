@@ -1,0 +1,13 @@
+Thread - Object class
+Lifecycle
+    NEW
+    RUNNABLE
+    RUNNING
+    BLOCKED/WAITING
+    TERMINATED/DEAD
+
+Yield
+Sleep
+Synchronized
+
+Executor Service
