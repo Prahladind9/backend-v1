@@ -1,0 +1,12 @@
+Concurrency
+Thread Safe > can be achieve via Synchronized > atomic
+    Method which can be run by multiple threads by the same time & there's no loss > can be called thread safe
+    Adding synchronized to the given method can help us achieve in the same,
+    but at a time only one thread can access that method and other threads must wait
+
+Locks > instead of whole class using synchronized - locking the thread for single method
+      > lock help in locking only single method & allow other methods to be accessible by other threads
+
+Atomic classes
+ConcurrentHashMap > different locks on different hash region
+CopyOnWriteArrayList > many reads - few writes
