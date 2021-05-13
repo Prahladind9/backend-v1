@@ -28,7 +28,7 @@ Queue
     A FIFO data structure!
 
 Trees
-    A DS consists of nodes in a parent/child relationship.
+    Trees are non-linear data structures that contain a root & child nodes
     Terminology used
         Root    : The top node in a tree
         Child   : A node directly connected to another node
@@ -38,7 +38,19 @@ Trees
         Leaf    : A node with no children
         Edge    : The connection between one node and another
 
+    Binary Trees
+        Binary Trees can have values of any type, but at most
+        two children for each parent
+
     Binary Search Trees
         Every parent node has at most two children
         Every node to the left of a parent node is always less than the parent
         Every node to the right of a parent node is always greater than the parent
+
+    Tree Transversal
+        Breadth-First Search > Lots of nodes to keep track of
+        Depth-First Search   > Fewer nodes to keep track of
+            > InOrder   > Used commonly with BST's > We get all nodes in their underlying order
+            > PreOrder  > Can be used to "export" a tree structure so that it is easily reconstructed or copied
+            > PostOrder > to transverse - bottom up all nodes in each row
+
