@@ -72,3 +72,25 @@ Trees
     Priority Queue
         A data structure where each element has a priority.
         Elements with higher priorities are served before elements with lower priorities
+
+    Hashtable
+        Hash tables are used to store key-value pairs.
+        They are like arrays, but the keys are not ordered.
+        Unlike arrays, hash tables are fast for all of the following operations:
+        finding values, adding new values, and removing values!
+
+        Good Hash
+            > Fast (constant time)
+            > Doesn't cluster outputs at specific indices, but distributes uniformly
+            > Deterministic (same input yields same output)
+
+        Dealing with Collisions with Strategies
+            1. Separate Chaining
+                With separate chaining, at each index in our array we store values
+                using a more sophisticate data structure (e.g. an array or a linked list)
+                This allows us to store multiple key-value paris at the same index.
+            2. Linear Probing
+                With linear probing, when we find a collision, we search through
+                the array to find the next empty slot
+                Unlike with separate chaining, this allows us to store a single
+                key-value at each index.
