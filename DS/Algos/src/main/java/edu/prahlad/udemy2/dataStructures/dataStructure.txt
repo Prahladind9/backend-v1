@@ -54,3 +54,21 @@ Trees
             > PreOrder  > Can be used to "export" a tree structure so that it is easily reconstructed or copied
             > PostOrder > to transverse - bottom up all nodes in each row
 
+    Binary Heap
+        Very similar to a binary search tree, bit with some different rules!
+        In a MaxBinaryHeap, parent nodes are always larger than child nodes.
+        In a MinBinaryHeap, parent nodes are always smaller than child nodes.
+
+        Binary Heaps are used to implement Priority Queues,
+        which are very commonly used data structures
+
+        SinkDown
+            The Procedure for deleting the root from the heap
+            (effectively extracting the maximum element in a max-heap
+            or the minimum element in a min-heap) and restoring
+            the properties os called down-heap/bubble-down/percolate-down/sift-down
+            /trickle-down/heapify-down/cascade-down/extract-min,max.
+
+    Priority Queue
+        A data structure where each element has a priority.
+        Elements with higher priorities are served before elements with lower priorities
