@@ -73,24 +73,38 @@ Trees
         A data structure where each element has a priority.
         Elements with higher priorities are served before elements with lower priorities
 
-    Hashtable
-        Hash tables are used to store key-value pairs.
-        They are like arrays, but the keys are not ordered.
-        Unlike arrays, hash tables are fast for all of the following operations:
-        finding values, adding new values, and removing values!
+Hashtable
+    Hash tables are used to store key-value pairs.
+    They are like arrays, but the keys are not ordered.
+    Unlike arrays, hash tables are fast for all of the following operations:
+    finding values, adding new values, and removing values!
 
-        Good Hash
-            > Fast (constant time)
-            > Doesn't cluster outputs at specific indices, but distributes uniformly
-            > Deterministic (same input yields same output)
+    Good Hash
+        > Fast (constant time)
+        > Doesn't cluster outputs at specific indices, but distributes uniformly
+        > Deterministic (same input yields same output)
 
-        Dealing with Collisions with Strategies
-            1. Separate Chaining
-                With separate chaining, at each index in our array we store values
-                using a more sophisticate data structure (e.g. an array or a linked list)
-                This allows us to store multiple key-value paris at the same index.
-            2. Linear Probing
-                With linear probing, when we find a collision, we search through
-                the array to find the next empty slot
-                Unlike with separate chaining, this allows us to store a single
-                key-value at each index.
+    Dealing with Collisions with Strategies
+        1. Separate Chaining
+            With separate chaining, at each index in our array we store values
+            using a more sophisticate data structure (e.g. an array or a linked list)
+            This allows us to store multiple key-value paris at the same index.
+        2. Linear Probing
+            With linear probing, when we find a collision, we search through
+            the array to find the next empty slot
+            Unlike with separate chaining, this allows us to store a single
+            key-value at each index.
+
+Graphs
+    A graph data structure consists of finite (and possibly mutable)
+    set of vertices or nodes or points, together
+    with a set of unordered pairs of these vertices for an undirected graph or
+    a set of ordered pairs for a directed graph.
+    Terminology used
+        Vertex    : a node
+        Edge      : connection between nodes
+        Weighted/
+        Unweighted: values assigned to distances between vertices
+        Directed/
+        Undirected: directions assigned to distances between vertices
+
