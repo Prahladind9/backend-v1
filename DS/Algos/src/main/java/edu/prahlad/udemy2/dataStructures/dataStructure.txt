@@ -108,3 +108,5 @@ Graphs
         Directed/
         Undirected: directions assigned to distances between vertices
 
+Dijkstra Algorithm
+    Finds the shortest path between two vertices on a graph (weighted)
