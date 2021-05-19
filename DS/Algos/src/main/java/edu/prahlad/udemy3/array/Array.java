@@ -2,6 +2,16 @@ package edu.prahlad.udemy3.array;
 
 import java.util.ArrayList;
 
+/**
+ * Simplest dataStructure
+ * Static (Array) vs dynamic (ArrayList)
+ * Best if we know the size beforehand
+ *
+ * Lookup by Index O(1)
+ * Lookup by Value O(n)
+ *          Insert O(n)
+ *          Delete O(n)
+ */
 public class Array {
     private int[] items;
     private int count;
