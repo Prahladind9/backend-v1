@@ -1,0 +1,10 @@
+Queues
+    First-In First-Out (FIFO) DataStructure
+    Sharing a resource amongst many consumers
+    PriorityQueues
+
+Operations
+    enqueue     O(1), in case of PriorityQueue - O(n), as items need to shifted as per the priority
+    dequeue     O(1)
+    peek        O(1)
+    isEmpty     O(1)
