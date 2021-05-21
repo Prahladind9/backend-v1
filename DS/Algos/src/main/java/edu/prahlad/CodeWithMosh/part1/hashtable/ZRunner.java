@@ -1,4 +1,4 @@
-package edu.prahlad.udemy3.hashtable;
+package edu.prahlad.CodeWithMosh.part1.hashtable;
 
 import java.util.HashMap;
 import java.util.HashSet;

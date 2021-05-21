@@ -1,4 +1,4 @@
-package edu.prahlad.udemy3.queue;
+package edu.prahlad.CodeWithMosh.part1.queue;
 
 import java.util.Queue;
 import java.util.ArrayDeque;

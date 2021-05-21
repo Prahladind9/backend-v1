@@ -1,4 +1,4 @@
-package edu.prahlad.udemy3.linkedlist;
+package edu.prahlad.CodeWithMosh.part1.linkedlist;
 
 import java.util.Arrays;
 import java.util.NoSuchElementException;

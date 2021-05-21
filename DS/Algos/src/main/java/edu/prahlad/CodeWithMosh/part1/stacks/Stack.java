@@ -1,4 +1,4 @@
-package edu.prahlad.udemy3.stacks;
+package edu.prahlad.CodeWithMosh.part1.stacks;
 
 import java.util.Arrays;
 
