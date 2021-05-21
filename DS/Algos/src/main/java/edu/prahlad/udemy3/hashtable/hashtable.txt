@@ -1,0 +1,20 @@
+Map Interface
+HashTable > store in Key-Value Pair
+Insert, remove, lookup > O(1)
+
+HashFunction - hashCode > deterministic value > same key - same return value
+    Collision > same hashCode for the given value > prime numbers are proven to be best
+        Chaining - linkedList
+        LinearProbing   > openAddressing > find next address & place the value
+                        > eventually forms cluster (hash(key) + i)
+                        > limited to the size of the map
+
+       QuadraticProbing > (hash(key) + i^2) % table_size
+                        > can lead to infinite loop
+
+        Double Hashing  >   hash1(key) = key & table_size
+                            hash2(key) = prime - (key % prime)
+                            (hash1(key) + i * hash2(key)) % table_size
+
+Command Query Principle
+    Methods - can either query or command an action > leading to sideEffect
