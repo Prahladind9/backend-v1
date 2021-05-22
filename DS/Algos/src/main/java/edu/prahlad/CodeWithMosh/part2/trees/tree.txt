@@ -1,0 +1,39 @@
+Tree
+    Nodes, Edges > Root, Leaf
+    Example
+        represents hierarchical data
+        databases index
+        google - autocompletion
+        Compilers - syntax tree > parsing expression
+        Compression (JPEG, MP3)
+
+BinaryTree: child node of sub-array can be greater than root
+BinarySearchTree: always: left < node < right
+
+Complexity
+    Lookup O(log n)
+    Insert O(log n)
+    Delete O(log n)
+
+Example
+                7
+            4       9
+         1     6 8      10
+
+Transversal
+    BreadthFirstSearch (BFS)
+        LevelOrder: each level transversal: [7,4,9,1,6,8,10]
+
+    DepthFirstSearch (DFS)
+        Pre-Order: Root, Left, Right: [7,4,1,6,9,8,10]
+
+         In-Order: Left, Root, Right: [1,4,6,7,8,9,10] AscendingOrder
+                   Right, Root, Left: [10,9,8,7,6,4,1] DescendingOrder
+
+       Post-Order: Left, Right, Root: [1,6,4,8,10,9,7]
+                    Left means - LeftSubtree viz Right
+
+Depth: Number Of Edges from root to targetNode, Ex., 6 depth is 2
+Height
+    Longest path from the targetNode to it's respective leaf, Ex., 4 height is 1
+    Height of Tree: [1 + max(height(L), height(R))]
