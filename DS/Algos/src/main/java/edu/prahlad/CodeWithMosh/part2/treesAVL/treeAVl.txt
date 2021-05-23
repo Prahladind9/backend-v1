@@ -1,0 +1,25 @@
+Tree Balance Evaluation
+    BalanceTree     : height(left) - height(right) <= 1
+    UnBalancedTree  : height(left) - height(right) > 1
+    Worst Tree      : Left/Right Skewed ~ similar to LinkedList
+
+BST
+    Average : O(log n)
+    Worst   : O(n)
+
+Self-Balancing Trees
+    AVL Trees (Adelson-Velsky and Landis)
+    Red-black Trees
+    B-Trees
+    Splay Trees
+    2-3 Trees
+
+AVL Trees
+    Using Rotations >> AVL Trees balance the tree & maintain
+                    >> height(left) - height(right) <= 1
+    Rotations
+        Left (LL)
+        Right (RR)
+        Left-Right (LR)
+        Right-Left (RL)
+
