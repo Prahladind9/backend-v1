@@ -1,0 +1,8 @@
+Tries
+    Trees with many children
+    the name is derived from Re'trie'val, also know as Digital, Radix, Prefix
+
+Uses: Autocompletion
+Complexity: Insert, Lookup , Delete > O(L),
+            where L is the length of the word
+Traversal: Pre-Order, Post-Order
