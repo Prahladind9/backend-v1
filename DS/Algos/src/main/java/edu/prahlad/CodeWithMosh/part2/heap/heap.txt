@@ -1,0 +1,18 @@
+Heap
+    Binary Tree should be complete: left sub-array must be filled
+    Heap Property: Node will be the max value of all the tree > called Max Heap
+
+Uses
+    Sorting (HeapSort)
+    Graph algorithms (Shortest Path)
+    Priority queues
+    Finding the Kth smallest/largest value
+
+Rearranging Tree after insert/remove
+    Bubble up
+    Bubble down
+
+Array can be used to implement Heap
+    left  = (parent*2) +1
+    right = (parent*2) +2
+    parent = (index-1)/2
