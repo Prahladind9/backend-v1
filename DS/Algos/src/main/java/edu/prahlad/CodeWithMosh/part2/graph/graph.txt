@@ -1,0 +1,31 @@
+Graphs - used to represent connected objects
+    > contains Node/Vertex & Edges
+    > Adjacent/Neighbors - Directions
+    > Weight between connections
+
+Example >   Social Network, GPS, finding fastest path,
+            topological order project execution
+
+v - Vertices/Nodes
+e - Edges
+k - no of existing edges
+
+Adjacency Matrix - best for dense graph only
+    Space         : O(v^2)
+
+    Add Edge      : O(1)
+    Remove Edge   : O(1)
+    Query Edge    : O(1)
+    FindNeighbors : O(v)
+    Add Node      : O(v^2)
+    RemoveNode    : O(v^2)
+
+Adjacency List
+    Space         : O(v+e) for dense graph o(v^2) ==> E = V*(V-1)
+
+    Add  Node     : O(1)
+    RemoveNode    : O(v+e) for dense graph O(v^2)
+    Add Edge      : O(k), worst case O(v)
+    RemoveEdge    : O(k), worst case O(v)
+    QueryEdge     : O(k), worst case O(v)
+    FindNeighbors : O(k), worst case O(v)
