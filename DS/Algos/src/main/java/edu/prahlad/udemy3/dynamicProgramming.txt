@@ -1,0 +1,13 @@
+Dynamic Programming
+    is a method for solving OptimizationProblems by
+    breaking a problem into smaller sub-problems.
+
+    OptimizationProblem
+    > Enumeration,                ex: climb n steps
+    > Minimization/Maximization,  ex: Stock buy/sell, over-days to get profit
+    > Yes/No Questions,           ex: form 10$ with x pennies, z quarters?
+
+Problems
+1) Stairs Climbing
+2) Cutting Stick/Rod
+
