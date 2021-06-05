@@ -1,2 +1,15 @@
 Class: A blueprint for creating objects
 Object: An instance of a class
+
+Storage
+    Heap  : Objects are stored
+    Stack : Primitives & short-lived variables
+
+OOPs
+    Procedural Programming: variables, functions in functions > spaghetti Code
+    Encapsulation: Bundle the data & methods that operate on the data in a single unit.
+    Abstraction: Reduce complexity by hiding unnecessary details
+    Coupling: The level of dependency between classes
+    MethodOverloading: Same method name, different method params, constructor can be overridden as well
+                       Totally different params are preferred, don't overuse this
+    Static Members
