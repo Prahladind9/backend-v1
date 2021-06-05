@@ -1,0 +1,2 @@
+Class: A blueprint for creating objects
+Object: An instance of a class
