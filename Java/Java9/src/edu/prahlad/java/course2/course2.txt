@@ -1,3 +1,29 @@
 CodeWithMosh
 0) Basics
 1) Classes
+    Class, Object
+    Storage :   Heap, Stack
+    Concepts:   Procedural Programming, Encapsulation, Abstraction
+                Coupling, MethodOverloading, Static Members
+
+2) Inheritance - IS-A Relation
+    Polymorphism: Many-forms
+        Constructors
+        Access Modifiers
+        Object: gives the below method
+            getClass,
+            equals; comparing objects with values stored in their fields
+            hashCode; of the address of the object, stored in the memory
+            toString; fully qualified class@hexadecimal of hashcode
+            concurrency; notify, notifyAll, wait
+
+        Method Overriding
+        Up-casting  :   Casting an object to one of its "super" types
+        Down-casting:   Casting an object to one of its "sub" types
+                        Handle ClassCastException
+
+        Comparing Objects
+        abstract, final
+        Deep Inheritance hierarchies are not recommended > max 3 levels
+        Multiple Inheritance is not supported
+       YAGNI - You aren't gonna need it
