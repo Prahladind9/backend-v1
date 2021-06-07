@@ -27,3 +27,17 @@ CodeWithMosh
         Deep Inheritance hierarchies are not recommended > max 3 levels
         Multiple Inheritance is not supported
        YAGNI - You aren't gonna need it
+
+3) Interfaces
+    We use interface to build loosely-coupled, extensible, testable applications.
+    Abstraction: Hide the implementation details
+    Programming against interfaces - loosely couple classes
+
+    Interface says: "What" should be done
+                Ex:  Data compression, Encryption, Sorting, Searching, contract
+
+    Classes impl  : "How" it should be done
+    DependencyInjection: Our Classes shouldn't instantiate their dependencies
+       Constructor Inj : We can inject dependency of class, during object creation (more preferred)
+       Setter Injection: We can the inject dependency of class, throughout the lifetime
+       Method Injection: Only applicable when we use the method, can be
