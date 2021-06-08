@@ -28,9 +28,11 @@ CodeWithMosh
         Multiple Inheritance is not supported
        YAGNI - You aren't gonna need it
 
-3) Interfaces
+3) Abstraction (Partially-completed Classes)
+    To share code & to hide the implementation details
+
+4) Interfaces(Contracts)
     We use interface to build loosely-coupled, extensible, testable applications.
-    Abstraction: Hide the implementation details
     Programming against interfaces - loosely couple classes
 
     Interface says: "What" should be done
@@ -41,3 +43,12 @@ CodeWithMosh
        Constructor Inj : We can inject dependency of class, during object creation (more preferred)
        Setter Injection: We can the inject dependency of class, throughout the lifetime
        Method Injection: Only applicable when we use the method, can be
+
+    Interface Segregation Principle: Divide big interfaces into smaller ones
+
+    InterfaceNaming: Can prefix, able postfix
+    Interface can have multiple parents Class, interface UIWidget extends Draggable, Resizable
+    whereas Class cannot have multiple parents, leads to Diamond problem
+    New Additions: fields, static methods, private methods (not preferable - as it leads to Multiple Inheritance)
+
+    Benefits: SwapImplementation, Extend Your Application, Test your class in isolation
