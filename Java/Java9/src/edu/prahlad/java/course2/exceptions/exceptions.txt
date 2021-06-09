@@ -1,0 +1,12 @@
+Exceptions Types - Checked, Unchecked, Error
+Hierarchy - based catching exception
+
+                    Throwable
+    Exception(checked)          Error
+    RuntimeException(unchecked)
+
+Try/catch blocks > try with resource > AutoCloseable Interface
+Defensive programming
+The throw keyword
+Custom exceptions
+Chaining exceptions

@@ -52,3 +52,5 @@ CodeWithMosh
     New Additions: fields, static methods, private methods (not preferable - as it leads to Multiple Inheritance)
 
     Benefits: SwapImplementation, Extend Your Application, Test your class in isolation
+
+5) Exceptions
