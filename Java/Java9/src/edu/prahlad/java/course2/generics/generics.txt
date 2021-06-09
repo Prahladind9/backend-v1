@@ -1,0 +1,8 @@
+Generics classes/methods: <T>
+Constraints: only given type or subtype can be used as T
+    ListGeneric<T extends Comparable & Cloneable & Closeable>
+
+TypeErasures: replace T with respective class
+GenericMethods
+WildCards: ? extends User: can only read
+           ? super User  : can only write
