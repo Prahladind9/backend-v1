@@ -1,5 +1,9 @@
-Iterables - java.lang - object that can be loop over
-Collection - container for other objects
-    Always try to program against interfaces
-List - we can access elements by their index
-Comparable
+A) Iterables - java.lang - object that can be loop over
+B) Collection - container for other objects
+        Always try to program against interfaces
+        Varrags
+        1) List - we can access elements by their index
+                Comparable, Comparator
+        2) Queue
+        3) Set - doesn't preserve the order, only uniqueness is promised
+        4) Maps - key,value pair, ordering is not guaranteed
