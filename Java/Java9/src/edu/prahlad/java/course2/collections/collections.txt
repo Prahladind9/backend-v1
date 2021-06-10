@@ -1,0 +1,5 @@
+Iterables - java.lang - object that can be loop over
+Collection - container for other objects
+    Always try to program against interfaces
+List - we can access elements by their index
+Comparable
