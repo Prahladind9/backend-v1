@@ -1,0 +1,10 @@
+Recursion is when a method calls itself again & again
+until it reaches a specified stopping condition.
+In general, the method mentioned above is called a recursive method
+    a) Base Case
+    b) Recursive Case
+
+Direct vs Indirect Recursion
+    Direct recursion occurs when a method calls itself
+    Indirect recursion occurs when a method calls another method,
+        eventually resulting in the original method being called again.
