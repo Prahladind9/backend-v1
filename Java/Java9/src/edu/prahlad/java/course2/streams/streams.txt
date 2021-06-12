@@ -1,0 +1,28 @@
+(1) Imperative(How) vs Functional/Declarative(What) Programming Paradigm
+(2) Streams
+    1) To process a collection of data in a declarative/functional way
+    2) Create Streams
+        from collections/arrays/an arbitrary number of objects
+        infinite/finite streams
+    3) LazyEvaluation
+    4) Operations - Intermediate & Terminal
+        a) Transform the data
+            mapping elements using: .map(), .flatMap(), .mapToInt()
+        b) Filtering Elements
+            filter(): goes through all elements in the stream
+        c) Slicing a Stream
+            limit(n), skip(n),
+            takeWhile(predicate): stops the moment the condition is reached
+            dropWhile(predicate): skips the first element that matches the condition
+                                    & continues with other elements
+
+        d) Sorting elements: sorted(Comparator)
+        e) Unique elements: distinct
+        f) Peeking elements: peek
+        g) Reducers: count(), findFirst(), findAny(), max(comparator), min(comparator),
+                     anyMatch(predicate), allMatch(predicate), noneMatch(predicate)
+                     reduce - general purpose reduction
+        h) Collectors
+        i) Grouping Elements
+        k) Partitioning Data
+        l) Primitive Stream
