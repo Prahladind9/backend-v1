@@ -1,0 +1,30 @@
+0) Lambda expressions
+1) Functional Interface: An interface with a single abstract method
+2) Method References
+3) In-built Functional Interfaces
+    a) Consumer
+        Take single argument as input, returns no result
+        Definition: void apply(T t)
+        ex: void consume(obj)
+        extensions - BiConsumer & Int, Long, Double Consumer
+        Composition: chaining consumers together using default method
+            default Consumer<T> andThen(Consumer<? super T> after)
+    b) Supplier
+        Take no input, returns value
+        Definition: T apply()
+        ex: obj supply()
+        extensions - Int, Long, Double, Boolean Supplier
+        Lazy evaluation - get() method call
+    c) Function
+        Map one input value, return same input type or different type
+        Definition: R apply(T t)
+        ex: obj map(obj)
+        extensions - UnaryOperator, BiFunction<T,U,R>, BinaryOperation<T> &
+                     Int, ToInt, IntToLong ... Long, Double Function
+        Composition: compose, andThen, identify
+    d) Predicate
+        represents an operation, that takes an object &
+        checks to see whether the objects satisfy some criteria
+        Definition: boolean test(T t)
+        ex: bool test(condition)
+        extensions - BiPredicate & Int, Long, Double Predicate

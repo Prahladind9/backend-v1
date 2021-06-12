@@ -56,3 +56,4 @@ CodeWithMosh
 5) Exceptions
 6) Generics
 7) Collections
+8) LambdasExpressions & FunctionalInterfaces
