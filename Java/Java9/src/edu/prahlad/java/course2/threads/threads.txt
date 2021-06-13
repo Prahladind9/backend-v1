@@ -1,0 +1,36 @@
+Multithreading & Concurrency
+   (1) Key terms & concepts
+        Process - Instance of a program/application
+        Concurrency - process level parallel run or
+                      application level multiple instance parallel run
+        Multi-threading - applications using multiple threads
+   (2) Working with threads
+        Thread Name
+        Thread Scheduler
+        Join - wait for other thread, blocking method
+        Interrupt - only request
+   (3) Concurrency issues
+        RaceCondition: Multiple threads modifying same data at same time
+        VisibilityProblem: Multiple threads access same data, one of the thread tries to modify
+        Solution: Thread-safe code
+
+   (4) StrategyForThreadSafety
+        1) Confinement: Not to share data across threads
+        2) Immutability: sharing immutable object across threads,
+                      immutable object - cannot be modified, can only be read
+        3) Synchronization:
+            a) using locks
+            b) using synchronized block
+                MonitorObject: using same monitor object is not preferred
+                               UseCase: "this" as monitor object
+                                   For example there are 2 methods, using synchronized(this)
+                                   only one thread can update, other thread has to wait - leading to overhead
+                synchronized access modifier & synchronized(this) are same
+         4) Volatile fields
+                Saying CPU that, this field is volatile, i.e.,
+                don't depend on the cache value, always read from the main memory
+         5) Wait & Notify
+                Until Notify is called, dependent threads will be in Wait state
+                We have better implementation now
+         6) Atomic Objects: compare & swap implementation
+         7) Synchronised Collection
