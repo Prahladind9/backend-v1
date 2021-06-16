@@ -1,0 +1,16 @@
+Generics
+    1) Liskov Substitution Principle
+    2) Strong Compile Time check
+    3) Type Parameters
+        E - Element
+        K - Key
+        N - Number
+        T - Generic Type
+        V - value
+    4) Type Erasure: the process that occurs during compile time
+                     to remove the explicit type information from a program
+    5) bounded types: Make it possible to apply compile time-enforced restrictions
+        on the kinds of type parameters that a generic may be used with
+    6) generic interfaces: Interfaces that are declared with type parameters
+    7) generics: A facility of generic programming added to Java to reduce bugs
+    8) raw type: the name of a generic class or interface without any type arguments
