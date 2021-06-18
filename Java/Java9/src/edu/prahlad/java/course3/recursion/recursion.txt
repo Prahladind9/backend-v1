@@ -1,0 +1,4 @@
+Recursion
+A method where the solution to a complex problem
+depends on the solutions to smaller, more simpler
+instances of the same problem

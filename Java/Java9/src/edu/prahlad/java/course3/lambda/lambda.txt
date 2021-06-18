@@ -1,0 +1,12 @@
+
+java.util.function
+java.util.stream
+
+Functional Interfaces
+An interface that contains at most one abstract function
+Represents abstract concepts such as functions, actions, or predicates
+
+Predicate - takes one argument, returns a Boolean
+Consumer - accepts single argument with no return value
+Function - accepts one argument and produces a result
+Supplier - represents a supplier of results
