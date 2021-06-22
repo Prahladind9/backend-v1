@@ -8,6 +8,10 @@ import java.util.Map;
 /**
  * Given an array of integers, return the indices of the two numbers
  * that add up to a given target.
+ *
+ * LeetCode
+ * 1. Two Sum
+ * https://leetcode.com/problems/two-sum/
  */
 public class TwoSum {
     /**
@@ -56,7 +60,7 @@ public class TwoSum {
      * TimeComplexity   : O(n^2)
      * SpaceComplexity  : O(1)
      * <p>
-     * 8) Optimize Solution
+     * 8) Can we optimize our solution?
      *
      *  1st Loop > calculate numberToFind(nft)
      *  2nd Loop > checks current == ntf > can this be improved?
