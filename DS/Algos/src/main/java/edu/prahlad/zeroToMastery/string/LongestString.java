@@ -23,7 +23,7 @@ public class LongestString {
      *      ""          0
      *      "abcbda"    4
      *
-     * 3)      
+     * 3) Figure out a solution without code (Critical Thinking)
      *
      */
 }
