@@ -25,5 +25,9 @@ public class LongestString {
      *
      * 3) Figure out a solution without code (Critical Thinking)
      *
+     * 4) Write out our code
+     * 5) Double check for errors, syntax or logic
+     * 6) Test code with test cases
+     *
      */
 }
