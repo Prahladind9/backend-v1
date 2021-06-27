@@ -1,0 +1,3 @@
+Sliding Window
+Form a window over some portion of sequential data,
+then move that window throughout the data to capture different parts of it.
