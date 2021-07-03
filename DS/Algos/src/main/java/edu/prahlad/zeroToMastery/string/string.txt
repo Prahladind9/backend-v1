@@ -1,3 +1,9 @@
 Sliding Window
 Form a window over some portion of sequential data,
 then move that window throughout the data to capture different parts of it.
+
+Sub-Problems
+A sub-problem is a problem we have to solve along
+the way to solving the main problem.
+
+A palindrome is a string that reads the same forwards & backwards.
