@@ -8,3 +8,13 @@ Direct vs Indirect Recursion
     Direct recursion occurs when a method calls itself
     Indirect recursion occurs when a method calls another method,
         eventually resulting in the original method being called again.
+
+Recursion vs Iteration
+    Application
+    Termination
+    Infinite Case
+    Code Size
+    Overhead time
+    Speed
+    Stack Utilization
+

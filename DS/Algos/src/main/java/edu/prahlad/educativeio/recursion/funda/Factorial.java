@@ -13,9 +13,23 @@ public class Factorial {
         }
     }
 
+    private static int factorialIterative(int n) {
+
+        int factorialResult = 1;
+
+        for (int i = 1; i <= n; i++) {
+            factorialResult = factorialResult * i;
+        }
+        return factorialResult;
+
+    }
+
     public static void main(String[] args) {
         //Calling the main
         int result = factorial(5);
-        System.out.println("Factorial of 5 is: " + result);
+        System.out.println("Factorial Recursive of 5 is: " + result);
+
+        result = factorialIterative(5);
+        System.out.println("Factorial Iterative of 5 is: " + result);
     }
 }
