@@ -17,8 +17,8 @@ public class ReverseLL {
      *      b) 3    ; soln: 3
      *      b) null ; soln: null
      *
-     *  3) Figure out a solution without code
-     *
+     * 3) Figure out a solution without code
+     * 4) Write out our solution in code
      */
 
 }
