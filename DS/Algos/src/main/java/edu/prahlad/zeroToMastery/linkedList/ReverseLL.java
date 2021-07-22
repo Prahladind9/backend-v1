@@ -18,6 +18,14 @@ public class ReverseLL {
      *      b) null ; soln: null
      *
      * 3) Figure out a solution without code
+     *
+     *  reverse linked list steps
+     *      a) get current node
+     *      b) store next value
+     *      c) update current's next value to prev
+     *      d) assign current to prev
+     *      e) update current node to stored next value at (b)
+     *
      * 4) Write out our solution in code
      * 5) Double check for errors, syntax or code
      * 6) Check with test cases
@@ -29,26 +37,12 @@ public class ReverseLL {
      *
      */
 
-    static Node head;
-
-    static class Node {
-
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     public static Node reverseLinkedList(Node head) {
         Node prev = null;
         Node current = head;
 
         while (current != null) {
-            //reference
-            var next = current.next;
+            var next = current.next; //~temp variable
 
             //updating the prev - used as final result
             current.next = prev;
@@ -62,20 +56,13 @@ public class ReverseLL {
 
     }
 
-    // prints content of double linked list
-    void printList(Node node) {
-        while (node != null) {
-            System.out.print(node.data + " ");
-            node = node.next;
-        }
-    }
 
 
     // Driver Code
     public static void main(String[] args) {
 
         //Test case 1
-        ReverseLL list = new ReverseLL();
+        LinkedList list = new LinkedList();
         list.head = new Node(5);
         list.head.next = new Node(4);
         list.head.next.next = new Node(3);
@@ -83,26 +70,26 @@ public class ReverseLL {
         list.head.next.next.next.next = new Node(1);
 
         System.out.println("Given Linked list");
-        list.printList(head);
-        head = list.reverseLinkedList(head);
+        list.printList(list.head);
+        list.head = reverseLinkedList(list.head);
         System.out.println("");
         System.out.println("Reversed linked list ");
-        list.printList(head);
+        list.printList(list.head);
         System.out.println();
 
         //Test case 2
-        list = new ReverseLL();
+        list = new LinkedList();
         list.head = new Node(3);
-        head = list.reverseLinkedList(head);
+        list.head = reverseLinkedList(list.head);
         System.out.println("Reversed linked list ");
-        list.printList(head);
+        list.printList(list.head);
         System.out.println();
 
         //Test case 3
-        list = new ReverseLL();
+        list = new LinkedList();
         list.head = null;
-        head = list.reverseLinkedList(head);
+        list.head = reverseLinkedList(list.head);
         System.out.println("Reversed linked list ");
-        list.printList(head);
+        list.printList(list.head);
     }
 }
