@@ -18,5 +18,10 @@ public class LinkedList {
                     ", next=" + next +
                     '}';
         }
+
+
+        private Node first;
+        private Node last;
+        private int size;
     }
 }
