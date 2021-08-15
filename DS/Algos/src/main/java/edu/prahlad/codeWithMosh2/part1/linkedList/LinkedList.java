@@ -25,7 +25,12 @@ public class LinkedList {
     private Node last;
     private int size;
 
+    public int size(){
+        return size;
+    }
+
     public static void main(String[] args) {
         var linkedList = new LinkedList();
+        System.out.println(linkedList.size());
     }
 }
