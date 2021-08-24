@@ -29,6 +29,10 @@ public class LinkedList {
         return size;
     }
 
+    private boolean isEmpty() {
+        return this.first == null;
+    }
+
     public static void main(String[] args) {
         var linkedList = new LinkedList();
         System.out.println(linkedList.size());
