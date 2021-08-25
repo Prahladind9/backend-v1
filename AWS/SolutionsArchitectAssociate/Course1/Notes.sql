@@ -89,8 +89,20 @@ General Commands
       
       You'll be charged for Elastic IP > even when u don't use it
 
-   Simplify EC2 HTTP server setup   
+   Simplify EC2 HTTP server setup
+
+      Bootstrapping: Install OS patches or software when an EC2 instance is launched
+      Lookup user data > curl http://169.254.169.254/latest/user-data/
    
+      Create New Instance and configure user data as below
+         #!/bin/bash
+         yum update -y
+         yum install httpd
+         systemctl start httpd
+         systemctl enable httpd
+         curl -s http://169.254.169.254/latest/dynamic/instance-identity/document > /var/www/html/index.html
+
+      Launch Templates   
 
 
 
