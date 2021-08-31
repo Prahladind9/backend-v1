@@ -171,7 +171,8 @@ General Commands
 
 (3) Load Balancing
    Elastic Load Balancer
-   Distribute traffic across EC2 instances in one or more AZs in a single region
+   Distribute traffic across EC2 instances in one or more 
+   Availability Zones in a single region
 
 
 
