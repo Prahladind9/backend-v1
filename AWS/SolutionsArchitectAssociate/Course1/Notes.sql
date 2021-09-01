@@ -1,6 +1,7 @@
 EC2 - Elastic Compute Cloud
 AMI - Amazon Machine Image
 AZ  - Availability Zone
+VPC - Virtual Private Cloud
 
 (1) Getting started with AWS Virtual Servers - EC2 Service and EC2 Instances
 General Commands
