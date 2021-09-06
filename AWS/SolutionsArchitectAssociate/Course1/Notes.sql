@@ -172,8 +172,60 @@ General Commands
 
 (3) Load Balancing
    Elastic Load Balancer
-   Distribute traffic across EC2 instances in one or more 
-   Availability Zones in a single region
+   1) Distribute traffic across EC2 instances in one or more Availability Zones in a single region
+   2) Managed Service - AWS ensures that it is highly available
+   3) Auto scales to handle huge loads
+   4) Health checks - route traffic to healthy instances
+   
+   HTTP vs HTTPS vs TCP vs TLS vs UDP vs IP
+      1) Application Layer: Make REST API calls and Send Emails
+         HTTP : Hypertext Transfer Protocol: Stateless Request Response Cycle
+         HTTPS: Secure HTTP 
+         SMTP : Email Transfer Protocol
+         FTP  : File Transfers
+      
+      2) Transport Layer: Are the bits and bytes transferred properly?
+         TCP: Transmission Control: Reliability > Performance
+         TLS: Transport Layer Security: Secure TCP
+         UDP: User Datagram Protocol: Performance > Reliability
+
+      3) Network Layer : Transfers bits and bytes
+         IP: Internet Protocol, Unreliable 
+         
+
+      a) Each layer makes use of the layers beneath it
+      b) Most applications typically communicate at application layer
+      c) However applications needing high performance directly commincate at transport layer
+         Gaming applications and live video streaming use UDP (sacrifice reliability for performance)
+
+   3 types of Elastic Load Balancers
+      1) Classic Load Balancer (Layer 4 and Layer 7)
+         Old generation supporting layer 4 (TCP/TLS) and layer 7 (HTTP/HTTPS) protocols
+         Not Recommended by AWS
+
+      2) Application Load Balancer (Layer 7)
+         New generation supporting HTTP/HTTPS and advanced routing approaches
+      3) Network Load Balancer (Layer 4)
+         New generation supporing TCP/TLS and UDP
+         Very hight performance usecases
+      4) Gateway Load Balancer
+         IP 
+
+      Listeners
+      1) Each Load Balancer has one or more listeners listening for connection requests from the client
+      2) Each listener has: a protocol, a port, a set of rules to route requests to targets         
+      3) Can have Multiple Listeners listening for a different protocol or port
+      
+      Target Groups (Attributes)
+      1) Deregistration Delay (0 to 3600 sec) Connection Draining
+      2) Slow start duration
+      3) Load balancing algorithm: Round robing or Least outstanding requests
+      4) Stickiness - sends all requests of one user to one instance > via cokkie
+
+      Microservices architectures - Multiple Target Groups
+      1) By configiruing Rules for multiple listener we can identify which request
+         should be sent to which target group
+      2) Rules are executed in the order they are configured   
 
 
 
