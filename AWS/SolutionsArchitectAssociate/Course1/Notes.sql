@@ -2,6 +2,7 @@ EC2 - Elastic Compute Cloud
 AMI - Amazon Machine Image
 AZ  - Availability Zone
 VPC - Virtual Private Cloud
+ASG - Auto Scaling Groups
 
 (1) Getting started with AWS Virtual Servers - EC2 Service and EC2 Instances
 General Commands
@@ -223,9 +224,34 @@ General Commands
       4) Stickiness - sends all requests of one user to one instance > via cokkie
 
       Microservices architectures - Multiple Target Groups
-      1) By configiruing Rules for multiple listener we can identify which request
-         should be sent to which target group
-      2) Rules are executed in the order they are configured   
+         1) By configiruing Rules for multiple listener we can identify which request
+            should be sent to which target group
+         2) Rules are executed in the order they are configured   
+         
+         Listener Rules - Possibilites, based on
+         1) path          : micro/a to targetGroupA and micro/b to targetGroupB
+         2) host          : a.micro to targetGroupA and b.micro to targetGroupB
+         3) HTTP headers  : Authorization header and methods (POST, GET, etc) 
+         4) Query Strings : example(/micro?taget=a)
+         5) IP Address    : all requests from a range of IP address to targetGroupA
+
+         Architecture Summary
+         1) Highly decouple architecture
+         2) Load balancer can have multiple listeners (protocol + port combinations)
+         3) Each listener can have multiple rules each routing to a target group based on request content
+
+
+      Auto Scaling Groups (ASG)
+         Target Groups are configured with a static set of instances.
+         How do you scale out and scale in automatically?
+         > Confgure a Auto Scaling Group
+            1) Maintain configured number of instances (using periodic health checks)
+            2) Auto scale to adjust to load (scale-in and scale-out based on auto scaling policies)
+         > ASG can launch On-Demand Instances, Spot Instances, or both
+            1) Best Practice: USe Launch Template
+         > An ELB can distribute load to active instances, as ASG expands and contracts based on the load.
+
+
 
 
 
