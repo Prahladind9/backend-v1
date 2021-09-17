@@ -268,6 +268,14 @@ General Commands
             > Simple Scaling
             > Step Scaling   
 
+      Network Load Balancer
+         1) Functions at the Transport Layer - Layer 4 (Protocols TCP, TLS and UDP)
+         2) For hught performance use cases (millions of request per second)
+         3) Can be assigned a Static IP/Elastic IP
+         4) Can load balance between
+            > EC2 instances
+            > Containerized applications (Amazon ECS)
+            > Web applications (using IP addresses)
 
 
 
