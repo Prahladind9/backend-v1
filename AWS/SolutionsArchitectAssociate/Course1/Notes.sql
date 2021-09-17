@@ -240,6 +240,15 @@ General Commands
          2) Load balancer can have multiple listeners (protocol + port combinations)
          3) Each listener can have multiple rules each routing to a target group based on request content
 
+      Auto Scaling Componenets   
+      1) Launch Configuration/Template
+         > EC2 instance size and AMI
+      2) Auto Scaling Group
+         > Reference to Launch Configuration/Template
+         > Min, max and desired size of ASG
+         > EC2 health checks by default. Optionally enable ELB health checks.
+         > Auto Scaling Policies (CPU usage based scaling)
+
 
       Auto Scaling Groups (ASG)
          Target Groups are configured with a static set of instances.
@@ -250,9 +259,14 @@ General Commands
          > ASG can launch On-Demand Instances, Spot Instances, or both
             1) Best Practice: USe Launch Template
          > An ELB can distribute load to active instances, as ASG expands and contracts based on the load.
-
-
-
+      UseCases
+         1) Maintain current instance levels at all times
+         2) Scale Manually
+         3) Scale based on a schedule
+         4) Scale based on demand (Dynamic)
+            > Target tracking scaling (CPU based)
+            > Simple Scaling
+            > Step Scaling   
 
 
 
