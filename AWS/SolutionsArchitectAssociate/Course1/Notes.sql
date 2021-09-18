@@ -277,6 +277,8 @@ General Commands
             > Containerized applications (Amazon ECS)
             > Web applications (using IP addresses)
 
+      Designing Solutions with EC2 and ELB for AWS Architects             
+
 
 
 
