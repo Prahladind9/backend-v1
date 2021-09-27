@@ -2,7 +2,8 @@ package edu.prahlad.codeWithMosh2.part2.trees;
 
 public class Tree {
 
-    private class Node {
+    //PackagePrivate, classPrivate is the best one
+     class Node {
         public int value;
         public Node leftChild;
         public Node rightChild;
