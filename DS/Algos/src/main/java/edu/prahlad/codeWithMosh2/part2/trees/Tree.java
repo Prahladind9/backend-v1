@@ -76,9 +76,13 @@ public class Tree {
     }
 
     public static void main(String[] args) {
-        //root(Node)
-        //Node(value, leftChild, rightChild)
-        //insert(value)
-        //find(value):boolean
+
+        Tree tree = new Tree();
+        System.out.println(tree);
+        System.out.println(tree.find(10));
+        System.out.println(tree.find(40));
+        System.out.println(tree.find(25));
+
+
     }
 }
