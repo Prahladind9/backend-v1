@@ -13,7 +13,7 @@ public class TreeDFS extends Tree{
     private void traversePreOrder(Node root){
         if(baseCondition(root)) return;
 
-        System.out.println(root.value);
+        System.out.print(root.value + ", ");
         traversePreOrder(root.leftChild);
         traversePreOrder(root.rightChild);
     }
@@ -25,7 +25,7 @@ public class TreeDFS extends Tree{
     private void traverseInOrder(Node root){
         if(baseCondition(root)) return;
         traverseInOrder(root.leftChild);
-        System.out.println(root.value);
+        System.out.print(root.value + ", ");
         traverseInOrder(root.rightChild);
     }
 
@@ -37,7 +37,7 @@ public class TreeDFS extends Tree{
         if(baseCondition(root)) return;
 
         traversePostOrder(root.rightChild);
-        System.out.println(root.value);
+        System.out.print(root.value + ", ");
         traversePostOrder(root.leftChild);
     }
 
@@ -46,8 +46,11 @@ public class TreeDFS extends Tree{
         TreeDFS tree = new TreeDFS();
         tree.getInitializedTree(tree);
 
+        System.out.println("traversePreOrder");
         tree.traversePreOrder();
+        System.out.println("\ntraverseInOrder");
         tree.traverseInOrder();
+        System.out.println("\ntraversePostOrder");
         tree.traversePostOrder();
 
     }
