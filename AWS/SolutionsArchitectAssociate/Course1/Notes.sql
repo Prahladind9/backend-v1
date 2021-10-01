@@ -279,6 +279,12 @@ General Commands
 
       Designing Solutions with EC2 and ELB for AWS Architects             
 
-
+(4) Availability
+      1) Are the applications available when the users need them?
+      2) % if time an application provides the operations expected of it.
+      3) Example 
+         1) 99.999 > five 9s > 26 seconds > per month downtime > achieving this is tough
+         2) 99.99% > four 9s > 4 and half minutes  > per month > most online apps aim this
+         
 
 
