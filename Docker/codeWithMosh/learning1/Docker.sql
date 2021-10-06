@@ -14,3 +14,4 @@ A kernel manages applications and hardware resources
 
 Commands:
 docker version
+mkdir hello-world
