@@ -72,7 +72,7 @@ General Commands
    curl -s http://169.254.169.254/latest/dynamic/instance-identity/document > /var/www/html/index.html
 
    Security Groups
-      1) Virual firewall to control incoming and outgoing traffic to/from
+      1) Virtual firewall to control incoming and outgoing traffic to/from
          AWS resources (EC2 instances, databases etc)
       2) Provides additional layers of security - Defense in Depth
 
@@ -162,7 +162,7 @@ General Commands
             Create an Custom AMI from the EC2 instance and use it for launching new instances
 
          10) Ive stopped my EC2 insatnce. Will I be billed for it?
-             ZERO charge for a stopped instance (If you have storage attahced, you have to pay for storage)
+             ZERO charge for a stopped instance (If you have storage attached, you have to pay for storage)
 
       VPC - Virtual Private Cloud > Subnet > availability regions
 
@@ -270,7 +270,7 @@ General Commands
 
       Network Load Balancer
          1) Functions at the Transport Layer - Layer 4 (Protocols TCP, TLS and UDP)
-         2) For hught performance use cases (millions of request per second)
+         2) For high performance use cases (millions of request per second)
          3) Can be assigned a Static IP/Elastic IP
          4) Can load balance between
             > EC2 instances
@@ -285,6 +285,124 @@ General Commands
       3) Example 
          1) 99.999 > five 9s > 26 seconds > per month downtime > achieving this is tough
          2) 99.99% > four 9s > 4 and half minutes  > per month > most online apps aim this
-         
+      4) Basics
+         1) Deploy to multiple AZs
+         2) Use Cross Zone Load Balancing   
+         3) Deploy to multiple regions
+         4) Configure proper EC2 and ELB health checks
+
+(5) Scalability
+      A system is handling 1000 transactions per second.
+      Load is expected to increase 10 times in the next month
+      1) Can we handle a growth in users, traffic, or data size without any drop in performance?
+      2) Does ability to serve more growth increase proportionally with resource?
+
+   1) Vertical Scaling
+      1) Deploying application/database to bigger instance (small to Xlarge)
+         > A larger hard drive
+         > A faster CPU
+         > More RAM, CPU, I/O, or networking capabilities
+      2) There are limits to vertical scaling
+         > for example no of CPUs for the given instance
+         > can be expesive
+      3) Increasing EC2 instance size   
+         > t2.micro to t2.small or
+         > t2.small to t2.2xlarge ...
+
+   2) Horizontal Scaling
+      1) Deploying multiple instances of application/database
+      2) increases availability
+      3) Distribute EC2 instances
+         > in a single AZ
+         > in multiple AZs in single region
+         > in multiple AZs in multiple regions
+      4) Auto scale: Auto Scaling Group
+      5) Distribute Load: Elastic Load Balancer, Route53 (for AZs in multiple regions)
+
+   3) EC2 Instance Families
+      1) m(m4, m5, m6): General Purpose
+         > Balance of compute, memory and networking
+         > UseCase: Web servers and code repositories
+      2) t(t2, t3, t3a): Burstable performance instances
+         > accumulate CPU credits when inactive
+         > Unlimited burstable mode at additional cost (new feature)
+           * t2, Unlimited Mode is disabled by default
+           * t3, Unlimited Mode is enabled by default 
+         > UseCase: Workloads with spikes
+           Test environmentsWeb servers, developer environments and small dbs
+
+      3) c(c4, c5, c5n): Compute optimized
+         > High performance processors
+         > UseCase: Batch processing, 
+           high performance http servers, high performance computing (HPC)
+
+      4) r(r4, r5, r5a, r5n): Memory (RAM) optimized
+         > Memory caches, in-memory databases and real time big data analytics  
+
+      5) i(i3, d2): Storage (I/O) optimized
+         > NoSQL databases and data warehousing
+
+      6) g(g3, g4): GPU optimized
+         > Floating point number calculations, graphics processing, or video compression      
+      
+      7) f(f1): FPGA instances - customizable field programmable gate arrays
+         > Applications needing massively parallel processing power,
+           such as genomics, data analytics, video processing and financial computing
+
+      8) inf(inf1): Machine learning ASIC instance
+         > Machine learning applications such as image recongnition, speech recognition,
+           natural language processing and personalization     
+
+   4) EC2 Tenancy - Shared or Dedicated
+      1) Shared Tenancy (Default)
+         > Single host machine can have instances from multiple customers
+
+      2) EC2 Dedicated Instances
+         > in case of country-region based regulatory norms
+         > Virtualized instances on hardware dedicated to one customer
+         > You do NOT have visibility into the hardware of underlying host
+
+      3) EC2 Dedicated Hosts
+         > Physical servers dedicated to one customer
+         > You have visibility into the hardware of underlying host (sockets and physical cores)
+         > UseCase: Regulatory needs or server-bound software licenses like Windows Server, SQL Server
+
+   (6) EC2 Placement Groups
+         1) Certain usecases need control over placement of a group of EC2 instances
+            > Low latency network connection
+            > High availability
+               
+         2) You do not want EC2 to decide that for you!
+         3) Go for EC2 placement groups!
+            1) Cluster (low network latency) - 10Gbps or 25Gbps
+                  > Big Data or High Performance Computing needing extreme low latency 
+            2) Spread (avoid simultaneous failures)
+                  > Each rack has its own network and power source
+                  > Avoid simultaneous failures of EC2 instances
+                  
+            3) Partition (multiple paritions with low network latency)
+                  > In large distributed and replicate workloads (HDFS, HBase, and Casssandra)
+                  > Maximum of 7 running instances per AZ in a spread placement group 
+
+         4) Insufficient capacity error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
