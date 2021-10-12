@@ -38,29 +38,55 @@ public class AVLTree {
             root.leftChild = insert(root.leftChild, value);
         }
 
-        root.height = Math.max(
-                height(root.leftChild),
-                height(root.rightChild)) + 1;
+        setHeight(root);
+        return balance(root);
 
+    }
 
-        balance(root);
+    private AVLNode balance(AVLNode root){
+        if(isLeftHeavy(root)){
+            if(balanceFactor(root.leftChild) < 0){
+                root.leftChild = rotateLeft(root.leftChild);
+            }
+           return rotateRight(root);
+        }
+        else if(isRightHeavy(root)) {
+            if(balanceFactor(root.rightChild) > 0){
+                root.rightChild = rotateRight(root.rightChild);
+            }
+            return rotateLeft(root);
+        }
 
         return root;
     }
 
-    void balance(AVLNode root){
-        if(isLeftHeavy(root)){
-            if(balanceFactor(root.leftChild) < 0){
-                System.out.println("Left Rotate " + root.leftChild.value);
-            }
-            System.out.println("RightRotate " + root.value);
-        }
-        else if(isRightHeavy(root)) {
-            if(balanceFactor(root.rightChild) > 0){
-                System.out.println("Right Rotate "+ root.rightChild.value);
-            }
-            System.out.println("LeftRotate "+root.value );
-        }
+    private AVLNode rotateLeft(AVLNode root){
+        var newRoot = root.rightChild;
+
+        root.rightChild = newRoot.leftChild;
+        newRoot.leftChild = root;
+
+        setHeight(root);
+        setHeight(newRoot);
+
+        return newRoot;
+    }
+
+    private AVLNode rotateRight(AVLNode root){
+        var newRoot = root.leftChild;
+        root.leftChild = newRoot.rightChild;
+        newRoot.rightChild = root;
+
+        setHeight(root);
+        setHeight(newRoot);
+
+        return newRoot;
+    }
+
+    private void setHeight(AVLNode node) {
+        node.height = Math.max(
+                height(node.leftChild),
+                height(node.rightChild)) + 1;
     }
 
     private int height(AVLNode node) {
