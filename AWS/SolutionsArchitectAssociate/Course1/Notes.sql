@@ -367,7 +367,7 @@ General Commands
          > You have visibility into the hardware of underlying host (sockets and physical cores)
          > UseCase: Regulatory needs or server-bound software licenses like Windows Server, SQL Server
 
-   (6) EC2 Placement Groups
+   5) EC2 Placement Groups
          1) Certain usecases need control over placement of a group of EC2 instances
             > Low latency network connection
             > High availability
@@ -386,9 +386,25 @@ General Commands
 
          4) Insufficient capacity error
 
+   6) Elastic Network Interface (ENI)
+         1) Logical networking component that represents a virtual network card.
+         2) Support IPv4 (110.120.120.145) and IPv6 (2001:odb8:85a3:0000:0000:8a2e:0370:7334)
+         3) Each ENI can provide:
+            a) One primary and multiple secondary private IP address
+            b) One public address
+            c) One Elastic IP address per private IPv4 address
+            d) One or more security groups
 
-
-
+      Two Types: Primary and Secondary 
+         1) Each EC2 instance is connected to primary network interface (eth0)
+         2) You can create and attach a secondary network interface - eth1
+         3) Allows an instance to be dual homed - present in 2 subnets in a VPC
+         4) Used to create a management network or a low budget high availability solution
+      
+      Terminology:
+         1) Hot attach: Attaching ENI when EC2 instance is running
+         2) Warm attach: Attaching ENI when EC2 instance is stoped
+         3) Cold attach: Attaching ENI at launch time of EC2 instance
 
 
 
