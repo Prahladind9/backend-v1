@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * Q) Given a string, find the length of the longest substring, which has all distinct characters.
+ * TC: O(n)
+ * SC: O(k), where k <= n
  */
 public class NoRepeatSubstring {
     public static int findLength(String str) {
