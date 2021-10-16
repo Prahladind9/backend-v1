@@ -4,8 +4,12 @@ AZ  - Availability Zone
 VPC - Virtual Private Cloud
 ASG - Auto Scaling Groups
 
-(1) Getting started with AWS Virtual Servers - EC2 Service and EC2 Instances
-General Commands
+01 Introduction - AWS Certified Solutions Architect Associate
+02 Getting Started - AWS Certified Solutions Architect Associate
+03 Understanding Regions and Availability Zones
+
+(4) Getting started with AWS Virtual Servers - EC2 Service and EC2 Instances
+   General Commands
         yum means (yellow updater)
         yum update -y
     a)  whoami
@@ -166,12 +170,12 @@ General Commands
 
       VPC - Virtual Private Cloud > Subnet > availability regions
 
-(2) Billing   
-   Stop services or any resource which isnt accessed, check weekly and add alerts
-   SNS - Simple Notification Service
-   Create Alarm using CloudWatch or AWS Budgets
+(5) Take care of Billing in the Cloud
+      Stop services or any resource which isnt accessed, check weekly and add alerts
+      SNS - Simple Notification Service
+      Create Alarm using CloudWatch or AWS Budgets
 
-(3) Load Balancing
+(6) Load Balancing Solutions in AWS - Elastic Load Balancing
    Elastic Load Balancer
    1) Distribute traffic across EC2 instances in one or more Availability Zones in a single region
    2) Managed Service - AWS ensures that it is highly available
@@ -277,139 +281,183 @@ General Commands
             > Containerized applications (Amazon ECS)
             > Web applications (using IP addresses)
 
-      Designing Solutions with EC2 and ELB for AWS Architects             
+                
+(7) Designing Solutions with EC2 and ELB for AWS Architects
+   1) Availability
+         1) Are the applications available when the users need them?
+         2) % if time an application provides the operations expected of it.
+         3) Example 
+            1) 99.999 > five 9s > 26 seconds > per month downtime > achieving this is tough
+            2) 99.99% > four 9s > 4 and half minutes  > per month > most online apps aim this
+         4) Basics
+            1) Deploy to multiple AZs
+            2) Use Cross Zone Load Balancing   
+            3) Deploy to multiple regions
+            4) Configure proper EC2 and ELB health checks
 
-(4) Availability
-      1) Are the applications available when the users need them?
-      2) % if time an application provides the operations expected of it.
-      3) Example 
-         1) 99.999 > five 9s > 26 seconds > per month downtime > achieving this is tough
-         2) 99.99% > four 9s > 4 and half minutes  > per month > most online apps aim this
-      4) Basics
-         1) Deploy to multiple AZs
-         2) Use Cross Zone Load Balancing   
-         3) Deploy to multiple regions
-         4) Configure proper EC2 and ELB health checks
+   2) Scalability
+         A system is handling 1000 transactions per second.
+         Load is expected to increase 10 times in the next month
+         1) Can we handle a growth in users, traffic, or data size without any drop in performance?
+         2) Does ability to serve more growth increase proportionally with resource?
 
-(5) Scalability
-      A system is handling 1000 transactions per second.
-      Load is expected to increase 10 times in the next month
-      1) Can we handle a growth in users, traffic, or data size without any drop in performance?
-      2) Does ability to serve more growth increase proportionally with resource?
+      1) Vertical Scaling
+         1) Deploying application/database to bigger instance (small to Xlarge)
+            > A larger hard drive
+            > A faster CPU
+            > More RAM, CPU, I/O, or networking capabilities
+         2) There are limits to vertical scaling
+            > for example no of CPUs for the given instance
+            > can be expesive
+         3) Increasing EC2 instance size   
+            > t2.micro to t2.small or
+            > t2.small to t2.2xlarge ...
 
-   1) Vertical Scaling
-      1) Deploying application/database to bigger instance (small to Xlarge)
-         > A larger hard drive
-         > A faster CPU
-         > More RAM, CPU, I/O, or networking capabilities
-      2) There are limits to vertical scaling
-         > for example no of CPUs for the given instance
-         > can be expesive
-      3) Increasing EC2 instance size   
-         > t2.micro to t2.small or
-         > t2.small to t2.2xlarge ...
+      2) Horizontal Scaling
+         1) Deploying multiple instances of application/database
+         2) increases availability
+         3) Distribute EC2 instances
+            > in a single AZ
+            > in multiple AZs in single region
+            > in multiple AZs in multiple regions
+         4) Auto scale: Auto Scaling Group
+         5) Distribute Load: Elastic Load Balancer, Route53 (for AZs in multiple regions)
 
-   2) Horizontal Scaling
-      1) Deploying multiple instances of application/database
-      2) increases availability
-      3) Distribute EC2 instances
-         > in a single AZ
-         > in multiple AZs in single region
-         > in multiple AZs in multiple regions
-      4) Auto scale: Auto Scaling Group
-      5) Distribute Load: Elastic Load Balancer, Route53 (for AZs in multiple regions)
+      3) EC2 Instance Families
+         1) m(m4, m5, m6): General Purpose
+            > Balance of compute, memory and networking
+            > UseCase: Web servers and code repositories
+         2) t(t2, t3, t3a): Burstable performance instances
+            > accumulate CPU credits when inactive
+            > Unlimited burstable mode at additional cost (new feature)
+              * t2, Unlimited Mode is disabled by default
+              * t3, Unlimited Mode is enabled by default 
+            > UseCase: Workloads with spikes
+              Test environmentsWeb servers, developer environments and small dbs
 
-   3) EC2 Instance Families
-      1) m(m4, m5, m6): General Purpose
-         > Balance of compute, memory and networking
-         > UseCase: Web servers and code repositories
-      2) t(t2, t3, t3a): Burstable performance instances
-         > accumulate CPU credits when inactive
-         > Unlimited burstable mode at additional cost (new feature)
-           * t2, Unlimited Mode is disabled by default
-           * t3, Unlimited Mode is enabled by default 
-         > UseCase: Workloads with spikes
-           Test environmentsWeb servers, developer environments and small dbs
+         3) c(c4, c5, c5n): Compute optimized
+            > High performance processors
+            > UseCase: Batch processing, 
+              high performance http servers, high performance computing (HPC)
 
-      3) c(c4, c5, c5n): Compute optimized
-         > High performance processors
-         > UseCase: Batch processing, 
-           high performance http servers, high performance computing (HPC)
+         4) r(r4, r5, r5a, r5n): Memory (RAM) optimized
+            > Memory caches, in-memory databases and real time big data analytics  
 
-      4) r(r4, r5, r5a, r5n): Memory (RAM) optimized
-         > Memory caches, in-memory databases and real time big data analytics  
+         5) i(i3, d2): Storage (I/O) optimized
+            > NoSQL databases and data warehousing
 
-      5) i(i3, d2): Storage (I/O) optimized
-         > NoSQL databases and data warehousing
+         6) g(g3, g4): GPU optimized
+            > Floating point number calculations, graphics processing, or video compression      
+         
+         7) f(f1): FPGA instances - customizable field programmable gate arrays
+            > Applications needing massively parallel processing power,
+              such as genomics, data analytics, video processing and financial computing
 
-      6) g(g3, g4): GPU optimized
-         > Floating point number calculations, graphics processing, or video compression      
-      
-      7) f(f1): FPGA instances - customizable field programmable gate arrays
-         > Applications needing massively parallel processing power,
-           such as genomics, data analytics, video processing and financial computing
+         8) inf(inf1): Machine learning ASIC instance
+            > Machine learning applications such as image recongnition, speech recognition,
+              natural language processing and personalization     
 
-      8) inf(inf1): Machine learning ASIC instance
-         > Machine learning applications such as image recongnition, speech recognition,
-           natural language processing and personalization     
+      4) EC2 Tenancy - Shared or Dedicated
+         1) Shared Tenancy (Default)
+            > Single host machine can have instances from multiple customers
 
-   4) EC2 Tenancy - Shared or Dedicated
-      1) Shared Tenancy (Default)
-         > Single host machine can have instances from multiple customers
+         2) EC2 Dedicated Instances
+            > in case of country-region based regulatory norms
+            > Virtualized instances on hardware dedicated to one customer
+            > You do NOT have visibility into the hardware of underlying host
 
-      2) EC2 Dedicated Instances
-         > in case of country-region based regulatory norms
-         > Virtualized instances on hardware dedicated to one customer
-         > You do NOT have visibility into the hardware of underlying host
+         3) EC2 Dedicated Hosts
+            > Physical servers dedicated to one customer
+            > You have visibility into the hardware of underlying host (sockets and physical cores)
+            > UseCase: Regulatory needs or server-bound software licenses like Windows Server, SQL Server
 
-      3) EC2 Dedicated Hosts
-         > Physical servers dedicated to one customer
-         > You have visibility into the hardware of underlying host (sockets and physical cores)
-         > UseCase: Regulatory needs or server-bound software licenses like Windows Server, SQL Server
-
-   5) EC2 Placement Groups
-         1) Certain usecases need control over placement of a group of EC2 instances
-            > Low latency network connection
-            > High availability
-               
-         2) You do not want EC2 to decide that for you!
-         3) Go for EC2 placement groups!
-            1) Cluster (low network latency) - 10Gbps or 25Gbps
-                  > Big Data or High Performance Computing needing extreme low latency 
-            2) Spread (avoid simultaneous failures)
-                  > Each rack has its own network and power source
-                  > Avoid simultaneous failures of EC2 instances
+      5) EC2 Placement Groups
+            1) Certain usecases need control over placement of a group of EC2 instances
+               > Low latency network connection
+               > High availability
                   
-            3) Partition (multiple paritions with low network latency)
-                  > In large distributed and replicate workloads (HDFS, HBase, and Casssandra)
-                  > Maximum of 7 running instances per AZ in a spread placement group 
+            2) You do not want EC2 to decide that for you!
+            3) Go for EC2 placement groups!
+               1) Cluster (low network latency) - 10Gbps or 25Gbps
+                     > Big Data or High Performance Computing needing extreme low latency 
+               2) Spread (avoid simultaneous failures)
+                     > Each rack has its own network and power source
+                     > Avoid simultaneous failures of EC2 instances
+                     
+               3) Partition (multiple paritions with low network latency)
+                     > In large distributed and replicate workloads (HDFS, HBase, and Casssandra)
+                     > Maximum of 7 running instances per AZ in a spread placement group 
 
-         4) Insufficient capacity error
+            4) Insufficient capacity error
 
-   6) Elastic Network Interface (ENI)
-         1) Logical networking component that represents a virtual network card.
-         2) Support IPv4 (110.120.120.145) and IPv6 (2001:odb8:85a3:0000:0000:8a2e:0370:7334)
-         3) Each ENI can provide:
-            a) One primary and multiple secondary private IP address
-            b) One public address
-            c) One Elastic IP address per private IPv4 address
-            d) One or more security groups
+      6) Elastic Network Interface (ENI)
+            1) Logical networking component that represents a virtual network card.
+            2) Support IPv4 (110.120.120.145) and IPv6 (2001:odb8:85a3:0000:0000:8a2e:0370:7334)
+            3) Each ENI can provide:
+               a) One primary and multiple secondary private IP address
+               b) One public address
+               c) One Elastic IP address per private IPv4 address
+               d) One or more security groups
 
-      Two Types: Primary and Secondary 
-         1) Each EC2 instance is connected to primary network interface (eth0)
-         2) You can create and attach a secondary network interface - eth1
-         3) Allows an instance to be dual homed - present in 2 subnets in a VPC
-         4) Used to create a management network or a low budget high availability solution
+         Two Types: Primary and Secondary 
+            1) Each EC2 instance is connected to primary network interface (eth0)
+            2) You can create and attach a secondary network interface - eth1
+            3) Allows an instance to be dual homed - present in 2 subnets in a VPC
+            4) Used to create a management network or a low budget high availability solution
+         
+         Terminology:
+            1) Hot attach: Attaching ENI when EC2 instance is running
+            2) Warm attach: Attaching ENI when EC2 instance is stoped
+            3) Cold attach: Attaching ENI at launch time of EC2 instance
+
+      6) Cloud Watch
+         1) Amazon CloudWatch used to monitor EC2 instances
+         2) (Free) Basic Monitoring (every 5 mins)
+         3) ($$$$) EC2 Detailed Monitoring, can be enabled for detailed metrics every 1 min 
+         4) EC2 System Level metrics (CPI, Disk, Network) are tracked
       
-      Terminology:
-         1) Hot attach: Attaching ENI when EC2 instance is running
-         2) Warm attach: Attaching ENI when EC2 instance is stoped
-         3) Cold attach: Attaching ENI at launch time of EC2 instance
+      7) EC2 Pricing Models Overview
+         1) EC2 on-Demand
+         2) EC2 Spot Instances
+            a) Spot Block (specific duration 1 or 2 or 6 .. hrs)
+            b) Spot Fleet (range of instance types)
+         3) EC2 Reserved Instances
+            a) Reserve EC2 instance ahead of time!
+            b) three types > standard, convertible, scheduled
+            c) payment methods 
+               1) No Upfront: $0 upfornt. Pay monthly installement
+               2) Partial Upfront: $XYZ upfornt. Pay monthly installement
+               3) All Upfront: Full amount upfornt. $0 monthly installement
+               4) Cost wise: Earlier you pay, more the discount.
+                  All Upfront < Partial Upfront < No Upfront (5% diff)
+            Summary
+               1) Standard: Commit for a EC2 platform and instance family
+                            for 1 year or 3 year (upto 75% off)
+               2) Convertible: Standard + flexibility to change EC2 & instance (54% off)
+               3) Scheduled: Reserve for specific time period in a day (5-10% off)
+               4) You can sell reserved instances on the 
+                  AWS Reserved instancce marketplace if you do not want to use your reservation
 
 
-(6)
-(7)
-(8)
+** AWS Managed Service Offerings
+   1) Elastic Load Balancing - Distribute incoming traffic across multiple targets
+   2) AWS Elastic Beanstalk - Run and Manage Web applications
+   3) AWS Elastic Container Service (ECS) - Container orchestration on AWS
+   4) AWS Fargate - Serverless compute for containers  
+   5) Amazon Elastic Kubernetes Service (EKS) - Run Kubernetes on AWS
+   6) Amazon RDS - Relational Databases - MySQL, Oracle, SQL Server etc
+
+(8) Getting started with AWS Elastic Beanstalk
+      1) Simplest way to deploy and scale your web application in AWS
+         Provies end-to-end web application management
+      2) No usage charges - Pay only for AWS resources you provision
+      3) Features:
+         Automatic load balancing
+         Auto Scaling
+         Managed platform updates
+         Application health monitoring
+
+
 (9) Container Solutions in AWS - ECS Fargate and EKS
 
 
