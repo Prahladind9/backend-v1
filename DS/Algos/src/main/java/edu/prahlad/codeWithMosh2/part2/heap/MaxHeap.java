@@ -43,6 +43,8 @@ public class MaxHeap {
     }
 
     public static int getKthLargest(int[] array, int k){
+        if(k < 1 || k > array.length) throw new IllegalArgumentException();
+
         var heap = new Heap();
         for (var arr: array)
             heap.insert(arr);
@@ -63,6 +65,6 @@ public class MaxHeap {
 
 
         numbers = new int[]{5, 3, 8, 4, 1, 2};
-        System.out.println(getKthLargest(numbers, 2));
+        System.out.println(getKthLargest(numbers, 1));
     }
 }
