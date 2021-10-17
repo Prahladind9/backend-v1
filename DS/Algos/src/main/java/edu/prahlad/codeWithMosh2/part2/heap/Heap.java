@@ -107,6 +107,12 @@ public class Heap {
         return size == items.length;
     }
 
+    public int max(){
+        if(isEmpty()) throw new IllegalStateException();
+
+        return items[0];
+    }
+
     @Override
     public String toString() {
         return "Heap{" +
