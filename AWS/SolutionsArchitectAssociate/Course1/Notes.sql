@@ -4,6 +4,8 @@ AZ  - Availability Zone
 VPC - Virtual Private Cloud
 ASG - Auto Scaling Groups
 
+"A Purpose & commitment to learn the technology"
+
 01 Introduction - AWS Certified Solutions Architect Associate
 02 Getting Started - AWS Certified Solutions Architect Associate
 03 Understanding Regions and Availability Zones
@@ -417,11 +419,11 @@ ASG - Auto Scaling Groups
          4) EC2 System Level metrics (CPI, Disk, Network) are tracked
       
       7) EC2 Pricing Models Overview
-         1) EC2 on-Demand
-         2) EC2 Spot Instances
+         1) EC2 on-Demand (Spiky workloads)
+         2) EC2 Spot Instances (Cost sensitive, Fault tolerant, Non immediate workloads)
             a) Spot Block (specific duration 1 or 2 or 6 .. hrs)
             b) Spot Fleet (range of instance types)
-         3) EC2 Reserved Instances
+         3) EC2 Reserved Instances (Constant workloads that run all the time)
             a) Reserve EC2 instance ahead of time!
             b) three types > standard, convertible, scheduled
             c) payment methods 
@@ -430,13 +432,18 @@ ASG - Auto Scaling Groups
                3) All Upfront: Full amount upfornt. $0 monthly installement
                4) Cost wise: Earlier you pay, more the discount.
                   All Upfront < Partial Upfront < No Upfront (5% diff)
-            Summary
+             Summary
                1) Standard: Commit for a EC2 platform and instance family
                             for 1 year or 3 year (upto 75% off)
                2) Convertible: Standard + flexibility to change EC2 & instance (54% off)
                3) Scheduled: Reserve for specific time period in a day (5-10% off)
                4) You can sell reserved instances on the 
                   AWS Reserved instancce marketplace if you do not want to use your reservation
+
+         4) Savings Plans 
+            Constant workloads that run all the time and you want more flexibility         
+        
+         https://instances.vantage.sh/
 
 
 ** AWS Managed Service Offerings
@@ -459,8 +466,19 @@ ASG - Auto Scaling Groups
 
 
 (9) Container Solutions in AWS - ECS Fargate and EKS
+      1) Microservices architectures - build small focused microservices
+      2) Flexibility to innovate & build applications in different programming languages
+         but deployments become complex
 
-
+(10) Architect Serverless Solutions with AWS Lambdas and API Gateway
+      1) Serverless and Lambdas
+      2) API Gateway
+         1) API Lifecycle Management for RESTful APIs and WebSocket APIs
+         2) Run multiple versions of the same API
+         3) Rate Limits, throttling and fine-grained access permissions 
+            using API Keys for Thrid-Party Developers
+         4) Authorization Integration 
+            AWS IAM, Cognito, Lambda authorizer
 
 
 
