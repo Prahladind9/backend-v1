@@ -480,6 +480,37 @@ ASG - Auto Scaling Groups
          4) Authorization Integration 
             AWS IAM, Cognito, Lambda authorizer
 
+(11) Architect Your Private Networking Solutions in AWS with VPC and Subnet
+      1) CIDR (Classless Inter-Domain Routing) Blocks
+         1) range if addresses that resources in  a network can have
+         2) www.cidr.xyz
+         3) How many addresses does 69.208.0.0/26 represent?
+            2 to the power ((32-26)=6) => 64 addresses from 69.208.0.0 to 69.208.0.63
+      2) Run APIs via Crontab and trace using X-Ray
+      3) An Internet Gateway enables internet communication for subnets
+      4) Any subnet which has a route to an internet gateway is called a public subnet
+      5) Any subnet which doesn not have route to an internet gateway is called a private subnet      
+      6) Network Address Translation (NAT) Instance and Gateway
+         1) Prefer NAT Gateway over NAT Instance
+         2) NAT Gateway supports IPv4 Only
+         3) Use Egress-Only Internet Gateway for IPv6
+      7) NACL - Network Access Control List
+
+(12) Getting Started with Amazon S3 - Object Storage in AWS
+      1) S3 is global service, buckets are created in specific AWS region
+      2) Objects are stored in buckets, whose names are globally unique & 5TB max object size 
+      3) key value pair
+      4) Versionsing - protects against accidental deletion, 
+         is optional, once enabled can only be suspended - the versions objects cannot be deleted
+      5) Resource-based policies - Bucket Policies
+         can grant cross-account and global access
+      6) Object Lock > write-once-read-many > can only be enabled during object creation     
+      7) Tags > key-value pairs
+      8) Lifecycle policies
+      9) Transfer acceleration
+     10) Requester pays
+     11) Event Notifications
+
 
 
 
