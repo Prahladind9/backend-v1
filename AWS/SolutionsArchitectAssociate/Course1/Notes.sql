@@ -510,6 +510,28 @@ ASG - Auto Scaling Groups
       9) Transfer acceleration
      10) Requester pays
      11) Event Notifications
+     12) Lifecycle Rules
+     13) Storage Class
+     14) Encryption 
+     15) Object Access Control List (ACL) 
+     16) Replication (Versionsing should be enabled on both source & destination - in same or different regions)
+     17) S3 Eventual Consistency
+     18) Presigned URL
+     19) Access Points
+     20) Security 
+     21) Cost
+         1) Cost of Storage per GB
+         2) Retrieval Charge per GB
+         3) Monlthly tiering fee (only for Intelligent Tiering) 
+         4) Data transfer fee
+         5) Free of cost
+            a) into s3
+            b) from s3 to Amazon CloudFront 
+            c) from s3 to services in same region
+     22) Performance (Multipart Upload API (file size > 100MB, for > 4GB mandatory)
+     23) Features
+     24) S3 Glacier
+
 
 
 
