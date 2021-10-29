@@ -557,6 +557,13 @@ ASG - Auto Scaling Groups
       3) Key Management Service (KMS), Envelop Encryption, shared
       4) Clould Hardware Security Module (HSM), dedicated single-tenant 
 
+(15) Block Storage Solutions in AWS - Elastic Block Storage EBS and Instance Store
+      1) Block Storage (Amazon EBS)
+         a) Direct-attached storage - Similar to a hard disk
+         b) Storage Area Network (SAN) - High speed network
+         c) One virtual server at a time
+      2) File Storage (Amazon EFS, FSx) - multiple virtual servers at a time
+      3) RAID - 0, 1
 
 
 
