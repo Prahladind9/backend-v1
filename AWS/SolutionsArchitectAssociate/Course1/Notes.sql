@@ -565,6 +565,9 @@ ASG - Auto Scaling Groups
       2) File Storage (Amazon EFS, FSx) - multiple virtual servers at a time
       3) RAID - 0, 1
 
+(16) File Storage Solutions in AWS - EFS and FSx
+(17) Getting Started with AWS Storage Gateway 
+     Hybrid Storage File, Tape and Volume - Cached & Stored
 
 
 
