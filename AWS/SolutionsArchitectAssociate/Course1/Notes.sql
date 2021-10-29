@@ -532,6 +532,31 @@ ASG - Auto Scaling Groups
      23) Features
      24) S3 Glacier
 
+(13) Getting Started with IAM - Identity and Access Management in AWS
+      1) Authentication (is it the right user?)
+      2) Authorization (do they have the right access?)
+      3) Identities can be 
+         a) AWS users or 
+         b) Federated users (externally authenticated users)
+      4) AccessKey - instance connect via command line - aws configure (not recommended)
+      5) permission via role
+      6) IAM Cross Account Access using Roles (Policy: SecureTokenService (STS) & switch role)
+      7) Federation with IAM role (Corporate Directory: SAML 2.0)
+      8) Web Identity Federation (OpenID: facebook, google ...) Amazon Cognito
+      9) Identity-based and Resource-based policies
+     10) Password Policy, 2 Access Keys
+         IAM roles is NOT associated with long-term credentials or IAM User
+         Enable MultiFactorAuthentication (MFA) - Hardware or virtual device
+
+(14) Data Encryption Solutions in AWS - KMS and Cloud HSM
+      1) Data States: Data at rest, in motion, in use
+      2) Encryption
+         1) First law of security: Defense in Depth   
+         2) Symmetric Key Encryption
+         3) Asymmetric Key Encryption (Public & Private Key also called Public Key Cryptography)
+      3) Key Management Service (KMS), Envelop Encryption, shared
+      4) Clould Hardware Security Module (HSM), dedicated single-tenant 
+
 
 
 
