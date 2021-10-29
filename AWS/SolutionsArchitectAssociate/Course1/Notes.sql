@@ -568,6 +568,42 @@ ASG - Auto Scaling Groups
 (16) File Storage Solutions in AWS - EFS and FSx
 (17) Getting Started with AWS Storage Gateway 
      Hybrid Storage File, Tape and Volume - Cached & Stored
+(18) Getting Started with Databases
+     1) Databases provide organized and persistent storage for your data.
+     2) Database - challenges like data center crashes, db crashes and db slowness when taking snapshots
+        We can add a standby db (Syncronous replication) & take snapshot
+     3) Concepts behind
+        1) Availability
+           a) Will I be able to access my data now and when I need it?
+           b) four 9s is very good
+        2) Durability
+           a) Will my data be available after 10 or 100 or 1000 years?
+           b) 11 9s is very good 
+        3) RTO (Recovery Time Objective), RPO (Recovery Point Objective)
+        4) Consistency (Strong, Eventual, Read-after-Write)
+        5) Transactions etc
+     4) Factors to conisder
+        1) fixed schema?
+        2) level of transaction properties? (atomicity & consistency)
+        3) latency? (seconds, milli or micro)
+        4) how many transactions? (100s or millions of txns/second)
+        5) how much data stored?
+      5) Relational Database
+         1) OLTP (Online Transaction Processing)
+            a) Applications where large no of users make large no of small transactions
+            b) e-commerce, banking ...
+            c) Amazon RDS, Aurora, PostgreSQL, MariaDB
+            d) Row storage
+         2) OLAP (Online Analytics Processing)
+            a) Applications allowing users to analyze petabytes of data
+            b) Business Intelligent, Analytics systems: decide insurance premiums data from last 100 yrs
+            c) Amazon Redshift, data-warehouse
+            d) Columnar Storage
+      6) Document database
+      7) Key-Value database
+      8) Graph database
+      9) In-memory database
+
 
 
 
