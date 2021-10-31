@@ -604,6 +604,11 @@ ASG - Auto Scaling Groups
       8) Graph database
       9) In-memory database
 
+(19) Architect Relational Databases Solutions in AWS with RDS
+      1) Multi-AZ Deployment (CNAME or DNS name replace) M -> S, syncronous
+      2) Read Replicas, M -> R, asyncronous
+      3) Amazon Aurora
+      4) Scaling, Operations, Security and Encryption, Costs - Key Elements
 
 
 
