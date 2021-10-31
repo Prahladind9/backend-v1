@@ -610,7 +610,8 @@ ASG - Auto Scaling Groups
       3) Amazon Aurora
       4) Scaling, Operations, Security and Encryption, Costs - Key Elements
 
-
+(20) Architect Scalable Database Solutions in AWS with Amazon DynamoDB, DAX(Dynamo BD Accelator)
+ 
 
 
 
