@@ -611,7 +611,10 @@ ASG - Auto Scaling Groups
       4) Scaling, Operations, Security and Encryption, Costs - Key Elements
 
 (20) Architect Scalable Database Solutions in AWS with Amazon DynamoDB, DAX(Dynamo BD Accelator)
- 
+(21) Architect Caching Solutions in AWS with Amazon ElastiCache
+(22) Exploring AWS CloudTrail CloudWatch and Config
+(23) Architect Asynchronous Communication Solutions in AWS with SQS SNS and MQ
+(24) Architect Solutions for Content Distribution with Amazon CloudFront
 
 
 
