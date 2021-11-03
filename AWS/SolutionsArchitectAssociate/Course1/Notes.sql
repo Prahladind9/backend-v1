@@ -616,8 +616,10 @@ ASG - Auto Scaling Groups
 (23) Architect Asynchronous Communication Solutions in AWS with SQS SNS and MQ
 (24) Architect Solutions for Content Distribution with Amazon CloudFront
 (25) Getting Started with Route 53 - AWS Domain Registrar and DNS
-
-
+(26) Switching to Architecture Mode
+(27) Big Data and ETL Solutions in AWS
+(28) Architect Simplified Big Data Solutions with AWS Data Lakes
+(29) Streaming Solutions - Amazon Kinesis Data Streams Data Firehose Analytics
 
 
 
