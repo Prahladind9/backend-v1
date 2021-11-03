@@ -615,6 +615,7 @@ ASG - Auto Scaling Groups
 (22) Exploring AWS CloudTrail CloudWatch and Config
 (23) Architect Asynchronous Communication Solutions in AWS with SQS SNS and MQ
 (24) Architect Solutions for Content Distribution with Amazon CloudFront
+(25) Getting Started with Route 53 - AWS Domain Registrar and DNS
 
 
 
