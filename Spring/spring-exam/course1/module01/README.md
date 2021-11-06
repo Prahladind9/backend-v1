@@ -6,3 +6,11 @@
 5) What is the concept of "container" and what is its lifecycle?
 6) W
 7) Can you describe the lifecycle of Spring Bean in an ApplicationContext?
+8) How are you going to create an ApplicationContext in an integration test?
+9) W
+10) Can you describe: Dependency injection
+    1) using Java configuration?
+    2) using annotations (@Component, @Autowired)
+    3) Component scanning, Stereotypes and Meta-Annotations?
+    4) Scopes for Spring beans?
+    5) What is the default scope?
