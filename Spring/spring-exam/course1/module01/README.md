@@ -4,3 +4,5 @@
    Why are they recommended for Spring beans?
 4) What is meant by "application context"?
 5) What is the concept of "container" and what is its lifecycle?
+6) W
+7) Can you describe the lifecycle of Spring Bean in an ApplicationContext?

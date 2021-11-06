@@ -13,6 +13,7 @@
         <module>q3</module>
         <module>q4</module>
         <module>q5</module>
+        <module>q7</module>
     </modules>
 
     <packaging>pom</packaging>
