@@ -456,7 +456,7 @@ ASG - Auto Scaling Groups
 
 (8) Getting started with AWS Elastic Beanstalk
       1) Simplest way to deploy and scale your web application in AWS
-         Provies end-to-end web application management
+         Provides end-to-end web application management
       2) No usage charges - Pay only for AWS resources you provision
       3) Features:
          Automatic load balancing
@@ -620,7 +620,10 @@ ASG - Auto Scaling Groups
 (27) Big Data and ETL Solutions in AWS
 (28) Architect Simplified Big Data Solutions with AWS Data Lakes
 (29) Streaming Solutions - Amazon Kinesis Data Streams Data Firehose Analytics
-
+(30) More Serverless Solutions in AWS
+(31) Connecting AWS with On Premise Data Centers
+(32) Architect Solutions for Moving Data from On Premises to AWS
+(33) DevOps Solutions in AWS
 
 
 
