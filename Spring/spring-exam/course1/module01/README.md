@@ -4,13 +4,15 @@
    Why are they recommended for Spring beans?
 4) What is meant by "application context"?
 5) What is the concept of "container" and what is its lifecycle?
-6) W
+6) How are you going to create a new instance of an ApplicationContext?
 7) Can you describe the lifecycle of Spring Bean in an ApplicationContext?
 8) How are you going to create an ApplicationContext in an integration test?
-9) W
+9) What is the preferred way to close an application context? Does Spring Boot do this for you?
 10) Can you describe: Dependency injection
     1) using Java configuration?
     2) using annotations (@Component, @Autowired)
     3) Component scanning, Stereotypes and Meta-Annotations?
     4) Scopes for Spring beans?
     5) What is the default scope?
+11) W
+12) What is property source? How would you use @PropertySource?
