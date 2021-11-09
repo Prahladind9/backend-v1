@@ -14,5 +14,9 @@
     3) Component scanning, Stereotypes and Meta-Annotations?
     4) Scopes for Spring beans?
     5) What is the default scope?
-11) W
+11) Are beans lazily or eagerly instantiated by default? How do you alter this behavior?
 12) What is property source? How would you use @PropertySource?
+13) What is BeanFactoryPostProcessor and what is it used for?
+    1) When is it invoked?
+    2) Why would you define a static @Bean method?
+    3) What is a PropertySourcesPlaceholderConfigurer used for?
