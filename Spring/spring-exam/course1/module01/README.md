@@ -20,3 +20,9 @@
     1) When is it invoked?
     2) Why would you define a static @Bean method?
     3) What is a PropertySourcesPlaceholderConfigurer used for?
+14) What is BeanPostProcessor and how is it different to a BeanFactoryPostProcessor?
+    1) What do they do? When are they called?
+    2) What is an initialization method and how is it declared on a Spring bean?
+    3) What is a destroy method, how is it declared and when is it called?
+    4) Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get called? 
+    5) How else can you define an initialization or destruction method for a Spring bean?
