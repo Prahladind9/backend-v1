@@ -17,6 +17,28 @@
         <module>q8</module>
         <module>q10</module>
         <module>q12</module>
+        <module>q13</module>
+        <module>q14</module>
+        <module>q15</module>
+        <module>q16</module>
+        <module>q17</module>
+        <module>q18</module>
+        <module>q19</module>
+        <module>q20</module>
+        <module>q21</module>
+        <module>q22</module>
+        <module>q23</module>
+        <module>q24</module>
+        <module>q25</module>
+        <module>q26</module>
+        <module>q27</module>
+        <module>q28</module>
+        <module>q29</module>
+        <module>q30</module>
+        <module>q31</module>
+        <module>q32</module>
+        <module>q33</module>
+        <module>q34</module>
     </modules>
 
     <packaging>pom</packaging>
