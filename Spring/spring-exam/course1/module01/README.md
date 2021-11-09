@@ -26,3 +26,4 @@
     3) What is a destroy method, how is it declared and when is it called?
     4) Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get called? 
     5) How else can you define an initialization or destruction method for a Spring bean?
+15) What does component-scanning do?
