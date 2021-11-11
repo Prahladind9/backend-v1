@@ -28,3 +28,4 @@
     5) How else can you define an initialization or destruction method for a Spring bean?
 15) What does component-scanning do?
 16) What is the behavior of the annotation @Autowired with regards to field, constructor and method injection?
+17) What do you have to do, if you would like to inject something into a private field? How does this impact testing?
