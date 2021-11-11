@@ -30,3 +30,6 @@
 16) What is the behavior of the annotation @Autowired with regards to field, constructor and method injection?
 17) What do you have to do, if you would like to inject something into a private field? How does this impact testing?
 18) How does the @Qualifier annotation compliment the use of @Autowired?
+19) What is a proxy object and what are the two different types of proxies Spring can create?
+    1) What are the limitations of these proxies (per type)?
+    2) What is the power of a proxy object and where are the disadvantages?
