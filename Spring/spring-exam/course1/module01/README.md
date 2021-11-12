@@ -34,3 +34,4 @@
     1) What are the limitations of these proxies (per type)?
     2) What is the power of a proxy object and where are the disadvantages?
 20) What are the advantages of Java Config? What are the limitations?
+21) What does @Bean annotation do?
