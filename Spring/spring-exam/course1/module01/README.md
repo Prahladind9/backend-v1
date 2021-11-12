@@ -33,3 +33,4 @@
 19) What is a proxy object and what are the two different types of proxies Spring can create?
     1) What are the limitations of these proxies (per type)?
     2) What is the power of a proxy object and where are the disadvantages?
+20) What are the advantages of Java Config? What are the limitations?
