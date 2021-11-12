@@ -36,3 +36,6 @@
 20) What are the advantages of Java Config? What are the limitations?
 21) What does @Bean annotation do?
 22) What is the default bean id if you only use @Bean? How can you override this?
+23) Why are you not allowed to annotate a final class with @Configuration?
+    1) How do @Configuration class support singleton beans?
+    2) Why can't @Bean methods be final either?

@@ -14,8 +14,8 @@ public class Runner {
         Arrays.stream(context.getBeanDefinitionNames())
                 .forEach(System.out::println);
 
-        System.out.println("Fetching Bean by Alias");
-        System.out.println(context.getBean("3rdSpringBean").getClass().getSimpleName());
+        System.out.print("Fetching Bean by Alias: ");
+        System.out.println(context.getBean("thirdSpringBean").getClass().getSimpleName());
 
     }
 }
