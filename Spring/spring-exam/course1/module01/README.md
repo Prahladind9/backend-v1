@@ -41,3 +41,4 @@
     2) Why can't @Bean methods be final either?
 24) How do you configure profiles? What are the possible use cases where they might be useful?
 25) Can you use @Bean together with @Profile?
+26) Can you use @Component together with @Profile?
