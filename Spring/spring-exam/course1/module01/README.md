@@ -39,3 +39,4 @@
 23) Why are you not allowed to annotate a final class with @Configuration?
     1) How do @Configuration class support singleton beans?
     2) Why can't @Bean methods be final either?
+24) How do you configure profiles? What are the possible use cases where they might be useful?
