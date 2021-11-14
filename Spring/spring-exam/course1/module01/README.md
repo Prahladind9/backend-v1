@@ -43,3 +43,4 @@
 25) Can you use @Bean together with @Profile?
 26) Can you use @Component together with @Profile?
 27) How many profiles can you have?
+28) How do you inject scalar/literal values into Spring beans?
