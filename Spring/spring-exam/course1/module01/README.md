@@ -45,3 +45,8 @@
 27) How many profiles can you have?
 28) How do you inject scalar/literal values into Spring beans?
 29) What is @Value used for?
+30) What is Spring Expression Language (SpEL)?
+31) What is Environment abstraction in Spring?
+32) Where can properties in the environment come from?
+33) What can you reference using SpEL?
+34) What is the difference between $ and # in @Value expressions?
