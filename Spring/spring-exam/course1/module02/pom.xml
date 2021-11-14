@@ -6,11 +6,37 @@
 
     <groupId>com.spring.professional</groupId>
     <artifactId>module02</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>q1</module>
+        <module>q2</module>
+        <module>q3</module>
+        <module>q4</module>
+        <module>q5</module>
+        <module>q6</module>
+        <module>q7</module>
+        <module>q8</module>
+        <module>q9</module>
+    </modules>
 
     <properties>
+        <spring.framework.version>5.2.4.RELEASE</spring.framework.version>
+        <project.build.sourceEnconding>UTF-8</project.build.sourceEnconding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring.framework.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
