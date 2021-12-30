@@ -5,8 +5,7 @@ package edu.prahlad.educativeio2.patternsForCodingQuestions.modifiedBinarySearch
  * Though we know that the array is sorted, we don’t know if it’s sorted in ascending or descending order.
  * You should assume that the array can have duplicates.
  *
- *
- * Time: O(logN)
+ * Time: O(log(n))
  * Space: O(1)
  */
 public class OrderAgnosticBinarySearch {
