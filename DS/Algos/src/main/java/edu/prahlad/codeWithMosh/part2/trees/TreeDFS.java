@@ -1,9 +1,23 @@
 package edu.prahlad.codeWithMosh.part2.trees;
 
+import java.util.Stack;
+
 /*
 Can be implemented in Tree class itself, just for better clarity
  */
 public class TreeDFS extends Tree{
+
+    public void transversePreOrderIterative(){
+        Stack<Node> s = new Stack<>();
+        if(this.root != null)  s.push(root);
+        Node current;
+        while (!s.isEmpty()){
+            current = s.pop();
+            System.out.print(current.value + ", ");
+            if(current.rightChild != null) s.push(current.rightChild);
+            if(current.leftChild != null) s.push(current.leftChild);
+        }
+    }
 
     public void transversePreOrder(){
         transversePreOrder(this.root);
@@ -54,6 +68,8 @@ public class TreeDFS extends Tree{
         TreeDFS tree = new TreeDFS();
         tree.getInitializedTree(tree);
         System.out.println(tree);
+        tree.transversePreOrderIterative();
+        System.out.println();
         tree.transversePreOrder();
         System.out.println();
         tree.transverseInOrderAsc();
