@@ -57,15 +57,12 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     private StateMachine<EmployeeState, EmployeeEvent> build(Employee employee){
         StateMachine<EmployeeState, EmployeeEvent> sm = factory.getStateMachine(Long.toString(employee.getId()));
-        sm.stop();
+        sm.stopReactively();
 
         sm.getStateMachineAccessor()
-                .doWithAllRegions(sma -> {
-                    //sma.addStateMachineInterceptor(interceptor);
-                    sma.resetStateMachine(new DefaultStateMachineContext<>(employee.getState(), null, null, null));
-                });
+                .doWithAllRegions(sma -> sma.resetStateMachineReactively(new DefaultStateMachineContext<>(employee.getState(), null, null, null)));
 
-        sm.start();
+        sm.startReactively();
 
         return sm;
     }

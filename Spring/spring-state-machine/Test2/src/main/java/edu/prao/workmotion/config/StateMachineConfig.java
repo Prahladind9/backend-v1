@@ -10,9 +10,8 @@ import org.springframework.statemachine.config.builders.StateMachineConfiguratio
 import org.springframework.statemachine.config.builders.StateMachineStateConfigurer;
 import org.springframework.statemachine.config.builders.StateMachineTransitionConfigurer;
 import org.springframework.statemachine.listener.StateMachineListenerAdapter;
+import org.springframework.statemachine.region.RegionExecutionPolicy;
 import org.springframework.statemachine.state.State;
-
-import java.util.EnumSet;
 
 import static edu.prao.workmotion.entity.EmployeeState.*;
 import static edu.prao.workmotion.entity.EmployeeEvent.*;
@@ -21,6 +20,19 @@ import static edu.prao.workmotion.entity.EmployeeEvent.*;
 @EnableStateMachineFactory
 @Configuration
 public class StateMachineConfig extends StateMachineConfigurerAdapter<EmployeeState, EmployeeEvent> {
+
+    @Override
+    public void configure(StateMachineConfigurationConfigurer<EmployeeState, EmployeeEvent> config) throws Exception {
+        StateMachineListenerAdapter<EmployeeState, EmployeeEvent> adapter = new StateMachineListenerAdapter<>() {
+            @Override
+            public void stateChanged(State<EmployeeState, EmployeeEvent> from, State<EmployeeState, EmployeeEvent> to) {
+                System.out.println(String.format("stateChanged(from: %s, to: %s)", from, to));
+            }
+        };
+
+        config.withConfiguration()
+                .listener(adapter);
+    }
 
     @Override
     public void configure(StateMachineStateConfigurer<EmployeeState, EmployeeEvent> states) throws Exception {
@@ -77,19 +89,5 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<EmployeeSt
                     .event(TO_ACTIVE)
                 ;
 
-    }
-
-    @Override
-    public void configure(StateMachineConfigurationConfigurer<EmployeeState, EmployeeEvent> config) throws Exception {
-        StateMachineListenerAdapter<EmployeeState, EmployeeEvent> adapter = new StateMachineListenerAdapter<>() {
-            @Override
-            public void stateChanged(State<EmployeeState, EmployeeEvent> from, State<EmployeeState, EmployeeEvent> to) {
-                log.info(String.format("stateChanged(from: %s, to: %s)", from, to));
-            }
-        };
-
-        config.withConfiguration()
-                .listener(adapter);
-                ;
     }
 }

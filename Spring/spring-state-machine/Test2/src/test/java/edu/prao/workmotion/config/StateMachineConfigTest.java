@@ -6,8 +6,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.messaging.Message;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
+import reactor.core.publisher.Mono;
 
 import java.util.Arrays;
 import java.util.UUID;
@@ -42,16 +45,21 @@ public class StateMachineConfigTest {
 
         System.out.println("1 "+stateMachine.getState().toString());
 
-        stateMachine.sendEvent(TO_IN_CHECK);
+        stateMachine.sendEvent(getEvent(TO_IN_CHECK)).subscribe();
         System.out.println("2 "+stateMachine.getState().toString());
 
-        stateMachine.sendEvent(TO_SECURITY_CHECK_FINISHED);
+        stateMachine.sendEvent(getEvent(TO_SECURITY_CHECK_FINISHED)).subscribe();
         System.out.println("3 "+stateMachine.getState().toString());
 
-        stateMachine.sendEvent(TO_WORK_PERMIT_CHECK_FINISHED);
+        stateMachine.sendEvent(getEvent(TO_WORK_PERMIT_CHECK_FINISHED)).subscribe();
         System.out.println("4 "+stateMachine.getState().toString());
 
-        stateMachine.sendEvent(TO_ACTIVE);
+        stateMachine.sendEvent(getEvent(TO_ACTIVE)).subscribe();
         System.out.println("5 "+stateMachine.getState().toString());
+    }
+
+    private Mono<Message<EmployeeEvent>> getEvent(EmployeeEvent event){
+        return Mono.just(MessageBuilder
+                        .withPayload(event).build());
     }
 }
