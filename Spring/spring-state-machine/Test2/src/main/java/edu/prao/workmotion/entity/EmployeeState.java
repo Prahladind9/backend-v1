@@ -1,6 +1,8 @@
 package edu.prao.workmotion.entity;
 
 public enum EmployeeState {
+    FORK, JOIN,
+
     ADDED,
     IN_CHECK,
 

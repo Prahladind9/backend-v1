@@ -40,18 +40,18 @@ public class StateMachineConfigTest {
     @Test
     void testSequence1() {
 
-        System.out.println(stateMachine.getState().toString());
+        System.out.println("1 "+stateMachine.getState().toString());
 
         stateMachine.sendEvent(TO_IN_CHECK);
-        System.out.println(stateMachine.getState().toString());
+        System.out.println("2 "+stateMachine.getState().toString());
 
         stateMachine.sendEvent(TO_SECURITY_CHECK_FINISHED);
-        System.out.println(stateMachine.getState().toString());
+        System.out.println("3 "+stateMachine.getState().toString());
 
         stateMachine.sendEvent(TO_WORK_PERMIT_CHECK_FINISHED);
-        System.out.println(stateMachine.getState().toString());
+        System.out.println("4 "+stateMachine.getState().toString());
 
         stateMachine.sendEvent(TO_ACTIVE);
-        System.out.println(stateMachine.getState().toString());
+        System.out.println("5 "+stateMachine.getState().toString());
     }
 }

@@ -26,9 +26,11 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<EmployeeSt
     public void configure(StateMachineStateConfigurer<EmployeeState, EmployeeEvent> states) throws Exception {
         states.withStates()
                 .initial(ADDED)
-                    .fork(IN_CHECK)
-                    .join(APPROVED)
-                    .end(ACTIVE)
+                .fork(FORK)
+                .state(IN_CHECK)
+                .join(JOIN)
+                .state(APPROVED)
+                .end(ACTIVE)
                 .and()
                 .withStates()
                     .parent(IN_CHECK)
@@ -46,29 +48,33 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<EmployeeSt
     public void configure(StateMachineTransitionConfigurer<EmployeeState, EmployeeEvent> transitions) throws Exception {
         transitions
                 .withExternal()
-                    .source(ADDED)
-                    .target(IN_CHECK)
+                    .source(ADDED).target(FORK)
                     .event(TO_IN_CHECK)
-                .and()
+                    .and()
+                .withFork()
+                    .source(FORK).target(IN_CHECK)
+                    .and()
                 .withExternal()
                     .source(SECURITY_CHECK_STARTED)
                     .target(SECURITY_CHECK_FINISHED)
                     .event(TO_SECURITY_CHECK_FINISHED)
-                .and()
+                    .and()
                 .withExternal()
                     .source(WORK_PERMIT_CHECK_STARTED)
                     .target(WORK_PERMIT_CHECK_FINISHED)
                     .event(TO_WORK_PERMIT_CHECK_FINISHED)
-                .and()
-                .withFork()
-                    .source(IN_CHECK)
-                    .target(SECURITY_CHECK_STARTED)
-                    .target(WORK_PERMIT_CHECK_STARTED)
-                .and()
+                    .and()
                 .withJoin()
-                    .source(SECURITY_CHECK_FINISHED)
-                    .source(WORK_PERMIT_CHECK_FINISHED)
+                    .source(IN_CHECK).target(JOIN)
+                    .and()
+                .withExternal()
+                    .source(JOIN)
                     .target(APPROVED)
+                    .and()
+                .withExternal()
+                    .source(APPROVED)
+                    .target(ACTIVE)
+                    .event(TO_ACTIVE)
                 ;
 
     }
@@ -84,5 +90,6 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<EmployeeSt
 
         config.withConfiguration()
                 .listener(adapter);
+                ;
     }
 }
