@@ -5,21 +5,21 @@ import edu.prao.workmotion.entity.EmployeeEvent;
 import edu.prao.workmotion.entity.EmployeeState;
 import edu.prao.workmotion.repo.EmployeeRepo;
 import lombok.RequiredArgsConstructor;
-import org.springframework.messaging.Message;
-import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.statemachine.support.DefaultStateMachineContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
+import java.util.Arrays;
+
+import static edu.prao.workmotion.entity.EmployeeState.*;
+import static edu.prao.workmotion.util.EmployeeUtil.getEvent;
 
 @RequiredArgsConstructor
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
-    public static final String EMPLOYEE_ID_HEADER = "employee_id";
-    
+
     private final EmployeeRepo repo;
     private final StateMachineFactory<EmployeeState, EmployeeEvent> factory;
 
@@ -34,44 +34,48 @@ public class EmployeeServiceImpl implements EmployeeService{
         return repo.getById(employeeId);
     }
 
-    @Transactional
     @Override
     public Employee updateEmployeeState(Long employeeId, EmployeeEvent event) {
-        //StateMachine<EmployeeState, EmployeeEvent> stateMachine = factory.getStateMachine(Long.toString(employeeId));
 
         Employee employee = repo.getById(employeeId);
         StateMachine<EmployeeState, EmployeeEvent> stateMachine = build(employee);
-        System.out.println(stateMachine.getState());
-        //sendEvent(employeeId, stateMachine, event);
-        boolean b = stateMachine.sendEvent(event);
-        System.out.println(stateMachine.getState());
-        System.out.println(stateMachine.getState().getIds());
-        System.out.println(stateMachine.getStateMachineAccessor());
-        System.out.println(stateMachine.getTransitions());
-        System.out.println(stateMachine.getState().getStates());
-        System.out.println(stateMachine.getState().getPseudoState());
-        System.out.println(stateMachine.getState());
-        employee.setState(stateMachine.getState().getId());
+
+        stateMachine.sendEvent(getEvent(event)).subscribe();
+        System.out.println("CurrentState "+ stateMachine.getState().getIds());
+
+        setEmployeeState(employee, stateMachine);
         return repo.save(employee);
     }
 
     private StateMachine<EmployeeState, EmployeeEvent> build(Employee employee){
         StateMachine<EmployeeState, EmployeeEvent> sm = factory.getStateMachine(Long.toString(employee.getId()));
-        sm.stopReactively();
+        sm.stopReactively().subscribe();
 
         sm.getStateMachineAccessor()
-                .doWithAllRegions(sma -> sma.resetStateMachineReactively(new DefaultStateMachineContext<>(employee.getState(), null, null, null)));
+                .doWithAllRegions(sma -> sma.resetStateMachineReactively(new DefaultStateMachineContext<>(employee.getState(), null, null, null)).subscribe());
 
-        sm.startReactively();
+        sm.startReactively().subscribe();
 
         return sm;
     }
 
-    private void sendEvent(Long paymentId, StateMachine<EmployeeState, EmployeeEvent> sm, EmployeeEvent event){
-        Message msg = MessageBuilder.withPayload(event)
-                .setHeader(EMPLOYEE_ID_HEADER, paymentId)
-                .build();
+    private void setEmployeeState(Employee employee, StateMachine<EmployeeState, EmployeeEvent> stateMachine) {
+        if(stateMachine.getState().getIds().contains(SECURITY_CHECK_STARTED))
+            employee.setState(SECURITY_CHECK_STARTED);
 
-        sm.sendEvent(msg);
+        if(stateMachine.getState().getIds().contains(WORK_PERMIT_CHECK_STARTED))
+            employee.setState(WORK_PERMIT_CHECK_STARTED);
+
+        if(stateMachine.getState().getIds().contains(SECURITY_CHECK_FINISHED))
+            employee.setState(SECURITY_CHECK_FINISHED);
+
+        if(stateMachine.getState().getIds().contains(WORK_PERMIT_CHECK_FINISHED))
+            employee.setState(WORK_PERMIT_CHECK_FINISHED);
+
+        if(stateMachine.getState().getIds().containsAll(Arrays.asList(IN_CHECK, SECURITY_CHECK_FINISHED, WORK_PERMIT_CHECK_FINISHED)))
+            employee.setState(APPROVED);
+
+        if(stateMachine.getState().getId().equals(ACTIVE))
+            employee.setState(ACTIVE);
     }
 }
