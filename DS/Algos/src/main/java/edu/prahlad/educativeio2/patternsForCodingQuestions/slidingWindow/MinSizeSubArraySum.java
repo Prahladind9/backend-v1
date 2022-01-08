@@ -6,7 +6,7 @@ package edu.prahlad.educativeio2.patternsForCodingQuestions.slidingWindow;
  * Return 0 if no such subarray exists.
  *
  * Time:
- * Space: 
+ * Space:
  */
 public class MinSizeSubArraySum {
 
