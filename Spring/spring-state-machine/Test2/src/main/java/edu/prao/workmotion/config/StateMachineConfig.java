@@ -10,7 +10,6 @@ import org.springframework.statemachine.config.builders.StateMachineConfiguratio
 import org.springframework.statemachine.config.builders.StateMachineStateConfigurer;
 import org.springframework.statemachine.config.builders.StateMachineTransitionConfigurer;
 import org.springframework.statemachine.listener.StateMachineListenerAdapter;
-import org.springframework.statemachine.region.RegionExecutionPolicy;
 import org.springframework.statemachine.state.State;
 
 import static edu.prao.workmotion.entity.EmployeeState.*;
@@ -26,7 +25,7 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<EmployeeSt
         StateMachineListenerAdapter<EmployeeState, EmployeeEvent> adapter = new StateMachineListenerAdapter<>() {
             @Override
             public void stateChanged(State<EmployeeState, EmployeeEvent> from, State<EmployeeState, EmployeeEvent> to) {
-                System.out.println(String.format("stateChanged(from: %s, to: %s)", from, to));
+                log.trace(String.format("stateChanged(from: %s, to: %s)", from, to));
             }
         };
 
