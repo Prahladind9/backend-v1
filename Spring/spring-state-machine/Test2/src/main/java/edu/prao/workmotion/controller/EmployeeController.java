@@ -3,7 +3,6 @@ package edu.prao.workmotion.controller;
 import edu.prao.workmotion.entity.Employee;
 import edu.prao.workmotion.entity.EmployeeEvent;
 import edu.prao.workmotion.service.EmployeeService;
-import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

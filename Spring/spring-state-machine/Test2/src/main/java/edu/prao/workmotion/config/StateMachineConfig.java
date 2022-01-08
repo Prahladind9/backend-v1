@@ -12,8 +12,8 @@ import org.springframework.statemachine.config.builders.StateMachineTransitionCo
 import org.springframework.statemachine.listener.StateMachineListenerAdapter;
 import org.springframework.statemachine.state.State;
 
-import static edu.prao.workmotion.entity.EmployeeState.*;
 import static edu.prao.workmotion.entity.EmployeeEvent.*;
+import static edu.prao.workmotion.entity.EmployeeState.*;
 
 @Slf4j
 @EnableStateMachineFactory
