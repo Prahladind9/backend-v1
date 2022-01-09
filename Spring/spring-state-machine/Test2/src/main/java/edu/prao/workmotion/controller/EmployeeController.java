@@ -2,6 +2,7 @@ package edu.prao.workmotion.controller;
 
 import edu.prao.workmotion.entity.Employee;
 import edu.prao.workmotion.entity.EmployeeEvent;
+import edu.prao.workmotion.model.EmployeeModel;
 import edu.prao.workmotion.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,17 +16,19 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @PostMapping("addEmployee")
-    public Employee addEmployee(@RequestBody Employee employee){
+    public EmployeeModel addEmployee(@RequestBody Employee employee){
         return this.employeeService.addEmployee(employee);
     }
 
-    @GetMapping("fetchEmployeeDetails/{employeeId}")
-    public Employee fetchEmployeeDetails(@PathVariable Long employeeId){
-        return this.employeeService.fetchEmployeeDetails(employeeId);
+    @GetMapping("getEmployeeDetails/{employeeId}")
+    public EmployeeModel getEmployeeDetails(@PathVariable Long employeeId){
+        //can add validations on employeeId
+        return this.employeeService.getEmployeeDetails(employeeId);
     }
 
     @PostMapping("updateEmployeeState/{employeeId}")
-    public Employee updateEmployeeState(@PathVariable Long employeeId, @RequestParam EmployeeEvent event){
+    public EmployeeModel updateEmployeeState(@PathVariable Long employeeId, @RequestParam EmployeeEvent event){
+        //can add validations on employeeId, event
         return this.employeeService.updateEmployeeState(employeeId, event);
     }
 }

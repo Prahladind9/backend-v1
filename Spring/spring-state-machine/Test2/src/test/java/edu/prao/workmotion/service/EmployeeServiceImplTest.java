@@ -2,6 +2,7 @@ package edu.prao.workmotion.service;
 
 import edu.prao.workmotion.entity.Employee;
 import edu.prao.workmotion.entity.EmployeeEvent;
+import edu.prao.workmotion.model.EmployeeModel;
 import edu.prao.workmotion.repo.EmployeeRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
@@ -30,14 +31,14 @@ class EmployeeServiceImplTest {
     @Transactional
     @Test
     void preAuth() {
-        Employee savedEmployee = employeeService.addEmployee(employee);
+        EmployeeModel savedEmployee = employeeService.addEmployee(employee);
 
         log.info("Should be ADDED");
-        log.info("SavedState", savedEmployee.getState());
+        log.info("SavedState", savedEmployee.getEmployee().getState());
 
-        employeeService.updateEmployeeState(savedEmployee.getId(), EmployeeEvent.TO_IN_CHECK);
+        employeeService.updateEmployeeState(savedEmployee.getEmployee().getId(), EmployeeEvent.TO_IN_CHECK);
 
-        Employee employee = repo.getById(savedEmployee.getId());
+        Employee employee = repo.getById(savedEmployee.getEmployee().getId());
         log.info("employee", employee);
 
     }
