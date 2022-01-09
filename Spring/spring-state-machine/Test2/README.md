@@ -24,6 +24,11 @@ For exploring the API, you can visit swagger-ui link
 
 --------------
 
+### State Chart Model
+
+For State Chart Model, please refer src/resources/statechartmodel.txt
+
+
 ## Testing app via rest api
 Sample "workMotion.postman_collection.json" is located under resources
 

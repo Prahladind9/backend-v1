@@ -13,6 +13,7 @@
     <version>1.0.0</version>
     <name>workmotion</name>
     <description>workmotion</description>
+    <packaging>jar</packaging>
     <properties>
         <java.version>11</java.version>
     </properties>

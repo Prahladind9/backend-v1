@@ -29,8 +29,6 @@ class EmployeeControllerTest {
     @LocalServerPort
     private int port;
     @Autowired
-    private EmployeeRepo employeeRepo;
-    @Autowired
     Jackson2ObjectMapperBuilder mapperBuilder;
 
     private TestRestTemplate restTemplate;
@@ -40,7 +38,6 @@ class EmployeeControllerTest {
     void beforeEach() {
         basePath = String.format("http://localhost:%d/employee", port);
         restTemplate = new TestRestTemplate();
-        employeeRepo.deleteAll();
     }
 
     @Test
