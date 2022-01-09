@@ -1,0 +1,19 @@
+{
+  "employee": {
+    "id": 1,
+    "orgId": 1,
+    "name": "prao",
+    "age": 29,
+    "contractCompany": "WorkMotion",
+    "contractStart": "2020-01-01",
+    "contractEnd": "2021-01-01",
+    "state": "ADDED",
+    "subState": "NA",
+    "createAt": "2022-01-09T19:56:10.259435"
+  },
+  "nextActionToTake": "Choose nextPossibleEvent",
+  "nextPossibleEvent": [
+    "TO_IN_CHECK"
+  ],
+  "targetState": "IN_CHECK"
+}

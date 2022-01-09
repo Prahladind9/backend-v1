@@ -56,7 +56,7 @@ public class EmployeeModelBuilder {
                 employee.setSubState("NA");
                 targetState = "NA";
                 nextActionToTake = NOTHING_EMPLOYEE_REACHED_ACTIVE_STATE;
-                nextPossibleEvent = null;
+                nextPossibleEvent = Arrays.asList("NA");;
                 break;
             case IN_CHECK:
             case SECURITY_CHECK_STARTED:

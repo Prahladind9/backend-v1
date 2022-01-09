@@ -1,0 +1,22 @@
+{
+  "employee": {
+    "id": 1,
+    "orgId": 1,
+    "name": "prao",
+    "age": 29,
+    "contractCompany": "WorkMotion",
+    "contractStart": "2020-01-01",
+    "contractEnd": "2021-01-01",
+    "state": "IN_CHECK",
+    "subState": "[SECURITY_CHECK_STARTED, WORK_PERMIT_CHECK_STARTED]",
+    "createAt": "2022-01-09T19:36:39.580853",
+    "lastUpdatedAt": "2022-01-09T19:41:49.194413",
+    "lastUpdatedState": "ADDED"
+  },
+  "nextActionToTake": "Choose nextPossibleEvent",
+  "nextPossibleEvent": [
+    "TO_SECURITY_CHECK_FINISHED",
+    "TO_WORK_PERMIT_CHECK_FINISHED"
+  ],
+  "targetState": "APPROVED"
+}

@@ -1,12 +1,14 @@
 package edu.prao.workmotion.model;
 
 import edu.prao.workmotion.entity.Employee;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 import java.util.List;
 
 @Getter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class EmployeeModel {
 
