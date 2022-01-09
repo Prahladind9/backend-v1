@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "5ce5bf10-1f3b-49d5-89fe-d4f4686243e2",
+		"name": "WorkMotion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "updateEmployeeState",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/updateEmployeeState/1?event=TO_IN_CHECK",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"updateEmployeeState",
+						"1"
+					],
+					"query": [
+						{
+							"key": "event",
+							"value": "TO_IN_CHECK"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getEmployeeDetails/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getEmployeeDetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgId\": 1,\n    \"name\": \"prao\",\n    \"age\": 29,\n    \"contractCompany\": \"WorkMotion\",\n    \"contractStart\": \"2020-01-01\",\n    \"contractEnd\": \"2021-01-01\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee/addEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"addEmployee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

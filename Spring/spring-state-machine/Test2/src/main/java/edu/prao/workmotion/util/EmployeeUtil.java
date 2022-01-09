@@ -1,8 +1,6 @@
 package edu.prao.workmotion.util;
 
-import edu.prao.workmotion.entity.Employee;
 import edu.prao.workmotion.entity.EmployeeEvent;
-import edu.prao.workmotion.model.EmployeeModel;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import reactor.core.publisher.Mono;

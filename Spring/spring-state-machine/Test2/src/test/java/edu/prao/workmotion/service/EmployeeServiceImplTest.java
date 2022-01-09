@@ -36,7 +36,7 @@ class EmployeeServiceImplTest {
         log.info("Should be ADDED");
         log.info("SavedState", savedEmployee.getEmployee().getState());
 
-        employeeService.updateEmployeeState(savedEmployee.getEmployee().getId(), EmployeeEvent.TO_IN_CHECK);
+        employeeService.updateEmployeeState(savedEmployee.getEmployee().getId(), EmployeeEvent.TO_IN_CHECK.name());
 
         Employee employee = repo.getById(savedEmployee.getEmployee().getId());
         log.info("employee", employee);

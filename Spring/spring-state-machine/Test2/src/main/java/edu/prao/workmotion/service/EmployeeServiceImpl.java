@@ -7,17 +7,20 @@ import edu.prao.workmotion.model.EmployeeModel;
 import edu.prao.workmotion.model.EmployeeModelBuilder;
 import edu.prao.workmotion.repo.EmployeeRepo;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.statemachine.support.DefaultStateMachineContext;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
+import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static edu.prao.workmotion.entity.EmployeeState.*;
 import static edu.prao.workmotion.util.EmployeeUtil.getEvent;
@@ -41,19 +44,25 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public EmployeeModel getEmployeeDetails(Long employeeId) {
+        paramEmployeeIdValidation(employeeId);
         Employee employee = employeeRepo.getById(employeeId);
+        validateEmployee(employee);
         final StateMachine<EmployeeState, EmployeeEvent> stateMachine = build(employee);
         return employeeModelBuilder.forGetEmployeeDetails(employee, stateMachine);
     }
 
     @Override
-    public EmployeeModel updateEmployeeState(Long employeeId, EmployeeEvent event) {
+    public EmployeeModel updateEmployeeState(Long employeeId, String event) {
 
+        paramEmployeeIdValidation(employeeId);
+        paramEventValidation(event);
         Employee employee = employeeRepo.getById(employeeId);
+        validateEmployee(employee);
+        EmployeeEvent validatedEvent = EmployeeEvent.valueOf(event);
         final StateMachine<EmployeeState, EmployeeEvent> stateMachine = build(employee);
 
-        if (isStateChanged(employee, event, stateMachine)) {
-            stateMachine.sendEvent(getEvent(event)).subscribe();
+        if (isStateChanged(employee, validatedEvent, stateMachine)) {
+            stateMachine.sendEvent(getEvent(validatedEvent)).subscribe();
             employee.setLastUpdatedState(employee.getState());
             employee.setLastUpdatedAt(LocalDateTime.now());
             employee.setState(getEmployeeState(employee, stateMachine));
@@ -61,6 +70,36 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
 
         return employeeModelBuilder.forGetEmployeeDetails(employee, stateMachine);
+    }
+
+    private void paramEmployeeIdValidation(Long employeeId){
+        if (employeeId < 0) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,
+                    "Please provide a valid employeeId or event.");
+        }
+    }
+
+    private void paramEventValidation(String event){
+        if ( !isValid(event)) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,
+                    "Please provide a valid employeeId or event.");
+        }
+    }
+
+    private void validateEmployee(Employee employee){
+
+        if (employee == null) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,
+                    "Employee doesn't exist, please provide correct employeeId.");
+        }
+
+        try{
+            employee.getState();
+        }catch (EntityNotFoundException e){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,
+                    "Employee doesn't exist, please provide correct employeeId.");
+        }
+
     }
 
     private boolean isStateChanged(Employee employee, EmployeeEvent event, StateMachine<EmployeeState, EmployeeEvent> stateMachine) {
@@ -125,5 +164,15 @@ public class EmployeeServiceImpl implements EmployeeService {
         stateMachine.startReactively().subscribe();
 
         return stateMachine;
+    }
+
+    public boolean isValid(String value) {
+        if (value == null) {
+            return false;
+        }
+
+        return Stream.of(EmployeeEvent.values())
+                .map(Enum::name)
+                .collect(Collectors.toList()).contains(value);
     }
 }
