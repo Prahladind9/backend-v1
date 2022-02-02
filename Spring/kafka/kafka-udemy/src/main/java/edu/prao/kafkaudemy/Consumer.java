@@ -17,7 +17,7 @@ public class Consumer {
     private String groupId;
 
     @KafkaListener(topics = "${topic.name}", groupId = "${spring.kafka.group-id}", containerFactory = "iotKafkaListenerContainerFactory")
-    public void listenTopicCar(ConsumerRecord<Long, Object> message){
+    public void iotListenTopic(ConsumerRecord<Long, Object> message){
         log.info("Message: "+message.topic());
         log.info("MessageKey: "+message.key());
         log.info("MessageValue: "+message.value());
