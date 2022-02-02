@@ -1,5 +1,7 @@
 package edu.prao.kafkaudemy;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,7 +19,9 @@ public class Consumer {
     private String groupId;
 
     @KafkaListener(topics = "${topic.name}", groupId = "${spring.kafka.group-id}", containerFactory = "iotKafkaListenerContainerFactory")
-    public void iotListenTopic(ConsumerRecord<Long, Object> message){
+    public void iotListenTopic(ConsumerRecord<Long, String> message) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        ModifiableRandomEvent event = mapper.readValue(message.value(), ModifiableRandomEvent.class);
         log.info("Message: "+message.topic());
         log.info("MessageKey: "+message.key());
         log.info("MessageValue: "+message.value());
