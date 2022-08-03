@@ -1,4 +1,4 @@
-package edu.prahlad.codeWithMosh4.part1;
+package edu.prahlad.codeWithMosh4.part1.array;
 
 import java.util.ArrayList;
 
